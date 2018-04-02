@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Invention_Contact_Lightning_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Connects Inventions to Contacts</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Contact_Account_Link__c</fullName>
+        <description>This returns a relative link to the related Contact Account in Lightning Experience. This is used to create a link to the object in a data table in a Lightning Component.</description>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK(Contact_Account__c)),&quot;/lightning/r/Account/&quot;&amp;Contact_Account__r.Id&amp;&quot;/view&quot;,&quot;&quot;)</formula>
+        <inlineHelpText>This returns a relative link to the related Contact Account in Lightning Experience.</inlineHelpText>
+        <label>Contact Account Link</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Account_Name__c</fullName>
+        <description>Name of the Contact Account on the Invention Contact record. This is used so Lightning Components can access related object data.</description>
+        <externalId>false</externalId>
+        <formula>Contact_Account__r.Name</formula>
+        <inlineHelpText>Name of the Contact Account on the Invention Contact record.</inlineHelpText>
+        <label>Contact Account Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Account__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>The Account the Researcher is associated with</inlineHelpText>
+        <label>Contact Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Inventions by Researcher</relationshipLabel>
+        <relationshipName>Contact_Inventions</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Division_Link__c</fullName>
+        <description>This returns a relative link to the related Division in Lightning Experience. This is used to create a link to the object in a data table in a Lightning Component.</description>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK(Division__c)),&quot;/lightning/r/Division__c/&quot;&amp;Division__r.Id&amp;&quot;/view&quot;,&quot;&quot;)</formula>
+        <inlineHelpText>This returns a relative link to the related Division in Lightning Experience.</inlineHelpText>
+        <label>Division Link</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Division_Name__c</fullName>
+        <description>Name of the Division on the Invention Contact Record. This is used so Lightning Components can access related object data.</description>
+        <externalId>false</externalId>
+        <formula>Division__r.Name</formula>
+        <inlineHelpText>Name of the Division on the Invention Contact Record.</inlineHelpText>
+        <label>Division Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Division__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Division related to the Researcher. Should be limited to only those associated with the Researcher.
+If you do not see the appropriate Division, please check to make sure the Researcher has the Division associated.</inlineHelpText>
+        <label>Division</label>
+        <referenceTo>Division__c</referenceTo>
+        <relationshipLabel>Inventions</relationshipLabel>
+        <relationshipName>Inventions</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Invention_Link__c</fullName>
+        <description>This returns a relative link to the related Invention in Lightning Experience. This is used to create a link to the object in a data table in a Lightning Component.</description>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK(Invention__c)),&quot;/lightning/r/Invention__c/&quot;&amp;Invention__r.Id&amp;&quot;/view&quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This returns a relative link to the related Invention in Lightning Experience.</inlineHelpText>
+        <label>Invention Link</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Invention_Name__c</fullName>
+        <description>Name of the Division on the Invention Contact Record. This is used so Lightning Components can access related object data.</description>
+        <externalId>false</externalId>
+        <formula>Invention__r.Name</formula>
+        <inlineHelpText>Name of the Division on the Invention Contact Record.</inlineHelpText>
+        <label>Invention Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Invention__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Invention</label>
+        <referenceTo>Invention__c</referenceTo>
+        <relationshipLabel>Researchers</relationshipLabel>
+        <relationshipName>Invention_Contacts</relationshipName>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Inventor_Share__c</fullName>
+        <externalId>false</externalId>
+        <label>Inventor Share</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Lead_Inventor_Text__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Lead_Inventor__c, &quot;Yes&quot;,&quot;No&quot;)</formula>
+        <label>Lead Inventor Text</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lead_Inventor__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Only one person may have this flag. If you chose this Contact as lead, all others will be marked as not the lead.</inlineHelpText>
+        <label>Lead Inventor</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Researcher_Link__c</fullName>
+        <description>This returns a relative link to the related Researcher (Contact) in Lightning Experience. This is used to create a link to the object in a data table in a Lightning Component.</description>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK(Researcher__c)),&quot;/lightning/r/Contact/&quot;&amp;Researcher__r.Id&amp;&quot;/view&quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This returns a relative link to the related Researcher in Lightning Experience.</inlineHelpText>
+        <label>Researcher Link</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Researcher_Name__c</fullName>
+        <description>Name of the Researcher on the Invention Contact Record. This is used so Lightning Components can access related object data.</description>
+        <externalId>false</externalId>
+        <formula>IF( 
+ISBLANK(Researcher__r.Title) , 
+&quot;&quot;, 
+Researcher__r.Title &amp; &quot; &quot; 
+) 
+&amp; 
+IF( 
+ISBLANK(Researcher__r.FirstName) , 
+&quot;&quot;, 
+Researcher__r.FirstName &amp; &quot; &quot; 
+) 
+&amp; 
+Researcher__r.LastName</formula>
+        <inlineHelpText>Name of the Researcher on the Invention Contact Record.</inlineHelpText>
+        <label>Researcher Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Researcher__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Researcher</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Inventions</relationshipLabel>
+        <relationshipName>Invention_Contacts</relationshipName>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Invention Contact</label>
+    <nameField>
+        <label>Invention Researcher Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Invention Contacts</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <startsWith>Vowel</startsWith>
+</CustomObject>

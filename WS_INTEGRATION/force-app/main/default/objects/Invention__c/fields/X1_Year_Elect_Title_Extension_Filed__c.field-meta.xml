@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X1_Year_Elect_Title_Extension_Filed__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates whether an extension of 1 year to elect title was filed</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check if an extension for 1 year to elect title was filed</inlineHelpText>
+    <label>1 Year Elect Title Extension Filed</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

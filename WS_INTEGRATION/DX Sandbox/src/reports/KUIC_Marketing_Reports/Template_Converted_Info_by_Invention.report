@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Lead$Name</field>
+    </columns>
+    <columns>
+        <field>Lead$Status</field>
+    </columns>
+    <columns>
+        <field>Lead$Email</field>
+    </columns>
+    <columns>
+        <field>Lead$Id</field>
+    </columns>
+    <columns>
+        <field>Lead$ConvertedContact.Name</field>
+    </columns>
+    <columns>
+        <field>Lead$ConvertedContact.Id</field>
+    </columns>
+    <columns>
+        <field>Lead$ConvertedOpportunity.Name</field>
+    </columns>
+    <columns>
+        <field>Lead$ConvertedOpportunity.Id</field>
+    </columns>
+    <columns>
+        <field>Lead$ConvertedOpportunity.Amount</field>
+    </columns>
+    <description>Shows the lead, converted contact, and converted opportunity info for a specific Invention. To be accessed through the Invention page.</description>
+    <format>Tabular</format>
+    <name>Template - Converted Info by Invention</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Leads_Related_Lookups__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Lead$ConvertedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

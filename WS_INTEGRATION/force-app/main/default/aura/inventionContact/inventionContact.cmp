@@ -1,0 +1,76 @@
+<aura:component controller="inventionContactController"
+                implements="lightning:actionOverride,force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    
+    <aura:attribute name="newInventionContact" type="Invention_Contact__c" />
+    <aura:attribute name="invContFields" type="Invention_Contact__c" />
+    <aura:attribute name="invContError" type="String" />
+    
+    <force:recordData aura:id="inventionRecordCreator"
+                      targetRecord="{!v.newInventionContact}"
+                      targetFields="{!v.invContFields}"
+                      targetError="{!v.invContError}"
+                      layoutType="FULL"
+                      />
+    
+       
+    <!-- Lookup Attributes -->
+    <aura:attribute name="selectedContactLookupRecord" type="sObject" default="{}"/>    
+    <aura:attribute name="relatedDivisions" type="RelatedObject" />
+    <aura:attribute name="relatedAccounts" type="RelatedObject" />
+    
+    <!-- Handlers -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:handler name="contSelect" value="{!v.selectedContactLookupRecord}" action="{!c.relDivisions}" />
+    <!--<aura:handler name="contSelect2" value="{!v.selectedContactLookupRecord}" action="{!c.relAccounts}" />-->
+    
+    <!--Method -->
+    <c:junctionObjectRelationshipLookup aura:id="echoJunctionAccount"/>
+    
+    
+    <div class="Relate Inventors">
+        <lightning:card iconName="action:new_group" title="Relate Inventors">
+            <div class="slds-p-horizontal--small">
+                
+                <div class="slds-form-element">
+                    <c:customLookup objectAPIName="contact" IconName="standard:contact" label="Lead Inventor" selectedRecord="{!v.selectedContactLookupRecord}"/>
+                </div>
+                                
+                <aura:if isTrue="{!not(empty(v.selectedContactLookupRecord))}"> 
+                    <div class="slds-form-element">
+                        <lightning:select aura:id="division" name="division" label="Division" required="true" messageWhenValueMissing="Please specify which department is related to the Inventor.">
+                            <option value="">Please Select a Department</option>
+                            <aura:iteration items="{!v.relatedDivisions}" var="item">
+                                <option text="{!item.Name}" value="{!item.Id}"/>
+                            </aura:iteration>
+                        </lightning:select>
+                    </div>                    
+                   
+                    <div class="slds-form-element">
+                        <lightning:select aura:id="account" name="account" label="Account" required="true" messageWhenValueMissing="Please specify which account is related to the Inventor.">
+                            <option value="">Please Select an Account</option>
+                            <aura:iteration items="{!v.relatedAccounts}" var="item">
+                                <option text="{!item.Name}" value="{!item.Id}"/>
+                            </aura:iteration>
+                        </lightning:select>
+                    </div>
+                    
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="inventorShare">Inventor Share</label>
+                        <div class="slds-form-element__control">
+                            <input type="text" id="inventorShare" class="slds-input" value="{!v.invContFields.Inventor_Share__c}"/>
+                        </div>
+                    </div>
+                </aura:if>
+                
+            </div>
+        </lightning:card>
+    </div>
+    
+    <!-- Display any LDS errors -->
+    <aura:if isTrue="{!not(empty(v.invContError))}">
+        <div class="recordError">
+            {!v.recordError}
+        </div>
+    </aura:if>
+    
+</aura:component>

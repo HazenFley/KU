@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Account_or_Division</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISBLANK( Division__c ), ISBLANK( Account__c ) )</errorConditionFormula>
+    <errorMessage>There must be an associated Division or and Account.</errorMessage>
+</ValidationRule>

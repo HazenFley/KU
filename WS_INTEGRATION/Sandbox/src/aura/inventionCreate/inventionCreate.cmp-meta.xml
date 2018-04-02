@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuraDefinitionBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>41.0</apiVersion>
+    <description>Used to create inventions. Only contains the basic information and then sends the user to define the lead inventor.</description>
+</AuraDefinitionBundle>

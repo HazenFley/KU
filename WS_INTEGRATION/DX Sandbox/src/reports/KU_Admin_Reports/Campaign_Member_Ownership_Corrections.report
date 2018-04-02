@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Campaign$Owner</field>
+    </columns>
+    <columns>
+        <field>Campaign.CampaignMembers$Name</field>
+    </columns>
+    <columns>
+        <field>Campaign.CampaignMembers$MemberId</field>
+    </columns>
+    <columns>
+        <field>Campaign.CampaignMembers*CampaignMember$Member_Owner__c</field>
+    </columns>
+    <description>Finds members who are assigned to a campaign that has a different owner than the member. Useful to correct problems with task assignment</description>
+    <filter>
+        <criteriaItems>
+            <column>Campaign.CampaignMembers*CampaignMember$Member_Owner_Check__c</column>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Campaign$Type</column>
+            <operator>equals</operator>
+            <value>Marketed Invention</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Campaign$Status</column>
+            <operator>equals</operator>
+            <value>In Progress,Planned</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Campaign$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Campaign Member Ownership Corrections</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Campaigns_and_Members__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Campaign$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

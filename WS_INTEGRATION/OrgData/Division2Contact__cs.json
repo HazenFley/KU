@@ -1,0 +1,108 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Division2Contact__c",
+                "referenceId": "Division2Contact__cRef1"
+            },
+            "Name": "Div2Cont-15",
+            "Active_Relationship__c": true,
+            "Full_Division_Name_Backward__c": "Liver Center, Centers, Medicine, KUMC - KU Medical Center",
+            "Full_Division_Name_Forward__c": "KUMC - KU Medical Center, Medicine, Centers, Liver Center",
+            "Inactive_Relationship__c": false,
+            "Primary_Division__c": false,
+            "Status__c": "Active"
+        },
+        {
+            "attributes": {
+                "type": "Division2Contact__c",
+                "referenceId": "Division2Contact__cRef2"
+            },
+            "Name": "Div2Cont-5",
+            "Active_Relationship__c": true,
+            "Full_Division_Name_Backward__c": "Center For Chemical Methodologies & Library - CMLD (INACTIVE), Higuchi Biosciences Center - HBC, Higuchi Biosciences Center, Office of Research, Lawrence",
+            "Full_Division_Name_Forward__c": "Lawrence, Office of Research, Higuchi Biosciences Center, Higuchi Biosciences Center - HBC, Center For Chemical Methodologies & Library - CMLD (INACTIVE)",
+            "Inactive_Relationship__c": false,
+            "Primary_Division__c": true,
+            "Status__c": "Primary"
+        },
+        {
+            "attributes": {
+                "type": "Division2Contact__c",
+                "referenceId": "Division2Contact__cRef3"
+            },
+            "Name": "Div2Cont-14",
+            "Active_Relationship__c": true,
+            "Full_Division_Name_Backward__c": "Kirmayer Fitness Center, Kirmayer Fitness Center, Kirmayer Fitness Ctr (Stu Serv), Student Services, KUMC - KU Medical Center",
+            "Full_Division_Name_Forward__c": "KUMC - KU Medical Center, Student Services, Kirmayer Fitness Ctr (Stu Serv), Kirmayer Fitness Center, Kirmayer Fitness Center",
+            "Inactive_Relationship__c": false,
+            "Primary_Division__c": false,
+            "Status__c": "Active"
+        },
+        {
+            "attributes": {
+                "type": "Division2Contact__c",
+                "referenceId": "Division2Contact__cRef4"
+            },
+            "Name": "Div2Cont-4",
+            "Active_Relationship__c": false,
+            "Full_Division_Name_Backward__c": "Genomics Facility, Centers, Medicine, KUMC - KU Medical Center",
+            "Full_Division_Name_Forward__c": "KUMC - KU Medical Center, Medicine, Centers, Genomics Facility",
+            "Inactive_Relationship__c": true,
+            "Primary_Division__c": false,
+            "Status__c": "Inactive"
+        },
+        {
+            "attributes": {
+                "type": "Division2Contact__c",
+                "referenceId": "Division2Contact__cRef5"
+            },
+            "Name": "Div2Cont-9",
+            "Active_Relationship__c": true,
+            "Full_Division_Name_Backward__c": "Medical Center Police, Medical Center Police, Safety and Security (Spt Svc), Support Services, KUMC - KU Medical Center",
+            "Full_Division_Name_Forward__c": "KUMC - KU Medical Center, Support Services, Safety and Security (Spt Svc), Medical Center Police, Medical Center Police",
+            "Inactive_Relationship__c": false,
+            "Primary_Division__c": true,
+            "Status__c": "Primary"
+        },
+        {
+            "attributes": {
+                "type": "Division2Contact__c",
+                "referenceId": "Division2Contact__cRef6"
+            },
+            "Name": "Div2Cont-11",
+            "Active_Relationship__c": true,
+            "Full_Division_Name_Backward__c": "Specialized Chemistry Center - SCC (INACTIVE), Higuchi Biosciences Center - HBC, Higuchi Biosciences Center, Office of Research, Lawrence",
+            "Full_Division_Name_Forward__c": "Lawrence, Office of Research, Higuchi Biosciences Center, Higuchi Biosciences Center - HBC, Specialized Chemistry Center - SCC (INACTIVE)",
+            "Inactive_Relationship__c": false,
+            "Primary_Division__c": false,
+            "Status__c": "Active"
+        },
+        {
+            "attributes": {
+                "type": "Division2Contact__c",
+                "referenceId": "Division2Contact__cRef7"
+            },
+            "Name": "Div2Cont-12",
+            "Active_Relationship__c": true,
+            "Full_Division_Name_Backward__c": "Kirmayer Fitness Center, Kirmayer Fitness Center, Kirmayer Fitness Ctr (Stu Serv), Student Services, KUMC - KU Medical Center",
+            "Full_Division_Name_Forward__c": "KUMC - KU Medical Center, Student Services, Kirmayer Fitness Ctr (Stu Serv), Kirmayer Fitness Center, Kirmayer Fitness Center",
+            "Inactive_Relationship__c": false,
+            "Primary_Division__c": false,
+            "Status__c": "Active"
+        },
+        {
+            "attributes": {
+                "type": "Division2Contact__c",
+                "referenceId": "Division2Contact__cRef8"
+            },
+            "Name": "Div2Cont-13",
+            "Active_Relationship__c": true,
+            "Full_Division_Name_Backward__c": "Center For Chemical Methodologies & Library - CMLD (INACTIVE), Higuchi Biosciences Center - HBC, Higuchi Biosciences Center, Office of Research, Lawrence",
+            "Full_Division_Name_Forward__c": "Lawrence, Office of Research, Higuchi Biosciences Center, Higuchi Biosciences Center - HBC, Center For Chemical Methodologies & Library - CMLD (INACTIVE)",
+            "Inactive_Relationship__c": false,
+            "Primary_Division__c": true,
+            "Status__c": "Primary"
+        }
+    ]
+}

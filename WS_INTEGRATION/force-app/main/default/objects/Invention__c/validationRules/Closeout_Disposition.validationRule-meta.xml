@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closeout_Disposition</fullName>
+    <active>true</active>
+    <description>Require a Disposition when an invention is marked as closed</description>
+    <errorConditionFormula>AND(  Close_Invention__c = TRUE ,  ISBLANK(TEXT(Disposition__c)) )</errorConditionFormula>
+    <errorMessage>A disposition must be selected to close out an invention</errorMessage>
+</ValidationRule>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Division</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Divisions</value>
+    </caseValues>
+    <fields>
+        <help><!-- Is the Division active? --></help>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- Wellspring ID --></help>
+        <label><!-- Campus WXID --></label>
+        <name>Campus_WXID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campus XID --></label>
+        <name>Campus_XID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campus --></label>
+        <name>Campus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost Center WXID --></label>
+        <name>Cost_Center_WXID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost Center XID --></label>
+        <name>Cost_Center_XID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost Center --></label>
+        <name>Cost_Center__c</name>
+    </fields>
+    <fields>
+        <label><!-- Department WXID --></label>
+        <name>Department_WXID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Department XID --></label>
+        <name>Department_XID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Department --></label>
+        <name>Department__c</name>
+    </fields>
+    <fields>
+        <label><!-- School WXID --></label>
+        <name>School_WXID__c</name>
+    </fields>
+    <fields>
+        <label><!-- School XID --></label>
+        <name>School_XID__c</name>
+    </fields>
+    <fields>
+        <label><!-- School --></label>
+        <name>School__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit WXID --></label>
+        <name>Unit_WXID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit XID --></label>
+        <name>Unit_XID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit --></label>
+        <name>Unit__c</name>
+    </fields>
+    <layouts>
+        <layout>Division Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- External IDs --></label>
+            <section>External IDs</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

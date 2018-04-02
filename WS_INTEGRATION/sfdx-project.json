@@ -1,0 +1,9 @@
+{
+  "packageDirectories": [
+    {"path": "force-app","default": true},
+    {"path": "Sandbox/mdapi_deployable"}
+  ],
+  "namespace": "",
+  "sfdcLoginUrl": "https://test.salesforce.com",
+  "sourceApiVersion": "41.0"
+}

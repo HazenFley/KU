@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Title_Elected__c</fullName>
+    <description>Indicates what title has been elected for Invention through iEdison</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicate what title has been elected for Invention through iEdison</inlineHelpText>
+    <label>Title Elected</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Under Evaluation</fullName>
+                <default>false</default>
+                <label>Under Evaluation</label>
+            </value>
+            <value>
+                <fullName>Elect Title</fullName>
+                <default>false</default>
+                <label>Elect Title</label>
+            </value>
+            <value>
+                <fullName>Licensed as an Unpatented Biological Material or Research Tool</fullName>
+                <default>false</default>
+                <label>Licensed as an Unpatented Biological Material or Research Tool</label>
+            </value>
+            <value>
+                <fullName>Not Elect Title - Waive to Third Party</fullName>
+                <default>false</default>
+                <label>Not Elect Title - Waive to Third Party</label>
+            </value>
+            <value>
+                <fullName>Not Elect Title - Waiver to Government</fullName>
+                <default>false</default>
+                <label>Not Elect Title - Waiver to Government</label>
+            </value>
+            <value>
+                <fullName>Not Elect Title - Waive to Inventor</fullName>
+                <default>false</default>
+                <label>Not Elect Title - Waive to Inventor</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

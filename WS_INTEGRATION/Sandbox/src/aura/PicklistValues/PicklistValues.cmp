@@ -1,0 +1,38 @@
+<aura:component controller="Lookup"> 
+    <aura:attribute Name="selItem" type="string" access="public" 
+                    description="This attribute can be used by parent component to read selected record"/>
+    <aura:attribute Name="server_result" type="object[]" access="private" /> 
+    <aura:attribute name="searchId" type="String" access="public" />
+    <aura:handler name="change" value="{!v.searchId}" action="{!c.serverCall}" />
+    <aura:attribute name="labelText" type="String" access="public" />
+    <aura:attribute name="lookupIcon" type="String" access="public" default="standard:contact"/>
+    
+    <aura:attribute name="objectName" type="String" access="public" 
+                    description="Name of Object to be searched"/>
+    <aura:attribute name="field_API_text" type="String" access="public" 
+                    description="API Name of field, to be used to show text"/>
+    <aura:attribute name="field_API_val" type="String" access="public" 
+                    description="API Name of field, to be returned from component"/>
+    <aura:attribute name="field_API_search" type="String" access="public" 
+                    description="API Name of field to be searched"/>
+    <aura:attribute name="field_API_Id" type="String" access="public" 
+                    description="Id field to be returned from junction object"/>
+    <aura:attribute name="junctObjectName" type="String" access="public" 
+                    description="Junction object name"/>
+    <aura:attribute name="field_API_Jun_Search" type="String" access="public" 
+                    description="Field on Junction Object to be searched"/>
+    <aura:attribute name="limit" type="Integer" access="public" default="5" 
+                    description="Total number of record to be returned"/>
+    <aura:attribute name="placeholder" type="String" access="public" 
+                    default="Space character is used to search" />
+    
+    <aura:attribute name="last_SearchText" type="String" access="private" />
+    <aura:attribute name="last_ServerResult" type="object[]" access="private" /> 
+    
+    <lightning:select aura:id="picklistSelect" name="picklistSelect" label="{!v.labelText}" value="{!v.selItem}" onchange="{!c.itemSelected}">
+        <option value="select">Select Record</option>
+        <aura:iteration items="{!v.server_result}" var="item" indexVar="i">
+            <option value="{!item.val}" selected="{!item.selected}" data-selectedIndex="{#i}">{!item.text}</option>
+        </aura:iteration>
+    </lightning:select>     
+</aura:component>

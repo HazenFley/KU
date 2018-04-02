@@ -1,0 +1,56 @@
+<apex:page standardController="Account" showHeader="true" 
+      tabStyle="account" >
+   <style>
+      .activeTab {background-color: #236FBD; color:white; 
+         background-image:none}
+      .inactiveTab { background-color: lightgrey; color:black; 
+         background-image:none}
+   </style>
+   <apex:tabPanel switchType="client" selectedTab="tabdetails" 
+                  id="AccountTabPanel" tabClass="activeTab" 
+                  inactiveTabClass="inactiveTab">
+                     
+      <apex:tab label="Details" name="AccDetails" id="tabdetails">
+         <apex:detail relatedList="false" title="true"/>         
+      </apex:tab>
+      
+      <apex:tab label="Contacts" name="Contacts" id="tabContact">
+         <apex:relatedList subject="{!account}" list="contacts" />         
+      </apex:tab>
+      
+      <apex:tab label="Opportunities" name="Opportunities" 
+                id="tabOpp">
+         <apex:relatedList subject="{!account}" 
+                           list="opportunities" />                           
+      </apex:tab>
+      
+      <apex:tab label="Open Activities" name="OpenActivities" 
+                id="tabOpenAct">
+         <apex:relatedList subject="{!account}" 
+                           list="OpenActivities" />
+      </apex:tab>
+      
+      <apex:tab label="Closed Activities" name="ActivityHistories" id="tabClosdAct">
+        <apex:relatedList subject="{!account}" list="ActivityHistories" />
+     </apex:tab>
+     
+      <apex:tab label="Engagements" name="Interaction" 
+                id="Interaction__c">
+         <apex:relatedList subject="{!account}" 
+                           list="Engagements__r" />
+      </apex:tab>
+      
+      <apex:tab label="Tech Transfer" name="Tech_Transfer_Link" 
+                id="Tech_Transfer_Link__c">
+         <apex:relatedList subject="{!account}" 
+                           list="Tech_Transfer_Link_Account__r" />
+      </apex:tab>
+      
+      <apex:tab label="Notes and Attachments" 
+                name="NotesAndAttachments" id="tabNoteAtt">
+         <apex:relatedList subject="{!account}" 
+                           list="CombinedAttachments" />
+      </apex:tab>
+      
+   </apex:tabPanel>
+</apex:page>

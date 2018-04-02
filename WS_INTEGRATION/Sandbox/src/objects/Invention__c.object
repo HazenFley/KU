@@ -1,0 +1,1775 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Invention_Record_Page4</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Publicly disclosed inventions from KU</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Close_Invention__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Mark the invention as closed and start closeout steps.</inlineHelpText>
+        <label>Close Invention</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Closeout_Comments__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What are the reasons this invention is being closed out?</inlineHelpText>
+        <label>Closeout Comments</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Comments__c</fullName>
+        <description>General comments regarding the invention</description>
+        <externalId>false</externalId>
+        <inlineHelpText>General comments regarding the invention</inlineHelpText>
+        <label>Comments</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Confidential_Summary__c</fullName>
+        <externalId>false</externalId>
+        <label>Confidential Summary</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Days_Since_Disclosure__c</fullName>
+        <description>Total number of days since receipt of disclosure.</description>
+        <externalId>false</externalId>
+        <formula>TODAY() -  KU_Disclosure_Date__c</formula>
+        <inlineHelpText>Auto-updated field</inlineHelpText>
+        <label>Days Since Disclosure</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Disclosure_Execution_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Disclosure Execution Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Disposition__c</fullName>
+        <description>Closeout results</description>
+        <externalId>false</externalId>
+        <globalPicklist>Disposition</globalPicklist>
+        <inlineHelpText>Closeout results</inlineHelpText>
+        <label>Disposition</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>EIR_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>EIR Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>External_Assessment_Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>External Assessment Comments</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>External_Assessment_Required__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please designate if this invention will need to be assessed by an external party.</inlineHelpText>
+        <label>External Assessment Required?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>External_Assessment_Score__c</fullName>
+        <externalId>false</externalId>
+        <label>External Assessment Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>External_Lead_Institution__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>An Account must be linked if the Lead Institution is marked as &quot;External&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>An Account must be linked if the Lead Institution is marked as &quot;External&quot;</inlineHelpText>
+        <label>External Lead Institution</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Lead Institution Inventions</relationshipLabel>
+        <relationshipName>Inventions1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Federal_Funding_Used__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Federal Funding Used</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>First_Non_Provisional_Patent_App_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Earliest file date of all non-provisional IP related to this invention.</inlineHelpText>
+        <label>First Non-Provisional Patent App Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>First_Provisional_Patent_App_File_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Earliest file date of all provisional IP related to this invention.</inlineHelpText>
+        <label>First Provisional Patent App File Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Fiscal_Year__c</fullName>
+        <description>Auto generated value from Apex Invention Class</description>
+        <externalId>false</externalId>
+        <label>Fiscal Year</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Funding_Grant_or_Contact_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Funding Grant or Contact Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IP_Updated_on_iEdison__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>If all linked IP have been submitted to iEdison, this will be checked.
+If this is unchecked, then there are IP that are not updated with iEdison.</inlineHelpText>
+        <label>IP Updated on iEdison</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Initial_Contact_Date__c</fullName>
+        <defaultValue>TODAY()</defaultValue>
+        <description>Used in Anticipated Disclosures.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>First date any information was given to the Licensing Officer.</inlineHelpText>
+        <label>Initial Contact Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Internal_Assessment_Comments__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is rich text and may be formatted</inlineHelpText>
+        <label>Internal Assessment Comments</label>
+        <length>100000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Internal_Assessment_Score__c</fullName>
+        <externalId>false</externalId>
+        <label>Internal Assessment Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Invention_Docket_Number__c</fullName>
+        <externalId>true</externalId>
+        <inlineHelpText>iEdison Docket Number</inlineHelpText>
+        <label>Invention Docket Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Invention_Report_Number_EIR__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter in only numbers, the dashes will be automatically added</inlineHelpText>
+        <label>Invention Report Number (EIR)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Invention_Status_Comments__c</fullName>
+        <description>Comments that help explain the status of the invention</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Comments that help explain the status of the invention</inlineHelpText>
+        <label>Invention Status Comments</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Invention_Title__c</fullName>
+        <description>Short description of the invention</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Short description of the invention</inlineHelpText>
+        <label>Invention Title</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Inventor_Listing__c</fullName>
+        <description>Listing of all inventors separated by a semicolon. Filled in automatically through code.</description>
+        <externalId>false</externalId>
+        <label>Inventor Listing</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>KU_Disclosure_Date__c</fullName>
+        <defaultValue>TODAY()</defaultValue>
+        <description>Date the invention was disclosed to KU</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date the invention was disclosed to KU</inlineHelpText>
+        <label>KU Disclosure Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>KU_Financial_Account__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>External ID to Peoplesoft for accounting purposes</description>
+        <externalId>true</externalId>
+        <inlineHelpText>External ID to Peoplesoft for accounting purposes</inlineHelpText>
+        <label>KU Financial Account</label>
+        <length>25</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Lead_Institution__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Please designate which account is the lead institution for this invention, since it is not KU.</inlineHelpText>
+        <label>Lead Institution</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Inventions (Lead Institution)</relationshipLabel>
+        <relationshipName>Inventions</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Lead_Inventor__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Lead Inventor</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Primary Inventions</relationshipLabel>
+        <relationshipName>PrimaryInventions</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Licensing_Associate__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>KUIC Licensing Associate coordinating with the inventors for this invention</description>
+        <externalId>false</externalId>
+        <inlineHelpText>KUIC Licensing Associate coordinating with the inventors for this invention</inlineHelpText>
+        <label>Licensing Associate</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Inventions</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Location__c</fullName>
+        <description>Campus origin of the invention</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the Campus this invention originated from</inlineHelpText>
+        <label>Location</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Lawrence</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Medical Center</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>On_Hold_Comments__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Comments are required if an invention is on hold.</inlineHelpText>
+        <label>On Hold Comments</label>
+        <length>5000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>On_Hold__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Mark the invention as being on hold, which will change the status to &quot;Hold&quot; until this box is unchecked.</inlineHelpText>
+        <label>On Hold</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Parent_Invention_Report_Number__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>EIR number of the parent Invention</inlineHelpText>
+        <label>Parent Invention Report Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Patent_Bar_Date__c</fullName>
+        <description>Bar date of patentability, based upon public disclosure date</description>
+        <externalId>false</externalId>
+        <formula>Public_Disclosure_Date__c + 366</formula>
+        <inlineHelpText>Auto-updated field</inlineHelpText>
+        <label>Patent Bar Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Primary_Contact__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>Filled in with code, should not be forward visible</description>
+        <externalId>false</externalId>
+        <label>Primary Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Inventions (Primary Contact)</relationshipLabel>
+        <relationshipName>PrimaryInvention</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Primary_Technology_Class__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Technology_Class</globalPicklist>
+        <label>Primary Technology Class</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Prior_Art_Search_Comments__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Some comment is required.</inlineHelpText>
+        <label>Prior Art Search Comments</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Prior_Art_Search_Completed_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Prior Art Search Completed Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Prior_Art_Searcher__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Prior Art Searcher</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Prior_Art_Searches</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Private_Abstract__c</fullName>
+        <description>This is internal to KU only!</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is internal to KU only! This text box is rich text and therefore may be formatted.</inlineHelpText>
+        <label>Private Abstract</label>
+        <length>100000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Public_Abstract__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is rich text, so you may format the text inside.</inlineHelpText>
+        <label>Public Abstract</label>
+        <length>100000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Public_Disclosure_Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Public Disclosure Comments</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Public_Disclosure_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Public Disclosure Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Ready_for_Market__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Marks the invention status as Marketing.</inlineHelpText>
+        <label>Ready for Market</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBIR_Funding__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Small Business Innovation Research</inlineHelpText>
+        <label>SBIR Funding</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Secondary_Technology_Class__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Technology_Class</globalPicklist>
+        <label>Secondary Technology Class</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Subject_to_Export_Control__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Checking this box will limit visibility of this invention to others.</inlineHelpText>
+        <label>Subject to Export Control</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Title_Election_Date__c</fullName>
+        <description>If date entered, will update EIR status</description>
+        <externalId>false</externalId>
+        <label>Title Election Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Track_Code_Counter__c</fullName>
+        <description>Used to calculate the next counter number for the track code</description>
+        <externalId>false</externalId>
+        <label>Track Code Counter</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Waive_Reason_Comments__c</fullName>
+        <description>Dependent upon Waive Reason field</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If you would like to add more detail to the Waive Reason.</inlineHelpText>
+        <label>Waive Reason Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Waive_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Waive Reason</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Low commercial potential</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Non-patentable (not novel)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Non-patentable (not useful)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Non-patentable (obvious)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Waiver_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Waiver Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Working_Title__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Something to differentiate the different inventions in the anticipated status. This will not be the final title.</inlineHelpText>
+        <label>Working Title</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>iEdison_Account_Number__c</fullName>
+        <description>Lawrence = 1484302
+Medical Center = 1484303</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Automatically populated</inlineHelpText>
+        <label>iEdison Account Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>iEdison_First_Public_Disclosure__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Default is Public Disclosure Date, but can be changed to reflect iEdison values.</inlineHelpText>
+        <label>iEdison First Public Disclosure</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>iEdison_Initial_Entry_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Date KUIC submitted information to iEdison</inlineHelpText>
+        <label>iEdison Initial Entry Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>iEdison_Invention_Report_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Defaults to Disclosure Execution Date, but can be changed to better reflect value in iEdison</inlineHelpText>
+        <label>iEdison Invention Report Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>iEdison_One_Year_Extension_Request__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>iEdison One Year Extension Request</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>iEdison_Reporting_Comment__c</fullName>
+        <externalId>false</externalId>
+        <label>iEdison Reporting Comment</label>
+        <length>100000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>iEdison_Reporting_Required__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>iEdison Reporting Required</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>iEdison_Request_Title_Extension__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>iEdison title extension request in years</inlineHelpText>
+        <label>iEdison Request Title Extension</label>
+        <picklist>
+            <picklistValues>
+                <fullName>1 Year</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2 Years</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>iEdison_Status__c</fullName>
+        <description>Indicates what title has been elected for Invention through iEdison</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicate what title has been elected for Invention through iEdison</inlineHelpText>
+        <label>iEdison Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Under Evaluation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Elect Title</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Licensed as an Unpatented Biological Material or Research Tool</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Not Elect Title - Waive to Third Party</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Not Elect Title - Waiver to Government</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Not Elect Title - Waive to Inventor</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <label>Invention</label>
+    <nameField>
+        <label>Invention Track Code</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Inventions</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Anticipated</fullName>
+        <active>true</active>
+        <description>This invention has not been disclosed formally to KU.</description>
+        <label>Anticipated</label>
+        <picklistValues>
+            <picklist>Campus</picklist>
+            <values>
+                <fullName>Kansas City Medical Center</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lawrence</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wichita</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Disposition</picklist>
+            <values>
+                <fullName>Abandoned</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Assigned to 3rd Party</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Released To Inventor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waived To Government</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>External_Assessment_Required__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Location__c</picklist>
+            <values>
+                <fullName>Lawrence</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical Center</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Technology_Class</picklist>
+            <values>
+                <fullName>Biotechnology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Creative-works</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Diagnostics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Drug-delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Energy-environment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Materials</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical-devices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Research-tools</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Therapeutics</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Waive_Reason__c</picklist>
+            <values>
+                <fullName>Low commercial potential</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-patentable %28not novel%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-patentable %28not useful%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-patentable %28obvious%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>iEdison_Request_Title_Extension__c</picklist>
+            <values>
+                <fullName>1 Year</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2 Years</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>iEdison_Status__c</picklist>
+            <values>
+                <fullName>Elect Title</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Licensed as an Unpatented Biological Material or Research Tool</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Elect Title - Waive to Inventor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Elect Title - Waive to Third Party</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Elect Title - Waiver to Government</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Under Evaluation</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Copywright</fullName>
+        <active>true</active>
+        <label>Copywright</label>
+        <picklistValues>
+            <picklist>Campus</picklist>
+            <values>
+                <fullName>Kansas City Medical Center</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lawrence</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wichita</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Disposition</picklist>
+            <values>
+                <fullName>Abandoned</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Assigned to 3rd Party</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Released To Inventor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waived To Government</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>External_Assessment_Required__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Location__c</picklist>
+            <values>
+                <fullName>Lawrence</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical Center</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Technology_Class</picklist>
+            <values>
+                <fullName>Biotechnology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Creative-works</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Diagnostics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Drug-delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Energy-environment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Materials</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical-devices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Research-tools</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Therapeutics</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Waive_Reason__c</picklist>
+            <values>
+                <fullName>Low commercial potential</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-patentable %28not novel%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-patentable %28not useful%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-patentable %28obvious%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>iEdison_Request_Title_Extension__c</picklist>
+            <values>
+                <fullName>1 Year</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2 Years</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>iEdison_Status__c</picklist>
+            <values>
+                <fullName>Elect Title</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Licensed as an Unpatented Biological Material or Research Tool</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Elect Title - Waive to Inventor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Elect Title - Waive to Third Party</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Elect Title - Waiver to Government</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Under Evaluation</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Exception</fullName>
+        <active>true</active>
+        <description>This record type can only be made by admins. There are not any requirements for this record type.</description>
+        <label>Exception</label>
+        <picklistValues>
+            <picklist>Campus</picklist>
+            <values>
+                <fullName>Kansas City Medical Center</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lawrence</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wichita</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Disposition</picklist>
+            <values>
+                <fullName>Abandoned</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Assigned to 3rd Party</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Released To Inventor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waived To Government</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>External_Assessment_Required__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Location__c</picklist>
+            <values>
+                <fullName>Lawrence</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical Center</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Technology_Class</picklist>
+            <values>
+                <fullName>Biotechnology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Creative-works</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Diagnostics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Drug-delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Energy-environment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Materials</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical-devices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Research-tools</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Therapeutics</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Waive_Reason__c</picklist>
+            <values>
+                <fullName>Low commercial potential</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-patentable %28not novel%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-patentable %28not useful%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-patentable %28obvious%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>iEdison_Request_Title_Extension__c</picklist>
+            <values>
+                <fullName>1 Year</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2 Years</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>iEdison_Status__c</picklist>
+            <values>
+                <fullName>Elect Title</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Licensed as an Unpatented Biological Material or Research Tool</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Elect Title - Waive to Inventor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Elect Title - Waive to Third Party</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Elect Title - Waiver to Government</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Under Evaluation</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Invention_Federally_Funded</fullName>
+        <active>true</active>
+        <label>Invention - Federally Funded</label>
+        <picklistValues>
+            <picklist>Campus</picklist>
+            <values>
+                <fullName>Kansas City Medical Center</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lawrence</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wichita</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Disposition</picklist>
+            <values>
+                <fullName>Abandoned</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Assigned to 3rd Party</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Released To Inventor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waived To Government</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>External_Assessment_Required__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Location__c</picklist>
+            <values>
+                <fullName>Lawrence</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical Center</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Technology_Class</picklist>
+            <values>
+                <fullName>Biotechnology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Creative-works</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Diagnostics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Drug-delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Energy-environment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Materials</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical-devices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Research-tools</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Therapeutics</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Waive_Reason__c</picklist>
+            <values>
+                <fullName>Low commercial potential</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-patentable %28not novel%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-patentable %28not useful%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-patentable %28obvious%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>iEdison_Request_Title_Extension__c</picklist>
+            <values>
+                <fullName>1 Year</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2 Years</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>iEdison_Status__c</picklist>
+            <values>
+                <fullName>Elect Title</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Licensed as an Unpatented Biological Material or Research Tool</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Elect Title - Waive to Inventor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Elect Title - Waive to Third Party</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Elect Title - Waiver to Government</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Under Evaluation</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Invention_Non_Federally_Funded</fullName>
+        <active>true</active>
+        <label>Invention - Non-Federally Funded</label>
+        <picklistValues>
+            <picklist>Campus</picklist>
+            <values>
+                <fullName>Kansas City Medical Center</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lawrence</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wichita</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Disposition</picklist>
+            <values>
+                <fullName>Abandoned</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Assigned to 3rd Party</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Released To Inventor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waived To Government</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>External_Assessment_Required__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Location__c</picklist>
+            <values>
+                <fullName>Lawrence</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical Center</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Technology_Class</picklist>
+            <values>
+                <fullName>Biotechnology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Creative-works</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Diagnostics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Drug-delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Energy-environment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Materials</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical-devices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Research-tools</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Therapeutics</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Waive_Reason__c</picklist>
+            <values>
+                <fullName>Low commercial potential</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-patentable %28not novel%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-patentable %28not useful%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-patentable %28obvious%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>iEdison_Request_Title_Extension__c</picklist>
+            <values>
+                <fullName>1 Year</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2 Years</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>iEdison_Status__c</picklist>
+            <values>
+                <fullName>Elect Title</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Licensed as an Unpatented Biological Material or Research Tool</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Elect Title - Waive to Inventor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Elect Title - Waive to Third Party</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Elect Title - Waiver to Government</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Under Evaluation</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <fullName>Closeout_Comments</fullName>
+        <active>true</active>
+        <description>Require Closeout Comments if invention is closed</description>
+        <errorConditionFormula>AND(  Close_Invention__c = TRUE ,  ISBLANK(Closeout_Comments__c) )</errorConditionFormula>
+        <errorMessage>Closeout Comments are required if you mark the invention as closed</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Closeout_Disposition</fullName>
+        <active>true</active>
+        <description>Require a Disposition when an invention is marked as closed</description>
+        <errorConditionFormula>AND(  Close_Invention__c = TRUE ,  ISBLANK(TEXT(Disposition__c)) )</errorConditionFormula>
+        <errorMessage>A disposition must be selected to close out an invention</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>EIR_Number</fullName>
+        <active>true</active>
+        <description>Require an EIR number when Initial Entry Date is populated</description>
+        <errorConditionFormula>AND( 
+NOT( ISBLANK(iEdison_Initial_Entry_Date__c) ) , 
+ISBLANK( Invention_Report_Number_EIR__c ) 
+)</errorConditionFormula>
+        <errorMessage>If the invention has been submitted to iEdison, it should have an Invention Report Number (EIR).
+Please enter that value.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>On_Hold_Comments</fullName>
+        <active>true</active>
+        <description>Require &quot;On Hold Comments&quot; if &quot;On Hold&quot; is checked</description>
+        <errorConditionFormula>AND( On_Hold__c ,  ISBLANK( On_Hold_Comments__c ) )</errorConditionFormula>
+        <errorMessage>A comment is required in the field &quot;On Hold Comments&quot; since the invention is marked as &quot;On Hold&quot;</errorMessage>
+    </validationRules>
+</CustomObject>

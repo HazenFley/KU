@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>CEO Report Static Values</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>CEO Report Static Values</value>
+    </caseValues>
+    <fields>
+        <label><!-- ED W 1 --></label>
+        <name>ED_W_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- ED W 2 --></label>
+        <name>ED_W_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- ED W 3 --></label>
+        <name>ED_W_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- ED W 4 --></label>
+        <name>ED_W_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- ED W 5 --></label>
+        <name>ED_W_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- ED W 6 --></label>
+        <name>ED_W_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- ED W 7 --></label>
+        <name>ED_W_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- ED W 8 --></label>
+        <name>ED_W_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Co Key Executive Visits To KU --></label>
+        <name>EV_Co_Key_Executive_Visits_To_KU__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Collaborative Grants Awarded --></label>
+        <name>EV_Collaborative_Grants_Awarded__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Company FTE Located In KU BTBC --></label>
+        <name>EV_Company_FTE_Located_In_KU_BTBC__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Company FTE Located In Kansas --></label>
+        <name>EV_Company_FTE_Located_In_Kansas__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Company FTE Located In Region --></label>
+        <name>EV_Company_FTE_Located_In_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Company Reps On KUCTC Board --></label>
+        <name>EV_Company_Reps_On_KUCTC_Board__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Company Reps On Start-Up Board --></label>
+        <name>EV_Company_Reps_On_Start_Up_Board__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV $ Cost Saving --></label>
+        <name>EV_Cost_Saving__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV $ Of Sponsored Research Awards --></label>
+        <name>EV_D_Of_Sponsored_Research_Awards__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV $ For Capstone Projects --></label>
+        <name>EV_For_Capstone_Projects__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV $ From Equipment Lease --></label>
+        <name>EV_From_Equipment_Lease__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV $ Generated From Joint Patents --></label>
+        <name>EV_Generated_From_Joint_Patents__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV $ Generated From Licenses --></label>
+        <name>EV_Generated_From_Licenses__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Interviews On Campus --></label>
+        <name>EV_Interviews_On_Campus__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # KU Researchers With Non-KU To CO --></label>
+        <name>EV_KU_Researchers_With_Non_KU_To_CO__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # KU Visits To CO HQ --></label>
+        <name>EV_KU_Visits_To_CO_HQ__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV $ License Revenue From Spin-Off --></label>
+        <name>EV_License_Revenue_From_Spin_Off__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV $ Of Awarded Grants Total --></label>
+        <name>EV_Of_Awarded_Grants__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV $ Of Awarded Grants received By KU --></label>
+        <name>EV_Of_Awarded_Grants_received_By_KU__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Of Calls To Firm --></label>
+        <name>EV_Of_Calls_To_Firm__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Of Career Fair Events --></label>
+        <name>EV_Of_Career_Fair_Events__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Of Citations For Published Research --></label>
+        <name>EV_Of_Citations_For_Published_Research__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Of Collaborative Grands Applied --></label>
+        <name>EV_Of_Collaborative_Grands_Applied__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Of Collaborative policy-Changing --></label>
+        <name>EV_Of_Collaborative_policy_Changing__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Of Courses With Firm Input --></label>
+        <name>EV_Of_Courses_With_Firm_Input__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Of Emails To Firm --></label>
+        <name>EV_Of_Emails_To_Firm__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Of Executive Briefings --></label>
+        <name>EV_Of_Executive_Briefings__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Of Firm Activities With Other U --></label>
+        <name>EV_Of_Firm_Activities_With_Other_U__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Of Firm Courses held --></label>
+        <name>EV_Of_Firm_Courses_held__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Of Firm Employees Seeking Training --></label>
+        <name>EV_Of_Firm_Employees_Seeking_Training__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Of Firm Expert Visits To KU --></label>
+        <name>EV_Of_Firm_Expert_Visits_To_KU__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV $ Of Gifts To KU --></label>
+        <name>EV_Of_Gifts_To_KU__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV $ Of IT Vendor Spending --></label>
+        <name>EV_Of_IT_Vendor_Spending__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Of Internships --></label>
+        <name>EV_Of_Internships__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Of Jobs Posted --></label>
+        <name>EV_Of_Jobs_Posted__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Of Joint Invention Disclosures --></label>
+        <name>EV_Of_Joint_Invention_Disclosures__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Of Joint PCT Patents Filed --></label>
+        <name>EV_Of_Joint_PCT_Patents_Filed__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Of Joint Patents Filed --></label>
+        <name>EV_Of_Joint_Patents_Filed__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Of Joint Patents Issued --></label>
+        <name>EV_Of_Joint_Patents_Issued__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Of Joint Supervisors --></label>
+        <name>EV_Of_Joint_Supervisors__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Of KU Alumni Serving On Firm Board --></label>
+        <name>EV_Of_KU_Alumni_Serving_On_Firm_Board__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Of KU Alumni Working In Firm --></label>
+        <name>EV_Of_KU_Alumni_Working_In_Firm__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Of KU F&amp;S Consulting For Firm --></label>
+        <name>EV_Of_KU_F_S_Consulting_For_Firm__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Of KU F&amp;S Serving On Firm Board --></label>
+        <name>EV_Of_KU_F_S_Serving_On_Firm_Board__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Of KU Facilities Used By Firms --></label>
+        <name>EV_Of_KU_Facilities_Used_By_Firms__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Of KU Researchers For Sabbatical --></label>
+        <name>EV_Of_KU_Researchers_For_Sabbatical__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Of Key KU Alumni --></label>
+        <name>EV_Of_Key_KU_Alumni__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Of Key Non-Alumni On Firm Board --></label>
+        <name>EV_Of_Key_Non_Alumni_On_Firm_Board__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Of Licenses Active --></label>
+        <name>EV_Of_Licenses_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Of Licenses Executed --></label>
+        <name>EV_Of_Licenses_Executed__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Of Major Entities Collaborating --></label>
+        <name>EV_Of_Major_Entities_Collaborating__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Of News Stories Of Firm &amp; KU --></label>
+        <name>EV_Of_News_Stories_Of_Firm_KU__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Of Seminars Given By Firm At KU --></label>
+        <name>EV_Of_Seminars_Given_By_Firm_At_KU__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Of Service Agreements --></label>
+        <name>EV_Of_Service_Agreements__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Of Sponsored Professorships --></label>
+        <name>EV_Of_Sponsored_Professorships__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Of Sponsored Research Awards --></label>
+        <name>EV_Of_Sponsored_Research_Awards__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Of Times KU Equipment Leased --></label>
+        <name>EV_Of_Times_KU_Equipment_Leased__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Of Total Firm Employees --></label>
+        <name>EV_Of_Total_Firm_Employees__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Of Workshops --></label>
+        <name>EV_Of_Workshops__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV $ Raised From External Investment --></label>
+        <name>EV_Raised_From_External_Investment__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV $ Raised From SBIR/STTR Grants --></label>
+        <name>EV_Raised_From_SBIR_STTR_Grants__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # SBIR/STTR Grants Applied --></label>
+        <name>EV_SBIR_STTR_Grants_Applied__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # SBIR/STTR Grants Awarded --></label>
+        <name>EV_SBIR_STTR_Grants_Awarded__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # Of Sponsored Research Proposals --></label>
+        <name>EV_SP__c</name>
+    </fields>
+    <fields>
+        <label><!-- EV # of Joint PCT Patents Issued --></label>
+        <name>EV_of_Joint_PCT_Patents_Issued__c</name>
+    </fields>
+    <fields>
+        <label><!-- IT W 1 --></label>
+        <name>IT_W_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- IT W 2 --></label>
+        <name>IT_W_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- KT W 1 --></label>
+        <name>KT_W_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- KT W 2 --></label>
+        <name>KT_W_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- KT W 3 --></label>
+        <name>KT_W_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- KT W 4 --></label>
+        <name>KT_W_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- KT W 5 --></label>
+        <name>KT_W_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- KT W 6 --></label>
+        <name>KT_W_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- KT W 7 --></label>
+        <name>KT_W_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- KT W 8 --></label>
+        <name>KT_W_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC W 1 --></label>
+        <name>PC_W_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC W 2 --></label>
+        <name>PC_W_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC W 3 --></label>
+        <name>PC_W_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC W 4 --></label>
+        <name>PC_W_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC W 5 --></label>
+        <name>PC_W_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC W 6 --></label>
+        <name>PC_W_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC W 7 --></label>
+        <name>PC_W_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC W 8 --></label>
+        <name>PC_W_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC W 9 --></label>
+        <name>PC_W_9__c</name>
+    </fields>
+    <fields>
+        <label><!-- R&amp;S W 1 --></label>
+        <name>R_S_W_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- R&amp;S W 2 --></label>
+        <name>R_S_W_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- R&amp;S W 3 --></label>
+        <name>R_S_W_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- R&amp;S W 4 --></label>
+        <name>R_S_W_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- R&amp;S W 5 --></label>
+        <name>R_S_W_5__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Division2Contact</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Division2Contacts</value>
+    </caseValues>
+    <fields>
+        <help><!-- Is the contact active within the division? --></help>
+        <label><!-- Active Relationship --></label>
+        <name>Active_Relationship__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Division2Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Division --></label>
+        <name>Division__c</name>
+        <relationshipLabel><!-- Division2Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Full Division Name --></label>
+        <name>Full_Division_Name_Backward__c</name>
+    </fields>
+    <fields>
+        <help><!-- The contact is no longer connected to this Division --></help>
+        <label><!-- Inactive Relationship --></label>
+        <name>Inactive_Relationship__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Division --></label>
+        <name>Primary_Division__c</name>
+    </fields>
+    <fields>
+        <help><!-- Primary = Active and Primary
+Active = Active, not Primary
+Inactive = Contact not active with Division (regardless of primary) --></help>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <layouts>
+        <layout>Division2Contact Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Divisions are requred to be marked Active or Inactive --></errorMessage>
+        <name>Active_Inactive</name>
+    </validationRules>
+</CustomObjectTranslation>

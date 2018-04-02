@@ -1,0 +1,77 @@
+<aura:component controller="inventionAura"
+                implements="flexipage:availableForRecordHome,force:hasRecordId,lightning:actionOverride" 
+                access="global" >    
+    
+    <aura:attribute name="newInvention" type="Invention__c" />
+    <aura:attribute name="simpleInvention" type="Invention__c" />
+    <aura:attribute name="newInventionError" type="String" />    
+    <force:recordData aura:id="inventionRecordCreator"
+                      layoutType="FULL"
+                      targetRecord="{!v.newInvention}"
+                      targetFields="{!v.simpleInvention}"
+                      targetError="{!v.newInventionError}"
+                      />
+    
+    <!-- Lead Inventor Lookup Attributes -->
+    <aura:attribute name="selectedContactLookupRecord" type="sObject" default="{}"/>
+       
+    <!-- Get Picklist options dynamically -->
+    <aura:attribute name="campusValues" type="Object" />
+    <c:inventionPicklist sObjectName="Invention__c" fieldName="Location__c" picklistValues="{!v.campusValues}" />
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <div class="Create Invention">
+        <lightning:card iconName="action:new" title="Create Invention">
+            <div class="slds-p-horizontal--small">
+                
+                <div class="slds-form-element">
+                    <label class="slds-form-element__label" for="inventionName">Invention Name</label>
+                    <div class="slds-form-element__control">
+                        <input type="text" id="inventionName" class="slds-input" placeholder="New Invention" value="{!v.simpleInvention.Name}"/>
+                    </div>
+                </div>
+                
+                <div class="slds-form-element">                    
+                    <lightning:input aura:id="workingTitle" name="workingTitle" label="Working Title" value="{!v.simpleInvention.Working_Title__c}" required="true" messageWhenValueMissing="Please add some kind of description to the Invention."/>
+                </div>                
+                
+                <div class="slds-form-element">
+                    <lightning:select aura:id="invLocation" name="invLocation" label="Location" required="true" messageWhenValueMissing="Please select a location.">
+                        <option value="">Please Select a Location</option>
+                        <aura:iteration items="{!v.LocationValues}" var="item">
+                            <option value="{!item}">{!item}</option>
+                        </aura:iteration>
+                    </lightning:select>
+                </div>
+                
+                <div class="slds-form-element">                    
+                    <c:customLookup objectAPIName="contact" IconName="standard:contact" label="Lead Inventor" selectedRecord="{!v.selectedContactLookupRecord}"/>
+                </div>
+                
+                <div class="slds-form-element">
+                    <label class="slds-form-element__label" for="inventionName">My Comments</label>
+                    <div class="slds-form-element__control">
+                        <ui:inputTextArea aura:id="comments" label="" value="{!v.simpleInvention.Comments__c}" rows="5"/>
+                    </div>                    
+                </div>
+                
+                
+                <br/>
+                <lightning:button label="Save Invention" variant="brand" onclick="{!c.handleSaveInvention}"/>                
+            </div>
+        </lightning:card>
+        
+        <!--Display any LDS errors -->
+        <aura:if isTrue="{!not(empty(v.newInventionError))}">
+            <div class="recordError">
+                {!v.recordError}
+            </div>
+        </aura:if>
+        
+        
+        
+    </div>
+    
+    
+</aura:component>

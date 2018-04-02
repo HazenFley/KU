@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Active_Inactive</fullName>
+    <active>true</active>
+    <description>Requires Division2Contact to be marked Active or Inactive</description>
+    <errorConditionFormula>OR(
+AND(Active_Relationship__c,Inactive_Relationship__c),
+AND(Active_Relationship__c=FALSE,Inactive_Relationship__c=FALSE)
+)</errorConditionFormula>
+    <errorMessage>Divisions are requred to be marked Active or Inactive</errorMessage>
+</ValidationRule>

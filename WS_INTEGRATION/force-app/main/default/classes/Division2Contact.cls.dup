@@ -1,0 +1,58 @@
+public class Division2Contact {
+    
+    /* Prevent duplicate Primary Divisions for Contact */
+    public void primaryDivision(Division2Contact__c[] newDivision2Contact){
+        //Set up our lists to compare
+        List<Division2Contact__c> List1 = new List<Division2Contact__c>();
+        Set<id> contactSet = new Set<id>();
+        Set<id> divisionSet = new Set<id>();
+        
+        //only pull the data for those that are relevant
+        for(Division2Contact__c n: newDivision2Contact){
+            if(n.Primary_Division__c==TRUE && n.Contact__c!=NULL && n.Division__c!=NULL){
+                List1.add(n);
+                contactSet.add(n.Contact__c);
+                divisionSet.add(n.Division__c);
+            }            
+        }
+        //System.debug('List1: ' + List1);
+        
+        //Now, if the one we are putting in is primary:
+        if(!List1.isEmpty()){
+            
+            //Create a set of Contact Ids that have primary divisions already
+            Set<Id> ContactIds = new Set<Id>();
+            List<Division2Contact__c> Div2Cont = [SELECT Contact__c FROM Division2Contact__c WHERE Contact__c IN :contactSet AND Primary_Division__c = TRUE];
+            
+            //Grab information from Division
+            Map<id,Division__c> divisionInfo = new /*cannot create with SOQL like a list */
+                									Map<id,Division__c>([SELECT id, Department__c FROM Division__c WHERE id in :divisionSet]);
+            	
+            //System.debug('Div2Cont: ' + Div2Cont.size());
+            
+            //add them to the set
+            for(Division2Contact__c d2c:Div2Cont){
+                ContactIds.add(d2c.Contact__c);
+            }
+            
+            //Place to hold the contacts we want to update the Department on
+            List<Contact> contactsToUpdate = new List<Contact>();
+            
+            //Actual check
+            //If the ORIGINAL Division2Contact is marked as primary, and the Contact is ALREADY in the set of Contacts with primary (ContactIds), error out
+            for(Division2Contact__c m: List1){
+                if(ContactIds.contains(m.Contact__c)){
+                    m.addError('Each Contact can only have one Division marked as primary.');
+                }else{//since we know this will now work, we can update the contact department info
+                    contactsToUpdate.add(new Contact(id=m.Contact__c,Department=divisionInfo.get(m.Division__c).Department__c));   
+                }
+            }
+            //Make sure there is something to update
+            if(contactsToUpdate.size()>0){
+                //Standard syntax, false makes it not fail the whole process on error
+                Database.SaveResult[] srList = Database.update(contactsToUpdate,false);
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,2689 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableCustomerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Account</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewCustomerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>WebsiteHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>Default</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Admin_Compact_Layout</fullName>
+        <fields>Account_Ownership__c</fields>
+        <fields>XID_Advance__c</fields>
+        <fields>XID_Peoplesoft__c</fields>
+        <fields>XID_Reggie__c</fields>
+        <fields>XID_Symplicity__c</fields>
+        <fields>XID_Wellspring__c</fields>
+        <fields>OwnerId</fields>
+        <label>Admin Compact Layout</label>
+    </compactLayouts>
+    <compactLayouts>
+        <fullName>Default</fullName>
+        <fields>Name</fields>
+        <fields>Phone</fields>
+        <fields>BillingAddress</fields>
+        <fields>Website</fields>
+        <fields>Total_Contact__c</fields>
+        <fields>Total_Number_Of_Engagements__c</fields>
+        <fields>Account_Ownership__c</fields>
+        <label>Default</label>
+    </compactLayouts>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <fields>
+        <fullName>AccountNumber</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>AccountSource</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Data.com</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Existing Partnership</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>External Referral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Seminar</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tremonti</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pardot</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Inventor Referral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IN_PART</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Partner Referral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Account_Children__c</fullName>
+        <description>The number of DIRECT children accounts. NOT filled in by automation Jan 2018</description>
+        <externalId>false</externalId>
+        <label>Account Children</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Ownership__c</fullName>
+        <description>Shows the primary ownership of the account. This is defined by the DB hierarchy. Formula field within SF.</description>
+        <externalId>false</externalId>
+        <formula>IF( Corporate_Partnership_Ownership__c =TRUE, &quot;Corporate Partnerships&quot;,
+IF( KUIC_Ownership__c = TRUE, &quot;KUIC&quot;,  
+IF( NOT ( ISBLANK( XID_Peoplesoft__c ) ), &quot;Research&quot;,
+IF( NOT ( ISBLANK( XID_Advance__c ) ), &quot;Endowment&quot;,
+IF( NOT ( ISBLANK( XID_Wellspring__c ) ), &quot;Tech Transfer&quot;,
+IF( NOT ( ISBLANK( XID_Symplicity__c ) ), &quot;Career Services&quot;,
+IF( NOT ( ISBLANK( XID_Reggie__c ) ), &quot;Continuing Education&quot;,
+&quot;Not Defined&quot;)))))))</formula>
+        <inlineHelpText>Shows the primary ownership of the account. This is defined by KUIC.</inlineHelpText>
+        <label>Account Ownership</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Type_Banner__c</fullName>
+        <description>Displays banners for different types of accounts, specifically for Corporate Partnerships</description>
+        <externalId>false</externalId>
+        <formula>IF(  Corporate_Partnership_Ownership__c = TRUE, IMAGE(&quot;/servlet/servlet.FileDownload?file=015i0000009lho2&quot;, &quot;Partner&quot;, 50, 300), &quot;General Account&quot;)</formula>
+        <label>Account Type Banner</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Alternate_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Alternate Name</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Alumni__c</fullName>
+        <description>Number of Alumni working at this company. Filled in by the integration, pulled from the Contact information.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of Alumni working at this company</inlineHelpText>
+        <label>Alumni</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AnnualRevenue</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>BillingAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Billing_Address_Latitude_Longitude__c</fullName>
+        <description>Latitude/Longitude Of Billing Address</description>
+        <displayLocationInDecimal>true</displayLocationInDecimal>
+        <externalId>false</externalId>
+        <inlineHelpText>Latitude/Longitude Of Billing Address</inlineHelpText>
+        <label>Billing Address Latitude Longitude</label>
+        <required>false</required>
+        <scale>5</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Location</type>
+    </fields>
+    <fields>
+        <fullName>Budgeted_Fee_for_Service__c</fullName>
+        <externalId>false</externalId>
+        <label>Budgeted Fee for Service</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Career_Fairs__c</fullName>
+        <description>Number of Career Fairs this company has attended. Filled in by the integration.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of Career Fairs this company has attended</inlineHelpText>
+        <label>Career Fairs</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Career_Service_Job_Postings__c</fullName>
+        <description>Filled in by the Account Analytics Process</description>
+        <externalId>false</externalId>
+        <label>Career Service Job Postings</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Career_Service_Total_Engagements__c</fullName>
+        <description>Filled in by the Account Analytic process</description>
+        <externalId>false</externalId>
+        <label>Career Service Total Engagements</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case_Insensitive_ID__c</fullName>
+        <description>18 digit Salesforce ID for external reference. This ID field is case sensitive, meaning AbC != aBc</description>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Id)</formula>
+        <inlineHelpText>18 digit Salesforce ID for external reference. This ID field is case sensitive, meaning AbC != aBc</inlineHelpText>
+        <label>Case Insensitive ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Continuing_Education_Classes__c</fullName>
+        <description>Number of different Continuing Education classes taken by contacts in Reggie. Filled in by the Account Analytics procedure.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of registrations for Continuing Education classes taken by contacts. Multiple contacts may be registered for the same class.</inlineHelpText>
+        <label>Continuing Education Classes</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Continuing_Education_Contacts__c</fullName>
+        <description>Number of contacts registered in Reggie by matching the emails on the contact, summed at the account level. Filled in by the Account Analytics procedure.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of different contacts who have taken Continuing Education classes</inlineHelpText>
+        <label>Continuing Education Contacts</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Corporate_Partnership_Ownership__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Check box indicating this contact has been handled by Corporate Partnerships.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This contact is maintained by Corporate Partnerships</inlineHelpText>
+        <label>Corporate Partnership Ownership</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>County__c</fullName>
+        <externalId>false</externalId>
+        <label>County</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DB_DUNS__c</fullName>
+        <description>Hidden</description>
+        <externalId>false</externalId>
+        <formula>ENCODED:[treatNullAsNull]{!ID:DandbCompany.GlobalUltimateDunsNumber}</formula>
+        <inlineHelpText>Hidden</inlineHelpText>
+        <label>Global Ultimate DUNS Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>D_B_Legal_Structure__c</fullName>
+        <externalId>false</externalId>
+        <formula>BillingCountry</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>D&amp;B Year Started</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>D_B_Ownership_Type_Indicator__c</fullName>
+        <externalId>false</externalId>
+        <formula>BillingCountry</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>D&amp;B Ownership Type Indicator</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Earliest_Record_Date__c</fullName>
+        <description>Date of the earliest record related to this account. This date is pulled from the Account, the Account Hierarchy, related Contacts, or related Engagements. Filled in by the Account Analytics Integration step.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date of the earliest record related to this account. This date is pulled from the Account, the Account Hierarchy, related Contacts, or related Engagements.</inlineHelpText>
+        <label>Earliest Record Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Email</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Endowment_Account_Name__c</fullName>
+        <description>PREF_NAME From Advance, Endowment&apos;s system of record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>PREF_NAME From Advance, Endowment&apos;s system of record</inlineHelpText>
+        <label>Endowment Account Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Endowment_Account_Website__c</fullName>
+        <description>ACCOUNT_WEBSITE From Advance, Endowment&apos;s system of record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The website listed for the account according to Endowment. Not currently being filled in.</inlineHelpText>
+        <label>Endowment Account Website</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Endowment_Active_Proposals__c</fullName>
+        <description>ACTIVE_PROPOSALS From Advance, Endowment&apos;s system of record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>ACTIVE_PROPOSALS From Advance, Endowment&apos;s system of record</inlineHelpText>
+        <label>Endowment Active Proposals</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Endowment_Address_1__c</fullName>
+        <description>ADDRESS_1 From Advance, Endowment&apos;s system of record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>From Advance, Endowment&apos;s system of record</inlineHelpText>
+        <label>Endowment Address 1</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Endowment_Address_2__c</fullName>
+        <description>ADDRESS_2 From Advance, Endowment&apos;s system of record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>From Advance, Endowment&apos;s system of record</inlineHelpText>
+        <label>Endowment Address 2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Endowment_Address_City__c</fullName>
+        <description>US_CITY From Advance, Endowment&apos;s system of record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>From Advance, Endowment&apos;s system of record</inlineHelpText>
+        <label>Endowment Address City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Endowment_Address_Country__c</fullName>
+        <description>COUNTRY From Advance, Endowment&apos;s system of record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>From Advance, Endowment&apos;s system of record</inlineHelpText>
+        <label>Endowment Address Country</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Endowment_Address_State__c</fullName>
+        <description>US_STATE From Advance, Endowment&apos;s system of record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>From Advance, Endowment&apos;s system of record</inlineHelpText>
+        <label>Endowment Address State</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Endowment_Address_Zip__c</fullName>
+        <description>US_ZIP From Advance, Endowment&apos;s system of record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>From Advance, Endowment&apos;s system of record</inlineHelpText>
+        <label>Endowment Address Zip</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Endowment_Alumni__c</fullName>
+        <description>ALUMNI_EMPLOYEES From Advance, Endowment&apos;s system of record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>ALUMNI_EMPLOYEES From Advance, Endowment&apos;s system of record</inlineHelpText>
+        <label>Endowment Alumni</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Endowment_Contact_Reports__c</fullName>
+        <description>CONTACT_RPTS From Advance, Endowment&apos;s system of record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>CONTACT_RPTS From Advance, Endowment&apos;s system of record</inlineHelpText>
+        <label>Endowment Contact Reports</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Endowment_Contact__c</fullName>
+        <description>Person in charge of the Endowment Account</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If you have questions regarding information from Endowment, please contact this person.</inlineHelpText>
+        <label>Endowment Contact</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Endowment_Email__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Email address of the Endowment Contact</inlineHelpText>
+        <label>Endowment Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Endowment_Gifts_Total_Value__c</fullName>
+        <description>UNIT_GIFT_TOTAL From Advance, Endowment&apos;s system of record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The total amount of gifts to KU tracked by Endowment</inlineHelpText>
+        <label>Endowment Gifts Total Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Endowment_Last_Contact_Date__c</fullName>
+        <description>LAST_CONTACT From Advance, Endowment&apos;s system of record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date of last visit or call from Endowment</inlineHelpText>
+        <label>Endowment Last Contact Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Endowment_Last_Contact_Description__c</fullName>
+        <description>LAST_CONTACT_DESC From Advance, Endowment&apos;s system of record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The first sentence from the most recent Endowment Contact Report.</inlineHelpText>
+        <label>Endowment Last Contact Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Endowment_Last_Contact_Purpose__c</fullName>
+        <description>LAST_CONTACT_PURPOSE From Advance, Endowment&apos;s system of record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The reason for the last contact by Endowment</inlineHelpText>
+        <label>Endowment Last Contact Purpose</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Endowment_Last_Contact_Report_ID__c</fullName>
+        <description>LAST_CONTACT_RPT_ID From Advance, Endowment&apos;s system of record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>LAST_CONTACT_RPT_ID From Advance, Endowment&apos;s system of record</inlineHelpText>
+        <label>Endowment Last Contact Report ID</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Endowment_Last_Contact_Type__c</fullName>
+        <description>LAST_CONTACT_TYPE From Advance, Endowment&apos;s system of record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The type of contact or visit from Endowment from their most recent contact.</inlineHelpText>
+        <label>Endowment Last Contact Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Endowment_Last_Gift_Date__c</fullName>
+        <description>LAST_GIFT From Advance, Endowment&apos;s system of record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date of the most recent gift to Endowment</inlineHelpText>
+        <label>Endowment Last Gift Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Endowment_Last_Match_Date__c</fullName>
+        <description>LAST_MATCH From Advance, Endowment&apos;s system of record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Most recent Gift Match was made on this date</inlineHelpText>
+        <label>Endowment Last Match Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Endowment_Non_Alumni_Employees__c</fullName>
+        <description>NON_ALUMNI_EMPLOYEES From Advance, Endowment&apos;s system of record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The number of non-Alumni employees according to Endowment</inlineHelpText>
+        <label>Endowment Non Alumni Employees</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Endowment_Parent_ID__c</fullName>
+        <description>Endowment ID of the parent record as given in Advance</description>
+        <externalId>false</externalId>
+        <label>Endowment Parent ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Endowment_Stage__c</fullName>
+        <description>LATEST_STAGE From Advance, Endowment&apos;s system of record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Current cultivation stage from Endowment</inlineHelpText>
+        <label>Endowment Stage</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Endowment_Unit_Matching__c</fullName>
+        <description>UNIT_MATCHING From Advance, Endowment&apos;s system of record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total amount of matching endowment gifts made by company</inlineHelpText>
+        <label>Endowment Unit Matching</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Endowment_Visits__c</fullName>
+        <description>VISITS From Advance, Endowment&apos;s system of record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>How many times Endowment has had in-person visits</inlineHelpText>
+        <label>Endowment Visits</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Engagement_Strategy__c</fullName>
+        <description>Describe the engagement strategy for this Company</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Describe the engagement strategy for this Company</inlineHelpText>
+        <label>Engagement Strategy</label>
+        <length>5000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Fax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Geographic_Proximity_Of_Firm_To_Universi__c</fullName>
+        <description>Distance in Miles between KU and Firm (Billing Address)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Distance in Miles between KU and Firm (Billing Address)</inlineHelpText>
+        <label>GeographicProximity of Firm ToUniversity</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Grandparent_Account_ID__c</fullName>
+        <description>The highest account in the account hierarchy. Filled in by SQL.</description>
+        <externalId>false</externalId>
+        <label>Grandparent Account ID</label>
+        <length>18</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Grandparent__c</fullName>
+        <description>Checked if Grandparent ID is the Account ID. This Account is at the top of the hierarchy if checked.</description>
+        <externalId>false</externalId>
+        <formula>IF (  Grandparent_Account_ID__c =   CASESAFEID(Id) , true, false)</formula>
+        <inlineHelpText>This Account is at the top of the hierarchy.</inlineHelpText>
+        <label>Grandparent</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Industry</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Agriculture</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Apparel</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Banking</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Biotechnology</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Chemicals</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Communications</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Construction</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Consulting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Energy</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Entertainment</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Environmental</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Finance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Food &amp; Beverage</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Government</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Healthcare</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hospitality</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Machinery</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Media</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Not For Profit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Recreation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shipping</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Technology</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Telecommunications</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Internships__c</fullName>
+        <description>Number of internships from Career Services. Filled in by integration.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of internships from Career Services.</inlineHelpText>
+        <label>Internships</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Intersection_Points__c</fullName>
+        <description>Manual Entry - Intersection Points</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Manual Entry - Intersection Points</inlineHelpText>
+        <label>Intersection Points</label>
+        <length>5000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Interviews__c</fullName>
+        <description>Number of interviews this company has conducted. Filled in by the integration.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of interviews this company has conducted.</inlineHelpText>
+        <label>Interviews</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Is_Strategic_Company__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Strategic Company?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Jigsaw</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>KUIC_Ownership__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>KUIC Ownership</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>KU_Division_Generating_Report__c</fullName>
+        <description>KU Division Generating Report</description>
+        <externalId>false</externalId>
+        <inlineHelpText>KU Division Generating Report</inlineHelpText>
+        <label>KU Division Generating Report</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Business Career Services</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CLAS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Continuing Education</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Engineering Career Services</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>KU Endowment</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Office of Corporate Partnerships</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Technology Transfer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>University Career Services</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>KU_Startup__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This company started here at KU</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This company started here at KU</inlineHelpText>
+        <label>KU Startup</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Key_Alumni__c</fullName>
+        <description>Number of key alumni working at this firm. Filled in by the integration, pulled from the contact object.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of key alumni working at this firm. Key alumni are defined by...?</inlineHelpText>
+        <label>Key Alumni</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Key_Focus_Areas__c</fullName>
+        <description>KEY COMPANY RESEARCH/FOCUS AREAS</description>
+        <externalId>false</externalId>
+        <inlineHelpText>KEY COMPANY RESEARCH/FOCUS AREAS</inlineHelpText>
+        <label>Key Focus Areas</label>
+        <length>1000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Last_Integration_Run__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Integration Run</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Length_Of_Client_Relationship_Years__c</fullName>
+        <externalId>false</externalId>
+        <label>Length Of Client Relationship Years</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Master_Research_Agreement__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Number of Master Research Agreements in place with KU. Filled in by the Analytics Procedure.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of Master Research Agreements in place with KU</inlineHelpText>
+        <label>Master Research Agreement</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Master_Service_Agreement__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Designates whether or not this account has a Master Service Agreement in place with KU. Filled in by the Analytics Procedure.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Designates whether or not this account has a Master Service Agreement in place with KU.</inlineHelpText>
+        <label>Master Service Agreement</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>NumberOfEmployees</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Other_Locations__c</fullName>
+        <description>Fields to allow Users to enter Other Locations of the Organization</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Fields to allow Users to enter Other Locations of the Organization</inlineHelpText>
+        <label>Other Locations</label>
+        <length>500</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Ownership</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Public</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Private</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Subsidiary</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ParentId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Hierarchy</type>
+    </fields>
+    <fields>
+        <fullName>Peoplesoft_Account_Name__c</fullName>
+        <description>Sponsor, from Peoplesoft, Research&apos;s system of record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of the account from Peoplesoft, Research&apos;s system of record</inlineHelpText>
+        <label>Peoplesoft Account Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Peoplesoft_Address_1__c</fullName>
+        <description>Address 1 from Peoplesoft, Research&apos;s system of record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>From Peoplesoft, Research&apos;s system of record</inlineHelpText>
+        <label>Peoplesoft Address 1</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Peoplesoft_Address_2__c</fullName>
+        <description>Address 2 From Peoplesoft, Research&apos;s system of record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>From Peoplesoft, Research&apos;s system of record</inlineHelpText>
+        <label>Peoplesoft Address 2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Peoplesoft_Address_City__c</fullName>
+        <description>City From Peoplesoft, Research&apos;s system of record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>From Peoplesoft, Research&apos;s system of record</inlineHelpText>
+        <label>Peoplesoft Address City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Peoplesoft_Address_Country__c</fullName>
+        <description>Country From Peoplesoft, Research&apos;s system of record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>From Peoplesoft, Research&apos;s system of record</inlineHelpText>
+        <label>Peoplesoft Address Country</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Peoplesoft_Address_State__c</fullName>
+        <description>St From Peoplesoft, Research&apos;s system of record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>From Peoplesoft, Research&apos;s system of record</inlineHelpText>
+        <label>Peoplesoft Address State</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Peoplesoft_Address_Zip__c</fullName>
+        <description>Postal From Peoplesoft, Research&apos;s system of record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>From Peoplesoft, Research&apos;s system of record</inlineHelpText>
+        <label>Peoplesoft Address Zip</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Peoplesoft_Create_Date__c</fullName>
+        <description>Date the record was created in Peoplesoft. Filled in with the integration.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date the record was created in Peoplesoft, the system for the Center for Research</inlineHelpText>
+        <label>Peoplesoft Create Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Peoplesoft_Last_Modified_Date__c</fullName>
+        <description>Date the record was last modified in Peoplesoft. Filled in with the integration</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date the record was last modified in Peoplesoft, the system for the Center of Research</inlineHelpText>
+        <label>Peoplesoft Last Modified Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Rating</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Hot</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Warm</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cold</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Relationship_Level__c</fullName>
+        <description>Displays the number of different departments that are working with this account</description>
+        <externalId>false</externalId>
+        <formula>IF( Tech_Transfer_Total_Engagements__c  &gt; 0, 1, 0) +
+IF( Endowment_Gifts_Total_Value__c &gt; 0, 1, 0) +
+IF( Career_Service_Total_Engagements__c &gt; 0, 1, 0) + 
+IF( Sponsored_Research_Projects__c &gt; 0, 1, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Displays the number of different departments that are working with this account</inlineHelpText>
+        <label>Relationship Level</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Relevant_Outside_Activities__c</fullName>
+        <description>Describe the relevant outside activities of the firm based on the Market Analysis</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Describe the relevant outside activities of the firm based on the Market Analysis</inlineHelpText>
+        <label>Relevant Outside Activities</label>
+        <length>5000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Research_Affiliate__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Designates whether or not this account is a Research Affiliate with KU. Filled in by the Analytics Procedure.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Designates whether or not this account is a Research Affiliate with KU</inlineHelpText>
+        <label>Research Affiliate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SalesforceCustomer</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ShippingAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Sic</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>SicDesc</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Site</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Source_System_Created_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Source System Created Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Source_System_Last_Modified_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Source System Last Modified Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Source_System__c</fullName>
+        <externalId>false</externalId>
+        <label>Source System</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sponsored_Research_Projects__c</fullName>
+        <description>Number of sponsored research awards</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of sponsored research awards</inlineHelpText>
+        <label>Sponsored Research Projects</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sponsored_Research_Value__c</fullName>
+        <description>Total Value of all sponsored research</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total Value of all sponsored research</inlineHelpText>
+        <label>Sponsored Research Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Statement_Of_Relevance__c</fullName>
+        <description>Manual Entry - Statement Of Relevance</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Manual Entry - Statement Of Relevance</inlineHelpText>
+        <label>Statement Of Relevance</label>
+        <length>5000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Status_Of_Partnership__c</fullName>
+        <description>Describe the Status of current relationship with this Master Organization for the CEO Report</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Describe the Status of current relationship with this Master Organization for the CEO Report</inlineHelpText>
+        <label>Status Of Partnership</label>
+        <length>1000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Strategic_Partner_Value__c</fullName>
+        <description>This number represents the number of different KU departments that have interactions with this company.</description>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK( XID_Advance__c), 0, 1) + IF(ISBLANK( XID_Peoplesoft__c), 0, 1) + IF(ISBLANK( XID_Reggie__c), 0, 1) + IF(ISBLANK( XID_Symplicity__c), 0, 1) + IF(ISBLANK( XID_Wellspring__c), 0, 1)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This number represents the number of different KU departments that have interactions with this company.</inlineHelpText>
+        <label>Strategic Partner # Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Symplicity_City_Address__c</fullName>
+        <description>Employer Address City from Symplicity, Career Service&apos;s system of record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Employer Address City from Symplicity, Career Service&apos;s system of record</inlineHelpText>
+        <label>Symplicity City Address</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Symplicity_Created_Date__c</fullName>
+        <description>Created date from Symplicity, Career Service&apos;s system of record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Created date from Symplicity, Career Service&apos;s system of record</inlineHelpText>
+        <label>Symplicity Created Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Symplicity_Employer_Website__c</fullName>
+        <description>Employer Website from Symplicity, Career Service&apos;s system of record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Employer Website from Symplicity, Career Service&apos;s system of record</inlineHelpText>
+        <label>Symplicity Employer Website</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Symplicity_Last_Modified__c</fullName>
+        <description>Last modified date from Symplicity, Career Service&apos;s system of record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Last modified date from Symplicity, Career Service&apos;s system of record</inlineHelpText>
+        <label>Symplicity Last Modified</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Symplicity_Organization_Name__c</fullName>
+        <description>Default Symplicity Account Name</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of the account in Symplicity, Career Service&apos;s system of record.</inlineHelpText>
+        <label>Symplicity Organization Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Symplicity_State_Address__c</fullName>
+        <description>Employer Address State from Symplicity, Career Service&apos;s system of record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Employer Address State from Symplicity, Career Service&apos;s system of record</inlineHelpText>
+        <label>Symplicity State Address</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Symplicity_Street_Address__c</fullName>
+        <description>Employer Street Address from Symplicity, Career Service&apos;s system of record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Employer Street Address from Symplicity, Career Service&apos;s system of record</inlineHelpText>
+        <label>Symplicity Street Address</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Symplicity_Zip_Code_Address__c</fullName>
+        <description>Employer Address Zip+4 from Symplicity, Career Service&apos;s system of record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Employer Address Zip+4 from Symplicity, Career Service&apos;s system of record</inlineHelpText>
+        <label>Symplicity Zip Code Address</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>T_T_Confidential_Disclosure_Agreements__c</fullName>
+        <description>Number of Confidential Disclosure Agreements this company has with KU. Defined by Tech Transfer. Filled in by the Account Analytics procedure</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of Confidential Disclosure Agreements this company has with KU. Defined by Tech Transfer. Filled in by the Account Analytics procedure</inlineHelpText>
+        <label>Confidential Disclosure Agreements</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>T_T_Exclusive_License_Agreements__c</fullName>
+        <description>Agreements that are both exclusive and executed. Pulled from Wellspring.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Agreements that are both exclusive and executed</inlineHelpText>
+        <label>Exclusive License Agreements</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>T_T_Material_Transfer_Inbound_Agreements__c</fullName>
+        <description>Number of Inbound Material Transfer Agreements this company has with KU. Defined by Tech Transfer.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of Inbound Material Transfer Agreements this company has with KU. Defined by Tech Transfer. Filled in by the Account Analytics procedure</inlineHelpText>
+        <label>Material Transfer Inbound Agreements</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>T_T_Material_Transfer_Outbound_Agreement__c</fullName>
+        <description>Number of Outbound Material Transfer Agreements this company has with KU. Defined by Tech Transfer</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of Outbound Material Transfer Agreements this company has with KU. Defined by Tech Transfer. Filled in by the Account Analytics procedure</inlineHelpText>
+        <label>Material Transfer Outbound Agreements</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>T_T_Memorandum_of_Understanding__c</fullName>
+        <description>Number of Memorandum of Understanding Agreements this company has with KU. Defined by Tech Transfer</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of Memorandum of Understanding Agreements this company has with KU. Defined by Tech Transfer. Filled in by the Account Analytics procedure</inlineHelpText>
+        <label>Memorandum of Understanding</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>T_T_Non_Exclusive_License_Agreements__c</fullName>
+        <description>Number of Non Exclusive License Agreements this company has with KU. Defined by Tech Transfer</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of Non Exclusive License Agreements this company has with KU. Defined by Tech Transfer. Filled in by the Account Analytics procedure</inlineHelpText>
+        <label>Non Exclusive License Agreements</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>T_T_Option_Agreements__c</fullName>
+        <description>Number of Option Agreements this company has with KU. Defined by Tech Transfer.  Filled in by the Account Analytics procedure</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of Option Agreements this company has with KU. Defined by Tech Transfer.</inlineHelpText>
+        <label>Option Agreements</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>T_T_Other_Agreements__c</fullName>
+        <description>Number of &quot;Other&quot; Agreements this company has with KU. Defined by Tech Transfer. Filled in by the Account Analytics procedure</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of &quot;Other&quot; Agreements this company has with KU. Defined by Tech Transfer</inlineHelpText>
+        <label>Other Agreements</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>T_T_Service_Agreements__c</fullName>
+        <description>Number of Service Agreements (not Master Service Agreements) this company has with KU. Defined by Tech Transfer. Filled in by the Account Analytics procedure</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of Service Agreements (not Master Service Agreements) this company has with KU. Defined by Tech Transfer.</inlineHelpText>
+        <label>Service Agreements</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>T_T_Tangible_Property_Licenses__c</fullName>
+        <description>Number of Tangible Property Licenses this company has with KU. Defined by Tech Transfer. Filled in by the Account Analytics procedure</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of Tangible Property Licenses this company has with KU. Defined by Tech Transfer</inlineHelpText>
+        <label>Tangible Property Licenses</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>T_T_Total_Material_Transfer_Agreements__c</fullName>
+        <description>Total number of Material Transfer Agreements this company has with KU - both inbound and outbound. Defined by Tech Transfer</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total number of Material Transfer Agreements this company has with KU - both inbound and outbound. Defined by Tech Transfer. Filled in by the Account Analytics procedure</inlineHelpText>
+        <label>Total Material Transfer Agreements</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>T_T_Visiting_Scientists__c</fullName>
+        <description>Number of Visiting Scientist Agreements this company has with KU. Defined by Tech Transfer. Filled in by the Account Analytics procedure</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of Visiting Scientist Agreements this company has with KU. Defined by Tech Transfer.</inlineHelpText>
+        <label>Visiting Scientists</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tech_Transfer_Capstone_Sponsorships__c</fullName>
+        <description>Number of Capstone Sponsorships this company has with KU. Defined by Tech Transfer.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of Capstone Sponsorships this company has with KU. Defined by Tech Transfer. Filled in by the Account Analytics procedure</inlineHelpText>
+        <label>Capstone Sponsorships</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tech_Transfer_Collaboration_Agreements__c</fullName>
+        <description>Number of Collaboration Agreements this company has with KU. Defined by Tech Transfer.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of Collaboration Agreements this company has with KU. Defined by Tech Transfer. Filled in by the Account Analytics procedure</inlineHelpText>
+        <label>Collaboration Agreements</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tech_Transfer_Joint_Invention_Disclosure__c</fullName>
+        <description>Filled in by the Account Analytics process</description>
+        <externalId>false</externalId>
+        <label>Tech Transfer Joint Invention Disclosure</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tech_Transfer_Joint_Patent_Disclosures__c</fullName>
+        <description>Filled in by the Account Analytics process</description>
+        <externalId>false</externalId>
+        <label>Tech Transfer Joint Patent Disclosures</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tech_Transfer_Total_Agreements__c</fullName>
+        <description>Filled in by the Account Analytics process</description>
+        <externalId>false</externalId>
+        <label>Tech Transfer Total Agreements</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tech_Transfer_Total_Engagements__c</fullName>
+        <description>Filled in by the Account Analytics process</description>
+        <externalId>false</externalId>
+        <label>Tech Transfer Total Engagements</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tech_Transfer_Total_Licenses__c</fullName>
+        <description>Total number of licenses this company has with KU - both exclusive and non-exclusive. Defined by Tech Transfer.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total number of licenses this company has with KU - both exclusive and non-exclusive. Defined by Tech Transfer. Filled in by the Account Analytics procedure</inlineHelpText>
+        <label>Total Licenses</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TickerSymbol</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Total_Account_Value__c</fullName>
+        <description>Filled in by the Account Analytics process</description>
+        <externalId>false</externalId>
+        <label>Total Account Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Contact__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Total number of Contacts associated with this Master Organization.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total number of Contacts associated with this Master Organization.</inlineHelpText>
+        <label>Total Number of Contacts</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Endowment_Engagements__c</fullName>
+        <description>Total number of engagements from Endowment for this account</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total number of engagements from Endowment for this account</inlineHelpText>
+        <label>Total Endowment Engagements</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Events__c</fullName>
+        <description>Filled in by the Account Analytics process</description>
+        <externalId>false</externalId>
+        <label>Total Events</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_KUCE_Classes__c</fullName>
+        <description>Total number of KUCE classes taken by contacts of this account. Filled in by the integration.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total number of KUCE classes taken by contacts of this account</inlineHelpText>
+        <label>Total KUCE Classes</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Number_Of_Engagements__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Total number of KU Engagements related to this Master Organization.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total number of KU Engagements related to this Master Organization.</inlineHelpText>
+        <label>Total Number of Engagements</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Opportunities__c</fullName>
+        <description>Filled in by the Account Analytics process</description>
+        <externalId>false</externalId>
+        <label>Total Opportunities</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Opportunity_Amount__c</fullName>
+        <description>Filled in by the Account Analytics process</description>
+        <externalId>false</externalId>
+        <label>Total Opportunity Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Tasks__c</fullName>
+        <description>Filled in by the Account Analytics process</description>
+        <externalId>false</externalId>
+        <label>Total Tasks</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Industry</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Government</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Foundation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Association / Society</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Trust</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Excluded</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other Not for Profit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Website</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Wellspring_Account_Name__c</fullName>
+        <description>organization_Name From Wellspring/Sophia, the system of record for Tech Transfer</description>
+        <externalId>false</externalId>
+        <inlineHelpText>From Wellspring/Sophia, the system of record for Tech Transfer</inlineHelpText>
+        <label>Wellspring Account Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Wellspring_Account_Website__c</fullName>
+        <description>organization_url From Wellspring/Sophia, the system of record for Tech Transfer</description>
+        <externalId>false</externalId>
+        <inlineHelpText>From Wellspring/Sophia, the system of record for Tech Transfer</inlineHelpText>
+        <label>Wellspring Account Website</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Wellspring_Address_1__c</fullName>
+        <description>organization_address_Line1 From Wellspring/Sophia, the system of record for Tech Transfer</description>
+        <externalId>false</externalId>
+        <inlineHelpText>From Wellspring/Sophia, the system of record for Tech Transfer</inlineHelpText>
+        <label>Wellspring Address 1</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Wellspring_Address_2__c</fullName>
+        <description>organization_address_Line2 From Wellspring/Sophia, the system of record for Tech Transfer</description>
+        <externalId>false</externalId>
+        <inlineHelpText>From Wellspring/Sophia, the system of record for Tech Transfer</inlineHelpText>
+        <label>Wellspring Address 2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Wellspring_Address_City__c</fullName>
+        <description>organization_address_City From Wellspring/Sophia, the system of record for Tech Transfer</description>
+        <externalId>false</externalId>
+        <inlineHelpText>From Wellspring/Sophia, the system of record for Tech Transfer</inlineHelpText>
+        <label>Wellspring Address City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Wellspring_Address_State__c</fullName>
+        <description>organization_address_state From Wellspring/Sophia, the system of record for Tech Transfer</description>
+        <externalId>false</externalId>
+        <inlineHelpText>From Wellspring/Sophia, the system of record for Tech Transfer</inlineHelpText>
+        <label>Wellspring Address State</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Wellspring_Company_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Wellspring Company Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Wellspring_Create_Date__c</fullName>
+        <description>Date the Wellspring Record was created. Filled in by the integration.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date the Wellspring Record was created</inlineHelpText>
+        <label>Wellspring Create Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Wellspring_Inactive__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Not listed as active in Wellspring. The account could be deleted or merged with another account.</description>
+        <externalId>false</externalId>
+        <label>Wellspring Inactive</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Wellspring_KU_Startup__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Wellspring KU Startup</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Wellspring_Last_Modified_Date__c</fullName>
+        <description>The last time the record was modified within Wellspring. Filled in by the integration.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The last time the record was modified within Wellspring</inlineHelpText>
+        <label>Wellspring Last Modified Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Wellspring_Org_Type__c</fullName>
+        <description>organization_type From Wellspring/Sophia, the system of record for Tech Transfer</description>
+        <externalId>false</externalId>
+        <inlineHelpText>From Wellspring/Sophia, the system of record for Tech Transfer</inlineHelpText>
+        <label>Wellspring Org Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Wellspring_Phone__c</fullName>
+        <description>organization_address_Phone From Wellspring/Sophia, the system of record for Tech Transfer</description>
+        <externalId>false</externalId>
+        <inlineHelpText>From Wellspring/Sophia, the system of record for Tech Transfer</inlineHelpText>
+        <label>Wellspring Phone</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Wellspring_Postal_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Wellspring Postal Code</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>XID_Advance__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <description>External ID for Advance. Holds the Advance Endow_ID</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Advance Endow_ID</inlineHelpText>
+        <label>XID Advance</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>XID_Peoplesoft__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <description>External ID from Peoplesoft, which holds Reasearch Sponsor IDs</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Reasearch Sponsor ID</inlineHelpText>
+        <label>XID Peoplesoft</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>XID_Reggie__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <description>External ID for the Reggie System. Built for future reference, since this is not currently being passed. Holds the Account ID for Continuing Education</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Account ID for Continuing Education</inlineHelpText>
+        <label>XID Reggie</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>XID_Symplicity__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <description>External ID from Symplicity. Holds the Career Services Employer ID</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Career Services Employer ID</inlineHelpText>
+        <label>XID Symplicity</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>XID_Wellspring__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <description>External ID for the Wellspring/Sophia system. Holds the Tech Transfer organization_id</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Tech Transfer organization_id</inlineHelpText>
+        <label>XID Wellspring</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Xref_Symplicity__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK(XID_Symplicity__c), &quot;&quot;,&quot;https://ku-csm.symplicity.com/manager/?mode=form&amp;id=&quot; &amp; XID_Symplicity__c &amp; &quot;&amp;employers_tab=1&quot;)</formula>
+        <label>Xref Symplicity</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>Account_Dedupe</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>ACCOUNT.INDUSTRY</columns>
+        <columns>ACCOUNT.OWNERSHIP</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.TYPE</field>
+            <operation>equals</operation>
+        </filters>
+        <label>Account Dedupe</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>Account_Type_Banner__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Accounts</label>
+    </listViews>
+    <listViews>
+        <fullName>List_View_Edit</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.TYPE</field>
+            <operation>equals</operation>
+        </filters>
+        <label>List View Edit</label>
+    </listViews>
+    <searchLayouts>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Alternate_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Corporate_Partnership_Ownership__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Grandparent__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.INDUSTRY</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.ADDRESS1_CITY</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.ADDRESS1_STATE</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Alternate_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Corporate_Partnership_Ownership__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Grandparent__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.INDUSTRY</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.ADDRESS1_CITY</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.ADDRESS1_STATE</lookupDialogsAdditionalFields>
+        <lookupFilterFields>ACCOUNT.NAME</lookupFilterFields>
+        <lookupFilterFields>Alternate_Name__c</lookupFilterFields>
+        <lookupFilterFields>Corporate_Partnership_Ownership__c</lookupFilterFields>
+        <lookupFilterFields>Grandparent__c</lookupFilterFields>
+        <lookupFilterFields>ACCOUNT.ADDRESS1_CITY</lookupFilterFields>
+        <lookupFilterFields>ACCOUNT.ADDRESS1_STATE</lookupFilterFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Alternate_Name__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Corporate_Partnership_Ownership__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Grandparent__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.INDUSTRY</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.ADDRESS1_CITY</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.ADDRESS1_STATE</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>ACCOUNT.NAME</searchFilterFields>
+        <searchFilterFields>Alternate_Name__c</searchFilterFields>
+        <searchFilterFields>Corporate_Partnership_Ownership__c</searchFilterFields>
+        <searchFilterFields>Grandparent__c</searchFilterFields>
+        <searchFilterFields>ACCOUNT.INDUSTRY</searchFilterFields>
+        <searchFilterFields>ACCOUNT.ADDRESS1_CITY</searchFilterFields>
+        <searchFilterFields>ACCOUNT.ADDRESS1_STATE</searchFilterFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Alternate_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Corporate_Partnership_Ownership__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Grandparent__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.INDUSTRY</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.ADDRESS1_CITY</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.ADDRESS1_STATE</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Account_Details_Cannot_Change</fullName>
+        <active>false</active>
+        <description>Account details cannot be changed by Non-Admin Users</description>
+        <errorConditionFormula>AND(ISCHANGED(Name), $Profile.Name &lt;&gt; &quot;System Administrator Clone&quot;, $Profile.Name &lt;&gt; &quot;System Administrator&quot;)</errorConditionFormula>
+        <errorMessage>Only System Administrator Can Change Key Details Of The Master Organization. Please Contact Your System Administrator to make this change.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Activities_in_Hierarchy</fullName>
+        <availability>online</availability>
+        <description>Shows all the activities for all accounts sharing the same Grandparent ID</description>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Activities in Hierarchy</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/00Oi0000006fmkU?pv0={!Account.Grandparent_Account_ID__c}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Activities_in_Hierarchy_LEX</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Activities in Hierarchy</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/one/one.app#/sObject/00OR0000000PCHYMA4/view?fv0={!Account.Grandparent_Account_ID__c}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>All_Contacts_in_Hierarchy</fullName>
+        <availability>online</availability>
+        <description>Shows all the contacts in the account hierarchy. Uses the Grandparent Account ID field.</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>All Contacts in Hierarchy</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/00Oi0000006auftEAA?pv0={!Account.Grandparent_Account_ID__c}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>AltavistaNews</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>true</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>true</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Altavista News</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>true</showsLocation>
+        <showsStatus>true</showsStatus>
+        <url>http://news.altavista.com/search?nc=0&amp;q={!Account_Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Engagements_in_Hierarchy</fullName>
+        <availability>online</availability>
+        <description>Shows all the engagements for all accounts sharing a grandparent ID</description>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Engagements in Hierarchy</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/00Oi0000006fmrp?pv0={!Account.Grandparent_Account_ID__c}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://maps.google.com/maps?f=q&amp;hl=en&amp;q={!Account_BillingStreet}+{!Account_BillingCity}+{!Account_BillingState}&amp;om=1</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleNews</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google News</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/news?&amp;q={!Account_Name}&amp;btnG=Search+News</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleSearch</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Search</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/search?q={!Account_Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>HooversProfile</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Hoovers Profile</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://search.hoovers.com/cgi-bin/hol_search?which=company&amp;query_string={!Account_Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>MA_MapIt_a0Gi000000MFjhLEAT</fullName>
+        <availability>online</availability>
+        <description>Maps this Account with selected tooltips</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Map It</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/apex/sma__mapanything?recordId={!Account.Id}&amp;baseObjectId=a0Gi000000MFjhLEAT&amp;tooltipField=Name&amp;tooltipField2=Phone&amp;tooltipField3=Type&amp;tooltipField4=Rating&amp;tooltipField5=Description&amp;color=%2366FF00</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Total_Interaction</fullName>
+        <availability>online</availability>
+        <description>Displays Engagements, Tasks, and Events on the selected Account. Uses JS to pass variables.</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Total Interaction</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>var url = &quot;/00Oi0000006avrx&quot;;    // report ID
+var method = &quot;POST&quot;;
+//var idArray = {!GETRECORDIDS($ObjectType.Account)};   // if the field you want for report critiera isn&apos;t avail from the detail record (ie list button) then need to get related data
+//var idToUse = idArray[0];
+//var idToUse = &quot;{!Account.Id}&quot;;
+var AcctId = &quot;{!Account.Id}&quot;;
+
+//alert(idToUse);
+
+//if (idToUse == null) {   // need to have at least 1 record selected
+//alert(&apos;You must select one Account record to run this report.&apos;);
+//} else {
+
+{!REQUIRESCRIPT(&quot;/soap/ajax/29.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/29.0/apex.js&quot;)}
+
+//result = sforce.connection.query(&quot;Select Id from Account where Id = \&apos;&quot; + idToUse + &quot;\&apos;&quot;);
+
+//var AcctId = null;
+
+
+//records = result.getArray(&quot;records&quot;);
+
+//for (var i=0; i&lt; records.length; i++) {
+//var record = records[i];
+//AcctId = record.id.substring(0,15);
+//}
+
+//alert(AcctId);
+
+// if the field you want for report critiera isn&apos;t avail from the detail record (ie list button) then need to get related data - in this case contract ID
+
+// next line is post data - needs to be URL encoded. Note this is based on what comes from the runReportJson which you can get from running the report and checking firebug
+var postData = &quot;op=run&amp;runReportJson=%7B%22rt%22%3A%22070i00000004gDg%22%2C%22charts%22%3A%5B%7B%22fg%22%3A0%2C%22chsv%22%3Afalse%2C%22cheh%22%3Afalse%2C%22cfsize%22%3A12%2C%22chst%22%3Afalse%2C%22Yman%22%3Afalse%2C%22bg2%22%3A16777215%2C%22csize%22%3A3%2C%22l%22%3A%221%22%2C%22chsp%22%3Afalse%2C%22bg1%22%3A16777215%2C%22cp%22%3A%22b%22%2C%22ct%22%3A%22none%22%2C%22tfg%22%3A0%2C%22ctitle%22%3A%22%22%2C%22ctsize%22%3A18%2C%22bgdir%22%3A%222%22%2C%22summaries%22%3A%5B%5D%2C%22sal%22%3Atrue%2C%22chco%22%3Atrue%7D%5D%2C%22last_modified_date%22%3A%223%2F8%2F2016+11%3A36+AM%22%2C%22topn%22%3A0%2C%22sideBySide%22%3Afalse%2C%22cust_owner%22%3A%2200li00000019k0y%22%2C%22colorRanges%22%3A%5B%5D%2C%22cust_desc%22%3A%22Custom+Link+Report+to+show+Engagements%2C+Tasks%2C+and+Events%22%2C%22reportParams%22%3A%5B%7B%22param%22%3A%22block_id_counter%22%2C%22value%22%3A%227%22%7D%5D%2C%22isVirtualEntity%22%3Afalse%2C%22last_modified_user_id%22%3A%22005i0000006lks9%22%2C%22cust_name%22%3A%22Total+Interaction%22%2C%22details%22%3A%22no%22%2C%22currency%22%3A%22000%22%2C%22id%22%3A%2200Oi0000006avrx%22%2C%22blkInfo%22%3A%7B%22blkjt%22%3A%22Account%22%7D%2C%22cust_devName%22%3A%22Total_Interaction%22%2C%22c%22%3A%5B%5D%2C%22breaks%22%3A%5B%7B%22sortColumn%22%3A%22072i000000BFOdj%22%2C%22break%22%3A%22072i000000BFOdj%22%2C%22brkord%22%3A%22up%22%2C%22brkcol%22%3A%22072i000000BFOdj%22%2C%22breakLevel%22%3A%220%22%2C%22brkdat%22%3A%220%22%7D%5D%2C%22showSubtotals%22%3Atrue%2C%22blocks%22%3A%5B%7B%22rt%22%3A%22070i00000004gDg%22%2C%22charts%22%3A%5B%7B%22fg%22%3A0%2C%22chsv%22%3Afalse%2C%22cheh%22%3Afalse%2C%22cfsize%22%3A12%2C%22chst%22%3Afalse%2C%22Yman%22%3Afalse%2C%22bg2%22%3A16777215%2C%22csize%22%3A3%2C%22l%22%3A%221%22%2C%22chsp%22%3Afalse%2C%22bg1%22%3A16777215%2C%22cp%22%3A%22b%22%2C%22ct%22%3A%22none%22%2C%22tfg%22%3A0%2C%22ctitle%22%3A%22%22%2C%22ctsize%22%3A18%2C%22bgdir%22%3A%222%22%2C%22summaries%22%3A%5B%5D%2C%22sal%22%3Atrue%2C%22chco%22%3Atrue%7D%5D%2C%22last_modified_date%22%3A%22%22%2C%22topn%22%3A0%2C%22sideBySide%22%3Afalse%2C%22colorRanges%22%3A%5B%5D%2C%22reportParams%22%3A%5B%7B%22param%22%3A%22colDt_c%22%2C%22value%22%3A%22072i000000BFOeJ%22%7D%2C%7B%22param%22%3A%22colDt_e%22%2C%22value%22%3A%22%22%7D%2C%7B%22param%22%3A%22colDt_q%22%2C%22value%22%3A%22custom%22%7D%2C%7B%22param%22%3A%22colDt_s%22%2C%22value%22%3A%22%22%7D%2C%7B%22param%22%3A%22function%22%2C%22value%22%3A%22c%22%7D%2C%7B%22param%22%3A%22name_op%22%2C%22value%22%3A%22co%22%7D%2C%7B%22param%22%3A%22save_drill%22%2C%22value%22%3A%22true%22%7D%5D%2C%22scope%22%3A%22organization%22%2C%22isVirtualEntity%22%3Afalse%2C%22last_modified_user_id%22%3A%22%22%2C%22cust_name%22%3A%22Engagements%22%2C%22details%22%3A%22no%22%2C%22blkInfo%22%3A%7B%22blockId%22%3A%22B1%22%2C%22blkjt%22%3A%22Account%22%7D%2C%22c%22%3A%5B%22072i000000BFOkX%22%2C%22072i000000BFOka%22%2C%22072i000000BFOk3%22%2C%22072i000000BFOjz%22%2C%22072i000000BFOjq%22%2C%22072i000000BFOl6%22%2C%22072i000000BFOkA%22%5D%2C%22breaks%22%3A%5B%5D%2C%22showSubtotals%22%3Atrue%2C%22format%22%3A%22t%22%2C%22last_modified_by%22%3A%22%22%2C%22filters%22%3A%5B%7B%22cc%22%3Afalse%2C%22pc%22%3A%22072i000000BFOdj%22%2C%22pv%22%3A%22&quot; + AcctId + &quot;%22%2C%22pn%22%3A%22eq%22%2C%22pc2%22%3A%22%22%2C%22irpe%22%3Afalse%7D%5D%2C%22co%22%3A%22yes%22%2C%22created_by_user_id%22%3A%22005i0000006lks9%22%2C%22blockId%22%3A%225%22%2C%22showGrandTotal%22%3Atrue%2C%22v%22%3A142%2C%22sortdir%22%3A%22up%22%2C%22customAggregates%22%3A%5B%5D%2C%22templateKey%22%3A%22070i00000004gDg%22%7D%2C%7B%22rt%22%3A%2224%22%2C%22charts%22%3A%5B%7B%22fg%22%3A0%2C%22chsv%22%3Afalse%2C%22cheh%22%3Afalse%2C%22cfsize%22%3A12%2C%22chst%22%3Afalse%2C%22Yman%22%3Afalse%2C%22bg2%22%3A16777215%2C%22csize%22%3A3%2C%22l%22%3A%221%22%2C%22chsp%22%3Afalse%2C%22bg1%22%3A16777215%2C%22cp%22%3A%22b%22%2C%22ct%22%3A%22none%22%2C%22tfg%22%3A0%2C%22ctitle%22%3A%22%22%2C%22ctsize%22%3A18%2C%22bgdir%22%3A%222%22%2C%22summaries%22%3A%5B%5D%2C%22sal%22%3Atrue%2C%22chco%22%3Atrue%7D%5D%2C%22last_modified_date%22%3A%22%22%2C%22topn%22%3A0%2C%22sideBySide%22%3Afalse%2C%22colorRanges%22%3A%5B%5D%2C%22reportParams%22%3A%5B%7B%22param%22%3A%22colDt%22%2C%22value%22%3A%22DUE_DATE%22%7D%2C%7B%22param%22%3A%22ed%22%2C%22value%22%3A%22%22%7D%2C%7B%22param%22%3A%22colDt_q%22%2C%22value%22%3A%22custom%22%7D%2C%7B%22param%22%3A%22sd%22%2C%22value%22%3A%22%22%7D%2C%7B%22param%22%3A%22closed%22%2C%22value%22%3A%22all%22%7D%2C%7B%22param%22%3A%22function%22%2C%22value%22%3A%22c%22%7D%2C%7B%22param%22%3A%22name_op%22%2C%22value%22%3A%22co%22%7D%2C%7B%22param%22%3A%22type%22%2C%22value%22%3A%22t%22%7D%5D%2C%22scope%22%3A%22organization%22%2C%22isVirtualEntity%22%3Afalse%2C%22last_modified_user_id%22%3A%22%22%2C%22cust_name%22%3A%22Tasks%22%2C%22details%22%3A%22no%22%2C%22blkInfo%22%3A%7B%22blockId%22%3A%22B0%22%2C%22blkjt%22%3A%22a%22%7D%2C%22c%22%3A%5B%22ASSIGNED%22%2C%22SUBJECT%22%2C%22DUE_DATE%22%2C%22WHO_NAME%22%2C%22CONTACT%22%2C%22OPPORTUNITY%22%5D%2C%22breaks%22%3A%5B%5D%2C%22showSubtotals%22%3Atrue%2C%22format%22%3A%22t%22%2C%22last_modified_by%22%3A%22%22%2C%22filters%22%3A%5B%7B%22cc%22%3Afalse%2C%22pc%22%3A%22ACCOUNT_ID%22%2C%22pv%22%3A%22&quot; + AcctId + &quot;%22%2C%22pn%22%3A%22eq%22%2C%22pc2%22%3A%22%22%2C%22irpe%22%3Afalse%7D%5D%2C%22co%22%3A%22yes%22%2C%22created_by_user_id%22%3A%22005i0000006lks9%22%2C%22blockId%22%3A%224%22%2C%22showGrandTotal%22%3Atrue%2C%22v%22%3A142%2C%22sortdir%22%3A%22up%22%2C%22customAggregates%22%3A%5B%5D%2C%22templateKey%22%3A%22ReportActv%22%7D%2C%7B%22rt%22%3A%2224%22%2C%22charts%22%3A%5B%7B%22fg%22%3A0%2C%22chsv%22%3Afalse%2C%22cheh%22%3Afalse%2C%22cfsize%22%3A12%2C%22chst%22%3Afalse%2C%22Yman%22%3Afalse%2C%22bg2%22%3A16777215%2C%22csize%22%3A3%2C%22l%22%3A%221%22%2C%22chsp%22%3Afalse%2C%22bg1%22%3A16777215%2C%22cp%22%3A%22b%22%2C%22ct%22%3A%22none%22%2C%22tfg%22%3A0%2C%22ctitle%22%3A%22%22%2C%22ctsize%22%3A18%2C%22bgdir%22%3A%222%22%2C%22summaries%22%3A%5B%5D%2C%22sal%22%3Atrue%2C%22chco%22%3Atrue%7D%5D%2C%22last_modified_date%22%3A%22%22%2C%22topn%22%3A0%2C%22sideBySide%22%3Afalse%2C%22colorRanges%22%3A%5B%5D%2C%22reportParams%22%3A%5B%7B%22param%22%3A%22colDt%22%2C%22value%22%3A%22DUE_DATE%22%7D%2C%7B%22param%22%3A%22ed%22%2C%22value%22%3A%22%22%7D%2C%7B%22param%22%3A%22colDt_q%22%2C%22value%22%3A%22custom%22%7D%2C%7B%22param%22%3A%22sd%22%2C%22value%22%3A%22%22%7D%2C%7B%22param%22%3A%22closed%22%2C%22value%22%3A%22all%22%7D%2C%7B%22param%22%3A%22function%22%2C%22value%22%3A%22c%22%7D%2C%7B%22param%22%3A%22name_op%22%2C%22value%22%3A%22co%22%7D%2C%7B%22param%22%3A%22type%22%2C%22value%22%3A%22e%22%7D%5D%2C%22scope%22%3A%22organization%22%2C%22isVirtualEntity%22%3Afalse%2C%22last_modified_user_id%22%3A%22%22%2C%22cust_name%22%3A%22Events%22%2C%22details%22%3A%22no%22%2C%22blkInfo%22%3A%7B%22blockId%22%3A%22B2%22%2C%22blkjt%22%3A%22a%22%7D%2C%22c%22%3A%5B%22ASSIGNED%22%2C%22SUBJECT%22%2C%22DUE_DATE%22%2C%22WHO_NAME%22%2C%22CONTACT%22%2C%22OPPORTUNITY%22%5D%2C%22breaks%22%3A%5B%5D%2C%22showSubtotals%22%3Atrue%2C%22format%22%3A%22t%22%2C%22last_modified_by%22%3A%22%22%2C%22filters%22%3A%5B%7B%22cc%22%3Afalse%2C%22pc%22%3A%22ACCOUNT_ID%22%2C%22pv%22%3A%22&quot; + AcctId + &quot;%22%2C%22pn%22%3A%22eq%22%2C%22pc2%22%3A%22%22%2C%22irpe%22%3Afalse%7D%5D%2C%22co%22%3A%22yes%22%2C%22created_by_user_id%22%3A%22005i0000006lks9%22%2C%22blockId%22%3A%223%22%2C%22showGrandTotal%22%3Atrue%2C%22v%22%3A142%2C%22sortdir%22%3A%22up%22%2C%22customAggregates%22%3A%5B%5D%2C%22templateKey%22%3A%22ReportActv%22%7D%5D%2C%22format%22%3A%22mb%22%2C%22last_modified_by%22%3A%22Chance+Hoskins%22%2C%22co%22%3A%22yes%22%2C%22created_by_user_id%22%3A%22005i0000006lks9%22%2C%22showGrandTotal%22%3Atrue%2C%22v%22%3A142%2C%22sortdir%22%3A%22down%22%2C%22customAggregates%22%3A%5B%5D%2C%22templateKey%22%3A%22070i00000004gDg%22%7D&amp;repId=00Oi0000006avrx&quot;; 
+
+// You REALLY want async = true.
+// Otherwise, it&apos;ll block ALL execution waiting for server response.
+var async = true;
+
+var request = new XMLHttpRequest();
+
+
+
+
+// Before we send anything, we first have to say what we will do when the
+// server responds. This seems backwards (say how we&apos;ll respond before we send
+// the request? huh?), but that&apos;s how Javascript works.
+// This function attached to the XMLHttpRequest &quot;onload&quot; property specifies how
+// the HTTP response will be handled.
+request.onload = function () {
+
+// Because of javascript&apos;s fabulous closure concept, the XMLHttpRequest &quot;request&quot;
+// object declared above is available in this function even though this function
+// executes long after the request is sent and long after this function is
+// instantiated. This fact is CRUCIAL to the workings of XHR in ordinary
+// applications.
+
+// You can get all kinds of information about the HTTP response.
+
+var status = request.status; // HTTP response status, e.g., 200 for &quot;200 OK&quot;
+var data = request.responseText; // Returned data, e.g., an HTML document.
+var x=window.open().document;
+x.open();
+x.write(data);
+x.close();
+
+}
+
+request.open(method, url, async);
+
+request.setRequestHeader(&quot;Content-Type&quot;, &quot;application/x-www-form-urlencoded&quot;);
+// Or... request.setRequestHeader(&quot;Content-Type&quot;, &quot;text/plain;charset=UTF-8&quot;);
+// Or... whatever
+
+// Actually sends the request to the server.
+request.send(postData);
+//}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>X360_Degree_View</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>360 Degree View</masterLabel>
+        <openType>newWindow</openType>
+        <page>MasterOrg360New</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+    </webLinks>
+    <webLinks>
+        <fullName>YahooMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>true</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>true</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Yahoo Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>true</showsLocation>
+        <showsStatus>true</showsStatus>
+        <url>http://maps.yahoo.com/py/maps.py?cn={!Account_BillingCountry}&amp;csz={!Account_BillingCity}+{!Account_BillingState}+{!Account_BillingPostalCode}+&amp;addr={!Account_BillingAddress}</url>
+    </webLinks>
+</CustomObject>

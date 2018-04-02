@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Invention</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Inventions</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Inventions (Account) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Mark the invention as closed and start closeout steps. --></help>
+        <label><!-- Close Invention --></label>
+        <name>Close_Invention__c</name>
+    </fields>
+    <fields>
+        <help><!-- What are the reasons this invention is being closed out? --></help>
+        <label><!-- Closeout Comments --></label>
+        <name>Closeout_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Confidential Summary --></label>
+        <name>Confidential_Summary__c</name>
+    </fields>
+    <fields>
+        <help><!-- Auto-updated field --></help>
+        <label><!-- Days Since Disclosure --></label>
+        <name>Days_Since_Disclosure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disclosure Execution Date --></label>
+        <name>Disclosure_Execution_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Closeout results --></help>
+        <label><!-- Disposition --></label>
+        <name>Disposition__c</name>
+    </fields>
+    <fields>
+        <label><!-- Division --></label>
+        <name>Division__c</name>
+        <relationshipLabel><!-- Inventions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- EIR Number --></label>
+        <name>EIR_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Assessment Comments --></label>
+        <name>External_Assessment_Comments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please designate if this invention will need to be assessed by an external party. --></help>
+        <label><!-- External Assessment Required? --></label>
+        <name>External_Assessment_Required__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- External Assessment Score --></label>
+        <name>External_Assessment_Score__c</name>
+    </fields>
+    <fields>
+        <help><!-- An Account must be linked if the Lead Institution is marked as &quot;External&quot; --></help>
+        <label><!-- External Lead Institution --></label>
+        <name>External_Lead_Institution__c</name>
+        <relationshipLabel><!-- Lead Institution Inventions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Earliest file date of all non-provisional IP related to this invention. --></help>
+        <label><!-- First Non-Provisional Patent App Date --></label>
+        <name>First_Non_Provisional_Patent_App_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Earliest file date of all provisional IP related to this invention. --></help>
+        <label><!-- First Provisional Patent App File Date --></label>
+        <name>First_Provisional_Patent_App_File_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Pulled automatically from the Public Disclosure Date. --></help>
+        <label><!-- First Publication, Sale, or Public Use --></label>
+        <name>First_Publication_Sale_or_Public_Use__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fiscal Year --></label>
+        <name>Fiscal_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Funding Grant or Contact Number --></label>
+        <name>Funding_Grant_or_Contact_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- First date any information was given to the Licensing Officer. --></help>
+        <label><!-- Initial Contact Date --></label>
+        <name>Initial_Contact_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is rich text and may be formatted --></help>
+        <label><!-- Internal Assessment Comments --></label>
+        <name>Internal_Assessment_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internal Assessment Score --></label>
+        <name>Internal_Assessment_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invention Contact --></label>
+        <name>Invention_Contact__c</name>
+        <relationshipLabel><!-- Inventions (Invention Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter in only numbers, the dashes will be automatically added --></help>
+        <label><!-- Invention Report Number (EIR) --></label>
+        <name>Invention_Report_Number_EIR__c</name>
+    </fields>
+    <fields>
+        <help><!-- Comments that help explain the status of the invention --></help>
+        <label><!-- Invention Status Comments --></label>
+        <name>Invention_Status_Comments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Short description of the invention --></help>
+        <label><!-- Invention Title --></label>
+        <name>Invention_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inventor Listing --></label>
+        <name>Inventor_Listing__c</name>
+    </fields>
+    <fields>
+        <help><!-- External ID to Peoplesoft for accounting purposes --></help>
+        <label><!-- KU Financial Account --></label>
+        <name>KU_Financial_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Institution --></label>
+        <name>Lead_Institution__c</name>
+        <picklistValues>
+            <masterLabel>External</masterLabel>
+            <translation><!-- External --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KU Center for Research, Inc. (KUCR)</masterLabel>
+            <translation><!-- KU Center for Research, Inc. (KUCR) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KU Center for Technology Commercialization, Inc. (KUCTC)</masterLabel>
+            <translation><!-- KU Center for Technology Commercialization, Inc. (KUCTC) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KU School of Medicine-Wichita (KUSMW)</masterLabel>
+            <translation><!-- KU School of Medicine-Wichita (KUSMW) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kansas University Endowment Association (KUEA)</masterLabel>
+            <translation><!-- Kansas University Endowment Association (KUEA) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>The University of Kansas (KU)</masterLabel>
+            <translation><!-- The University of Kansas (KU) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>The University of Kansas Medical Center (KU)</masterLabel>
+            <translation><!-- The University of Kansas Medical Center (KU) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>The University of Kansas Medical Center Research Institute, Inc. (KUMCRI)</masterLabel>
+            <translation><!-- The University of Kansas Medical Center Research Institute, Inc. (KUMCRI) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Lead Inventor --></label>
+        <name>Lead_Inventor__c</name>
+        <relationshipLabel><!-- Primary Inventions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- KUIC Licensing Associate coordinating with the inventors for this invention --></help>
+        <label><!-- Licensing Associate --></label>
+        <name>Licensing_Associate__c</name>
+        <relationshipLabel><!-- Inventions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Select the Campus with primary responsibility for this invention. --></help>
+        <label><!-- Location --></label>
+        <name>Location__c</name>
+        <picklistValues>
+            <masterLabel>Lawrence</masterLabel>
+            <translation><!-- Lawrence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Center</masterLabel>
+            <translation><!-- Medical Center --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Material Type --></label>
+        <name>Material_Type__c</name>
+        <picklistValues>
+            <masterLabel>Antibody</masterLabel>
+            <translation><!-- Antibody --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cell Line</masterLabel>
+            <translation><!-- Cell Line --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mouse Model</masterLabel>
+            <translation><!-- Mouse Model --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Automatically filled by the fields &quot;Waive to Account&quot; or &quot;Waive to Individual&quot;.
+Waiving to an Account takes priority over an individual. --></help>
+        <label><!-- Name of Third Party - Title Waived --></label>
+        <name>Name_of_Third_Party_Title_Waived__c</name>
+    </fields>
+    <fields>
+        <help><!-- If you would like to add more detail to the Waive Reason. --></help>
+        <label><!-- Not Elect Title Other Reason --></label>
+        <name>Not_Elect_Title_Other_Reason__c</name>
+    </fields>
+    <fields>
+        <help><!-- Waive Reason --></help>
+        <label><!-- Not Elect Title Reason --></label>
+        <name>Not_Elect_Title_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Low commercial potential</masterLabel>
+            <translation><!-- Low commercial potential --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-patentable (not novel)</masterLabel>
+            <translation><!-- Non-patentable (not novel) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-patentable (not useful)</masterLabel>
+            <translation><!-- Non-patentable (not useful) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-patentable (obvious)</masterLabel>
+            <translation><!-- Non-patentable (obvious) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Comments are required if an invention is on hold. --></help>
+        <label><!-- On Hold Comments --></label>
+        <name>On_Hold_Comments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Mark the invention as being on hold, which will change the status to &quot;Hold&quot; until this box is unchecked. --></help>
+        <label><!-- On Hold --></label>
+        <name>On_Hold__c</name>
+    </fields>
+    <fields>
+        <help><!-- General comments regarding the invention --></help>
+        <label><!-- Other Comments --></label>
+        <name>Other_Comments__c</name>
+    </fields>
+    <fields>
+        <help><!-- EIR number of the parent Invention --></help>
+        <label><!-- Parent Invention Report Number --></label>
+        <name>Parent_Invention_Report_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Auto-updated field --></help>
+        <label><!-- Patent Bar Date --></label>
+        <name>Patent_Bar_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Agency --></label>
+        <name>Primary_Agency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact --></label>
+        <name>Primary_Contact__c</name>
+        <relationshipLabel><!-- Inventions (Primary Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Primary Technology Class --></label>
+        <name>Primary_Technology_Class__c</name>
+    </fields>
+    <fields>
+        <help><!-- Some comment is required. --></help>
+        <label><!-- Prior Art Search Comments --></label>
+        <name>Prior_Art_Search_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prior Art Search Completed Date --></label>
+        <name>Prior_Art_Search_Completed_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is internal to KU only! This text box is rich text and therefore may be formatted. --></help>
+        <label><!-- Private Abstract --></label>
+        <name>Private_Abstract__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is rich text, so you may format the text inside. --></help>
+        <label><!-- Public Abstract --></label>
+        <name>Public_Abstract__c</name>
+    </fields>
+    <fields>
+        <label><!-- Public Disclosure Comments --></label>
+        <name>Public_Disclosure_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Public Disclosure Date --></label>
+        <name>Public_Disclosure_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Marks the invention status as Marketing. --></help>
+        <label><!-- Ready for Market --></label>
+        <name>Ready_for_Market__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Agreement Type --></label>
+        <name>Related_Agreement_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- iEdison title extension request in years --></help>
+        <label><!-- Request Title Extension Years --></label>
+        <name>Request_Title_Extension_Years__c</name>
+        <picklistValues>
+            <masterLabel>1 Year</masterLabel>
+            <translation><!-- 1 Year --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 Years</masterLabel>
+            <translation><!-- 2 Years --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Small Business Innovation Research --></help>
+        <label><!-- SBIR Funding --></label>
+        <name>SBIR_Funding__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Technology Class --></label>
+        <name>Secondary_Technology_Class__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- Checking this box will limit visibility of this invention to others. --></help>
+        <label><!-- Subject to Export Control --></label>
+        <name>Subject_to_Export_Control__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicate what title has been elected for Invention through iEdison --></help>
+        <label><!-- Title Elected --></label>
+        <name>Title_Elected__c</name>
+        <picklistValues>
+            <masterLabel>Elect Title</masterLabel>
+            <translation><!-- Elect Title --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Licensed as an Unpatented Biological Material or Research Tool</masterLabel>
+            <translation><!-- Licensed as an Unpatented Biological Material or Research Tool --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Elect Title - Waive to Inventor</masterLabel>
+            <translation><!-- Not Elect Title - Waive to Inventor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Elect Title - Waive to Third Party</masterLabel>
+            <translation><!-- Not Elect Title - Waive to Third Party --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Elect Title - Waiver to Government</masterLabel>
+            <translation><!-- Not Elect Title - Waiver to Government --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under Evaluation</masterLabel>
+            <translation><!-- Under Evaluation --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Title Election Date --></label>
+        <name>Title_Election_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Track Code Counter --></label>
+        <name>Track_Code_Counter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Waive to Account --></label>
+        <name>Waive_to_Account__c</name>
+        <relationshipLabel><!-- Inventions Waived to Account --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Waive to Individual --></label>
+        <name>Waive_to_Individual__c</name>
+        <relationshipLabel><!-- Inventions Waived to Individual --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Waiver Date --></label>
+        <name>Waiver_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Something to differentiate the different inventions in the anticipated status. This will not be the final title. --></help>
+        <label><!-- Working Title --></label>
+        <name>Working_Title__c</name>
+    </fields>
+    <fields>
+        <help><!-- Grantee / Contractor Organization
+Automatically filled in by Location. --></help>
+        <label><!-- iEdison Account Number --></label>
+        <name>iEdison_Account_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- If all linked IP have been submitted to iEdison, this will be checked.
+If this is unchecked, then there are IP that are not updated with iEdison. --></help>
+        <label><!-- iEdison All IP Updated --></label>
+        <name>iEdison_All_IP_Updated__c</name>
+    </fields>
+    <fields>
+        <label><!-- iEdison Docket Number --></label>
+        <name>iEdison_Docket_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- iEdison Reporting comment --></help>
+        <label><!-- Explanatory Notes --></label>
+        <name>iEdison_Explanatory_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date KUIC submitted information to iEdison --></help>
+        <label><!-- iEdison Initial Entry Date --></label>
+        <name>iEdison_Initial_Entry_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Pulled automatically from the Disclosure Execution date. --></help>
+        <label><!-- Invention Report Date --></label>
+        <name>iEdison_Invention_Report_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Request One Year Extension to File Initial Patent Application --></help>
+        <label><!-- Request One Year Extension to File --></label>
+        <name>iEdison_One_Year_Extension_Request__c</name>
+    </fields>
+    <fields>
+        <label><!-- iEdison Reporting Required --></label>
+        <name>iEdison_Reporting_Required__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicate what title has been elected for Invention through iEdison --></help>
+        <label><!-- iEdison Status --></label>
+        <name>iEdison_Status__c</name>
+        <picklistValues>
+            <masterLabel>Elect Title</masterLabel>
+            <translation><!-- Elect Title --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Licensed as an Unpatented Biological Material or Research Tool</masterLabel>
+            <translation><!-- Licensed as an Unpatented Biological Material or Research Tool --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Elect Title - Waive to Inventor</masterLabel>
+            <translation><!-- Not Elect Title - Waive to Inventor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Elect Title - Waive to Third Party</masterLabel>
+            <translation><!-- Not Elect Title - Waive to Third Party --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Elect Title - Waiver to Government</masterLabel>
+            <translation><!-- Not Elect Title - Waiver to Government --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under Evaluation</masterLabel>
+            <translation><!-- Under Evaluation --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Anticipated</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Copyright Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Disclosure Information --></label>
+            <section>Disclosure Information</section>
+        </sections>
+        <sections>
+            <label><!-- Evaluation --></label>
+            <section>Evaluation</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Exception Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Disclosure Information --></label>
+            <section>Disclosure Information</section>
+        </sections>
+        <sections>
+            <label><!-- Evaluation --></label>
+            <section>Evaluation</section>
+        </sections>
+        <sections>
+            <label><!-- iEdison --></label>
+            <section>iEdison</section>
+        </sections>
+        <sections>
+            <label><!-- iEdison Extension --></label>
+            <section>iEdison Extension</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Federally Funded Invention</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Development Only --></label>
+            <section>Development Only</section>
+        </sections>
+        <sections>
+            <label><!-- Disclosure Information --></label>
+            <section>Disclosure Information</section>
+        </sections>
+        <sections>
+            <label><!-- Evaluation --></label>
+            <section>Evaluation</section>
+        </sections>
+        <sections>
+            <label><!-- Status --></label>
+            <section>Status</section>
+        </sections>
+        <sections>
+            <label><!-- iEdison --></label>
+            <section>iEdison</section>
+        </sections>
+        <sections>
+            <label><!-- iEdison Title --></label>
+            <section>iEdison Title</section>
+        </sections>
+        <sections>
+            <label><!-- iEdison Title Waive Information --></label>
+            <section>iEdison Title Waive Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Invention Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Disclosure Information --></label>
+            <section>Disclosure Information</section>
+        </sections>
+        <sections>
+            <label><!-- Evaluation --></label>
+            <section>Evaluation</section>
+        </sections>
+        <sections>
+            <label><!-- iEdison --></label>
+            <section>iEdison</section>
+        </sections>
+        <sections>
+            <label><!-- iEdison Extension --></label>
+            <section>iEdison Extension</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Non Federally Funded Invention</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Disclosure Information --></label>
+            <section>Disclosure Information</section>
+        </sections>
+        <sections>
+            <label><!-- Evaluation --></label>
+            <section>Evaluation</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Copyright --></label>
+        <name>Copyright</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Exception --></label>
+        <name>Exception</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Invention - Federally Funded --></label>
+        <name>Invention_Federally_Funded</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Invention - Not Federally Funded --></label>
+        <name>Invention_Not_Federally_Funded</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Closeout Comments are required if you mark the invention as closed --></errorMessage>
+        <name>Closeout_Comments</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A disposition must be selected to close out an invention --></errorMessage>
+        <name>Closeout_Disposition</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Disclosure Execution Date is required before the invention can be marked as Ready for Market. --></errorMessage>
+        <name>Disclosure_before_Market_Ready</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please be sure to format the Invention Report Number (EIR) correctly. The format is XXXXXXX-XX-XXXX, all numbers. --></errorMessage>
+        <name>EIR_Format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If the invention has been submitted to iEdison, it should have an Invention Report Number (EIR).
+Please enter that value. --></errorMessage>
+        <name>EIR_Number</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please designate whether an external assessment is required. --></errorMessage>
+        <name>External_Assessment_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please be sure to record the External Assessment Score. --></errorMessage>
+        <name>External_Assessment_Score</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If the Lead Institution is external, please define that institution in the External Lead Institution field. --></errorMessage>
+        <name>External_Lead_Institution_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- An invention must first be disclosed to KU before it can be reported to iEdison. --></errorMessage>
+        <name>Initial_iEdison_Entry_Rq_Disclosure_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please be sure to record the internal assessment score. --></errorMessage>
+        <name>Internal_Assessment_Score</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A comment is required in the field &quot;On Hold Comments&quot; since the invention is marked as &quot;On Hold&quot; --></errorMessage>
+        <name>On_Hold_Comments</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Inventions cannot be placed On Hold until they have a Disclosure Execution Date. Please either uncheck On Hold or fill in the Disclosure Execution Date. --></errorMessage>
+        <name>On_Hold_Disclosure_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please be sure to complete the Prior Art Search before this invention is moved to Market Status. --></errorMessage>
+        <name>Prior_Art_Search_Before_Market</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please be sure to leave some comments in the Prior Art Search Comment box. --></errorMessage>
+        <name>Prior_Art_Search_Comments</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please choose a waive reason. --></errorMessage>
+        <name>Waive_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Not Elect Title Other Reason is blank.
+Please give a reason in the comment field. --></errorMessage>
+        <name>Waive_Reason_Other_Comment</name>
+    </validationRules>
+</CustomObjectTranslation>

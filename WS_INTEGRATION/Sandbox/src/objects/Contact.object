@@ -1,0 +1,2481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddToCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableCustomerPortal</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnablePartnerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableSelfService</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Merge</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewContact</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Contact_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewCustomerPortal</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewPartnerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewSelfService</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>Contacts</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Contacts</fullName>
+        <fields>Name</fields>
+        <fields>Title</fields>
+        <fields>AccountId</fields>
+        <fields>Phone</fields>
+        <fields>MobilePhone</fields>
+        <fields>Email</fields>
+        <fields>OwnerId</fields>
+        <fields>RecordTypeId</fields>
+        <label>Contacts</label>
+    </compactLayouts>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <fields>
+        <fullName>AB_Aerospace_Engineering__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Is the Contact on Aerospace Engineering Advisory Board?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Is the Contact on Aerospace Engineering Advisory Board?</inlineHelpText>
+        <label>AB-Aerospace Engineering</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>AB_Bioengineering__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Is the Contact on Bioengineering Advisory Board?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Is the Contact on Bioengineering Advisory Board?</inlineHelpText>
+        <label>AB-Bioengineering</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>AB_CLAS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Is the Contact on CLAS Advisory Board?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Is the Contact on CLAS Advisory Board?</inlineHelpText>
+        <label>AB-CLAS</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>AB_Chemical_Petroleum_Engineering__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Is the Contact on Chemical &amp; Petroleum Engineering Advisory Board?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Is the Contact on Chemical &amp; Petroleum Engineering Advisory Board?</inlineHelpText>
+        <label>AB-Chemical &amp; Petroleum Engineering</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>AB_Civil_Environmental_Arch_Engg__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Is the Contact On Civil, Environmental &amp; Architectural Engineering Advisory Board?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Is the Contact On Civil, Environmental &amp; Architectural Engineering Advisory Board?</inlineHelpText>
+        <label>AB-Civil, Environmental &amp; Arch. Engg.</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>AB_ElectricalEngg_ComputerScience__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Is the Contact On Electrical Engineering &amp; Computer Science Advisory Board?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Is the Contact On Electrical Engineering &amp; Computer Science Advisory Board?</inlineHelpText>
+        <label>AB-ElectricalEngg. &amp; ComputerScience</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>AB_Geology__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Is the Contact on Geology Advisory Board?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Is the Contact on Geology Advisory Board?</inlineHelpText>
+        <label>AB-Geology</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>AB_KUCTC__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Is the Contact on KUIC Advisory Board?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Is the Contact on KUIC Advisory Board?</inlineHelpText>
+        <label>AB-KUIC</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>AB_Mechanical_Engineering__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Is the Contact On Mechanical Engineering Advisory Board?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Is the Contact On Mechanical Engineering Advisory Board?</inlineHelpText>
+        <label>AB-Mechanical Engineering</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>AB_Pharmacy__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Is the Contact on the Pharmacy Advisory Board?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Is the Contact on the Pharmacy Advisory Board?</inlineHelpText>
+        <label>AB-Pharmacy</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>AB_School_of_Business__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Is the Contact On School of Business Advisory Board?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Is the Contact On School of Business Advisory Board?</inlineHelpText>
+        <label>AB-School of Business</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>AB_School_of_Education__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Is the Contact on School of Education Advisory Board?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Is the Contact on School of Education Advisory Board?</inlineHelpText>
+        <label>AB-School of Education</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Account_Name_Search__c</fullName>
+        <description>Text field that allows for search of contacts by account name. Filled in by the analytics process. Not to be added to page layout.</description>
+        <externalId>false</externalId>
+        <label>Account Name Search</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Address_Line_1__c</fullName>
+        <description>Contacts&apos; Address for communication - Line 1</description>
+        <externalId>false</externalId>
+        <label>Address Line 1</label>
+        <length>300</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Address_Line_2__c</fullName>
+        <description>Contact Communication Address Line 2</description>
+        <externalId>false</externalId>
+        <label>Address Line 2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Advisory_Boards__c</fullName>
+        <description>This field tracks any advisory boards that this contact may be a member of.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Press Ctrl to select more than one board.</inlineHelpText>
+        <label>Advisory Boards</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Aerospace Engineering</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bioengineering</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Chemical &amp; Petroleum Engineering</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Civil, Environmental &amp; Arch Engg</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>College of Liberal Arts &amp; Sciences</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Electrical Engg &amp; Computer Sciences</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Geology</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>KU Innovation &amp; Collaboration</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mechanical Engineering</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pharmacy</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>School of Business - Accounting and IS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>School of Business - Career Services</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>School of Business - Finance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>School of Business - Management</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>School of Business - Marketing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>School of Business - MBA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>School of Business - Supply Chain</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>School of Education</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>School of Business</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>School of Engineering</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Engineering Career Services</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Edwards Campus Board of Advisors</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Edwards Campus Workforce Advisory Board</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>MultiselectPicklist</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Alternate_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Alternate Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AssistantName</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>AssistantPhone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Birthdate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Case_Insensitive_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Id)</formula>
+        <label>Case Insensitive ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>City__c</fullName>
+        <description>Contact Address City</description>
+        <externalId>false</externalId>
+        <label>City</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Count__c</fullName>
+        <defaultValue>1</defaultValue>
+        <externalId>false</externalId>
+        <label>Contact Count</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Owner__c</fullName>
+        <description>Shows the primary ownership of the contact. This is defined by the DB hierarchy. Formula field within SF.</description>
+        <externalId>false</externalId>
+        <formula>IF( Corporate_Partnership_Ownership__c =TRUE, &quot;Corporate Partnerships&quot;,
+IF(  Licensing_Contact__c = TRUE, &quot;Licensing&quot;, 
+IF( NOT ( ISBLANK( XID_Peoplesoft__c ) ), &quot;Research&quot;,
+IF( NOT ( ISBLANK( XID_Advance__c ) ), &quot;Endowment&quot;,
+IF( NOT ( ISBLANK( XID_Wellspring__c ) ), &quot;Tech Transfer&quot;,
+IF( NOT ( ISBLANK( XID_Symplicity__c ) ), &quot;Career Services&quot;,
+IF( NOT ( ISBLANK( XID_Reggie__c ) ), &quot;Continuing Education&quot;,
+&quot;Not Defined&quot;)))))))</formula>
+        <inlineHelpText>Shows the primary ownership of the contact. This is defined by KUIC.</inlineHelpText>
+        <label>Contact Owner</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Services__c</fullName>
+        <description>Services for getting in touch with the Contact</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Services for getting in touch with the Contact</inlineHelpText>
+        <label>Contact Services</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Careerfair</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Contact Mentee</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Information Sessions</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Job Postings</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>On-Campus Recruiting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Professional Network</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Profile</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Profile Viewable Contact</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Resume Book</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Contact_Source_KU_Division__c</fullName>
+        <description>The KU Division that the data is received from</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The KU Division that the data is received from</inlineHelpText>
+        <label>Contact Owners</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Career Services</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Center for Research</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Continuing Education</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Corporate Partnerships</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Endowment</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Technology Transfer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>N/A</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Admin</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <visibleLines>7</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Contact_Source_System_ID__c</fullName>
+        <description>Unique ID from the source system where the Contact originated from</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Unique ID from the source system where the Contact originated from</inlineHelpText>
+        <label>Contact Source System ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Source_System__c</fullName>
+        <description>Source System From Where The Contact Was Imported</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Source System From Where The Contact Was Imported</inlineHelpText>
+        <label>Contact Source System</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Corporate Partnerships</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sophia</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Advance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Peoplesoft</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Symplicity</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Reggie</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Contact_Type_Banner__c</fullName>
+        <description>Formula that displays a small banner on the page that correlates to the type of contact it is.</description>
+        <externalId>false</externalId>
+        <formula>IF(  RecordTypeId = &apos;012i00000015Qwk&apos;, IMAGE(&quot;/servlet/servlet.FileDownload?file=015i0000009lgzE&quot;,&quot;Internal&quot;, 50, 300),IF (  Account.Corporate_Partnership_Ownership__c  = TRUE, IMAGE(&quot;/servlet/servlet.FileDownload?file=015i0000009lho2&quot;, &quot;Partner&quot;, 50, 300), &apos;External Contact&apos;))</formula>
+        <label>Contact Type Banner</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Corporate_Partnership_Ownership__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used to denote ownership by Corporate Partnership. This field is manually maintained by KUIC. This field defines update hierarchy in the integration.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This contact is maintained by Corporate Partnership, and updates from other databases will not change the data on this contact.</inlineHelpText>
+        <label>Corporate Partnership Ownership</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Country__c</fullName>
+        <description>Contact Address Country</description>
+        <externalId>false</externalId>
+        <label>Country</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CustomID__c</fullName>
+        <description>Custom ID created to track all KU Contacts.</description>
+        <externalId>true</externalId>
+        <label>CustomID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Department</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Department_Chair__c</fullName>
+        <externalId>false</externalId>
+        <label>Department Chair</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Department_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Department Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>DoNotCall</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Email</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Endowment_Last_Contacted_Date__c</fullName>
+        <description>When was the last interaction on Endowment  with thisContact</description>
+        <externalId>false</externalId>
+        <inlineHelpText>When was the last interaction on Endowment  with thisContact</inlineHelpText>
+        <label>Endowment Last Contacted Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Event_Invitations__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This box will be checked by users to show whether this contact should get invitations to local events held at KU.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Should this contact receive invites to events held here at KU?</inlineHelpText>
+        <label>Event Invitations</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>External_Electronic_Communications__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Communications about KUIC, KU, or other mass mailing emails.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Communications about KUIC, KU, or other mass mailing emails.</inlineHelpText>
+        <label>External Electronic Communications</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Fax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>HasOptedOutOfEmail</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>HasOptedOutOfFax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>HomePhone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Hubspot_Track_Code__c</fullName>
+        <description>Track code for Hubspot.com. The related list for Hubspot intelligence will work with or without this information.</description>
+        <externalId>false</externalId>
+        <label>Hubspot Track Code</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Is_KU_Alumnus__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used to indicate that the Contact is an Alumnus</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please select the Checkbox to indicate that this Contact is a KU alumnus</inlineHelpText>
+        <label>Is KU Alumnus?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_Key_Leadership_Alumni__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Checked If the Contact is an Alumnus who is in a Key/Leadership Position at the Company</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Checked If the Contact is an Alumnus who is in a Key/Leadership Position at the Company</inlineHelpText>
+        <label>Is Key/Leadership Alumnus?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Jigsaw</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>KU_Relationship__c</fullName>
+        <description>Picklist defining the role this person has within KU. Dependent upon the KU Affiliations field.</description>
+        <externalId>false</externalId>
+        <label>KU Relationship</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Faculty</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Staff</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Student</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Alumni</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>External Not-for-Profit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>External Company</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>LastCURequestDate</fullName>
+    </fields>
+    <fields>
+        <fullName>LastCUUpdateDate</fullName>
+    </fields>
+    <fields>
+        <fullName>LeadSource</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Data.com</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Existing Partnership</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>External Referral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Seminar</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tremonti</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pardot</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Inventor Referral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IN_PART</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Partner Referral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Lead_Source_System__c</fullName>
+        <description>Where the contact originated when it was a lead. Usually filled in by data.com or HubSpot.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Where the contact originated when it was a lead. Usually filled in by data.com or HubSpot.</inlineHelpText>
+        <label>Lead Source System</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Data.com</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Existing Partnership</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>External Referral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pardot</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Seminar</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SFDC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tremonti</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Length_Relationship_In_Contact_Level__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+AND( 
+ISNULL( Endowment_Last_Contacted_Date__c  ), 
+ISNULL( Source_System_Created_Date__c ), 
+ISNULL( Source_System_Last_Modified_Date__c )
+), 
+0, 
+MAX( 
+IF(ISNULL( Endowment_Last_Contacted_Date__c ),0,TODAY() - Endowment_Last_Contacted_Date__c ), 
+IF(ISNULL( Source_System_Created_Date__c ),0,TODAY() - Source_System_Created_Date__c ), 
+IF(ISNULL( Source_System_Last_Modified_Date__c ),0,TODAY() - Source_System_Last_Modified_Date__c ) 
+))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Length Relationship In Contact Level</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Licensing_Contact__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Runs from a process, used to determine contact owner.</description>
+        <externalId>false</externalId>
+        <label>Licensing Contact</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MACleanCity__c</fullName>
+        <externalId>false</externalId>
+        <label>Clean City (MapAnything)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MACleanCountry__c</fullName>
+        <externalId>false</externalId>
+        <label>Clean Country (MapAnything)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MACleanCounty__c</fullName>
+        <externalId>false</externalId>
+        <label>Clean County (MapAnything)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MACleanDistrict__c</fullName>
+        <externalId>false</externalId>
+        <label>Clean District (MapAnything)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MACleanPostalCode__c</fullName>
+        <externalId>false</externalId>
+        <label>Clean Postal Code (MapAnything)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MACleanState__c</fullName>
+        <externalId>false</externalId>
+        <label>Clean State (MapAnything)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MACleanStreet__c</fullName>
+        <externalId>false</externalId>
+        <label>Clean Street (MapAnything)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MALatitude__c</fullName>
+        <externalId>false</externalId>
+        <label>Latitude (MapAnything)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>15</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MALongitude__c</fullName>
+        <externalId>false</externalId>
+        <label>Longitude (MapAnything)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>15</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MAQuality__c</fullName>
+        <externalId>false</externalId>
+        <label>Quality (MapAnything)</label>
+        <precision>7</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>MASimilarity__c</fullName>
+        <externalId>false</externalId>
+        <label>Similarity (MapAnything)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MASkipGeocoding__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Skip Geocoding (MapAnything)</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MAVerifiedLatitude__c</fullName>
+        <externalId>false</externalId>
+        <label>Verified Latitude (MapAnything)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>15</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MAVerifiedLongitude__c</fullName>
+        <externalId>false</externalId>
+        <label>Verified Longitude (MapAnything)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>15</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MailingAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>MobilePhone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Nametag_Department__c</fullName>
+        <description>Allows contacts to create a text field to display their department or company to be displayed on nametags for events</description>
+        <externalId>false</externalId>
+        <label>Nametag Department</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>National_Communication__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This box will be checked by users to show whether this contact should get marketing information at the national level.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Should this contact receive marketing material at the national level?</inlineHelpText>
+        <label>National Communication</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>OtherAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OtherPhone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>RU_KUCTC_Count__c</fullName>
+        <description>This field is set as 1 if the Contact is selected to be on the KUCTC Board &quot;AB-KUCTC&quot;</description>
+        <externalId>false</externalId>
+        <formula>IF(AND(AB_KUCTC__c=True, RecordType.Name= &apos;External Contacts&apos;),1,0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This field is set as 1 if the Contact is selected to be on the KUCTC Board &quot;AB-KUCTC&quot;</inlineHelpText>
+        <label>RU KUCTC Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RU_Key_Alumni_Count__c</fullName>
+        <description>This is set to 1 if Is Key/Leadership Alumni? is Checked</description>
+        <externalId>false</externalId>
+        <formula>IF((Is_Key_Leadership_Alumni__c=True),1,0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This is set to 1 if Is Key/Leadership Alumni? is Checked</inlineHelpText>
+        <label>RU Key Alumni Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RU_Main_Count_Contact__c</fullName>
+        <defaultValue>1</defaultValue>
+        <description>Used by Rollup Helper to calculate the Total number of Contacts</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used by Rollup Helper to calculate the Total number of Contacts</inlineHelpText>
+        <label>RU Main Count Contact</label>
+        <precision>1</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Regional_Communication__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This box will be checked by users to show whether this contact should get marketing information at the regional level.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Should this contact get marketing communication at the regional level?</inlineHelpText>
+        <label>Regional Communication</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ReportsToId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Research_to_Patent__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Designates this person to be invited to R2P events</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Should this person be invited to R2P events?</inlineHelpText>
+        <label>Research to Patent</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SIC_Code__c</fullName>
+        <description>Information filled in by Data.com. Pulled from the lead information.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Information filled in by Data.com. Pulled from the lead information.</inlineHelpText>
+        <label>SIC Code</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SIC_Description__c</fullName>
+        <description>Information filled in from Data.com.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Information filled in from Data.com.</inlineHelpText>
+        <label>SIC Description</label>
+        <length>750</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Source_System_Created_Date__c</fullName>
+        <description>Date the record was created in the corresponding source system</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date the record was created in the corresponding source system</inlineHelpText>
+        <label>Source System Created Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Source_System_Is_Deleted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Indicates if this contact has been deleted from the Source System.</description>
+        <externalId>false</externalId>
+        <label>Source System Is Deleted</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Source_System_Last_Modified_Date__c</fullName>
+        <description>Date when the source system record was last modified in the source system</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date when the source system record was last modified in the source system</inlineHelpText>
+        <label>Source System Last Modified Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Startup_Showcase__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This person is designated to be invited to the startup showcase events</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Should this person be invited to Startup Showcase events?</inlineHelpText>
+        <label>Startup Showcase</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>State_Province__c</fullName>
+        <description>Contact Address State/Province</description>
+        <externalId>false</externalId>
+        <label>State/Province</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Symplicity_Create_Date__c</fullName>
+        <description>Date the record was created in Symplicity, the system of record for Career Services. This field is filled in by the integration and is not editable.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date the record was created in Symplicity, the system of record for Career Services.</inlineHelpText>
+        <label>Symplicity Create Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Symplicity_Last_Modified_Date__c</fullName>
+        <description>Date the record was last modified in Symplicity, the system of record for Career Services. This field is filled in by the integration and is not editable.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date the record was last modified in Symplicity, the system of record for Career Services</inlineHelpText>
+        <label>Symplicity Last Modified Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Tech_Tuesday__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Marks the contact as someone to be invited to Tech Tuesdays</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Invite this person to Tech Tuesday events?</inlineHelpText>
+        <label>Tech Tuesday</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Title</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>UseSalesforce</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Wellspring_Create_Date__c</fullName>
+        <description>Date the record was created in Wellspring/Sophia, the system of record for Tech Transfer. This field is filled in by the integration and is not editable.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date the record was created in Wellspring/Sophia, the system of record for Tech Transfer.</inlineHelpText>
+        <label>Wellspring Create Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Wellspring_Last_Modified_Date__c</fullName>
+        <description>Date the record was last modified in Wellspring/Sophia, the system of record for Tech Transfer. This field is filled in by the integration and is not editable.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date the record was last modified in Wellspring/Sophia, the system of record for Tech Transfer.</inlineHelpText>
+        <label>Wellspring Last Modified Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>XID_Advance__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <description>Used to store the unique identified used to match records with the Endowment system, Advance</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Advance External ID</inlineHelpText>
+        <label>XID Advance</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>XID_Peoplesoft__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <description>Used to store the Unique Identifier used to match this record with Center for Research data, Peoplesoft. This data is sensitive and not visible to anyone but the admin.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Peoplesoft External ID. This data is sensitive and not visible to anyone but the admin.</inlineHelpText>
+        <label>XID Peoplesoft</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>XID_Reggie__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <description>Used to store the unique identifier from the Continuing Education system, Reggie</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Reggie External ID</inlineHelpText>
+        <label>XID Reggie</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>XID_Symplicity__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <description>Used to store the unique identified used to match records with the Career Services system, Symplicity.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Career Services External ID</inlineHelpText>
+        <label>XID Symplicity</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>XID_Wellspring__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <description>Used to store the unique identifier used to match records with the Technology Transfer system, Wellspring/Sophia</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Wellspring/Sophia External ID</inlineHelpText>
+        <label>XID Wellspring</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Zip__c</fullName>
+        <description>Contact Address Zip Code</description>
+        <externalId>false</externalId>
+        <label>Zip</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>All_Contacts</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CONTACT.TITLE</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Contact_Owner__c</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>CONTACT.LAST_ACTIVITY</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Contacts</label>
+    </listViews>
+    <listViews>
+        <fullName>Corporate_Partnership</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CONTACT.TITLE</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>Alternate_Email__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Contact_Owner__c</field>
+            <operation>equals</operation>
+            <value>Corporate Partnerships</value>
+        </filters>
+        <label>Corporate Partnership</label>
+    </listViews>
+    <listViews>
+        <fullName>Corporate_Partnership_Communication</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.TITLE</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>CORE.USERS.LAST_NAME</columns>
+        <columns>Regional_Communication__c</columns>
+        <columns>National_Communication__c</columns>
+        <columns>Event_Invitations__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Corporate_Partnership_Ownership__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Corporate Partnership Communication</label>
+    </listViews>
+    <listViews>
+        <fullName>External_Contacts</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CONTACT.TITLE</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>Alternate_Email__c</columns>
+        <columns>Contact_Owner__c</columns>
+        <columns>CONTACT.LAST_ACTIVITY</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CONTACT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Contact.External_Contacts</value>
+        </filters>
+        <label>External Contacts</label>
+    </listViews>
+    <listViews>
+        <fullName>KU_Contacts</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CONTACT.TITLE</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>Alternate_Email__c</columns>
+        <columns>Contact_Owner__c</columns>
+        <columns>CONTACT.LAST_ACTIVITY</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CONTACT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Contact.KU_Contacts</value>
+        </filters>
+        <label>KU Contacts</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Contact_Communications</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CONTACT.TITLE</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>CONTACT.ADDRESS2_STATE</columns>
+        <columns>National_Communication__c</columns>
+        <columns>Regional_Communication__c</columns>
+        <columns>External_Electronic_Communications__c</columns>
+        <columns>Event_Invitations__c</columns>
+        <columns>Tech_Tuesday__c</columns>
+        <columns>Startup_Showcase__c</columns>
+        <columns>Research_to_Patent__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>CONTACT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Contact.External_Contacts</value>
+        </filters>
+        <label>My Contact Communications</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Contacts</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CONTACT.TITLE</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>Contact_Owner__c</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Contacts</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Pending_Contacts</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.TITLE</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>Contact_Owner__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>ACCOUNT.ACCOUNT_ID</field>
+            <operation>equals</operation>
+            <value>001i000001sHPLb</value>
+        </filters>
+        <filters>
+            <field>CONTACT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Contact.External_Contacts</value>
+        </filters>
+        <filters>
+            <field>CONTACT.EMAIL</field>
+            <operation>notContain</operation>
+            <value>.edu</value>
+        </filters>
+        <label>My Pending Contacts</label>
+    </listViews>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>true</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>External_Contacts</fullName>
+        <active>true</active>
+        <description>All Non-KU Contacts</description>
+        <label>External Contacts</label>
+        <picklistValues>
+            <picklist>Advisory_Boards__c</picklist>
+            <values>
+                <fullName>Aerospace Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bioengineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemical %26 Petroleum Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Civil%2C Environmental %26 Arch Engg</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>College of Liberal Arts %26 Sciences</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Edwards Campus Board of Advisors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Edwards Campus Workforce Advisory Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electrical Engg %26 Computer Sciences</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engineering Career Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Geology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KU Innovation %26 Collaboration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mechanical Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pharmacy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>School of Business - Accounting and IS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>School of Business - Career Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>School of Business - Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>School of Business - MBA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>School of Business - Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>School of Business - Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>School of Business - Supply Chain</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>School of Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>School of Engineering</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contact_Services__c</picklist>
+            <values>
+                <fullName>Careerfair</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Mentee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Information Sessions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Job Postings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On-Campus Recruiting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Professional Network</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Profile</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Profile Viewable Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resume Book</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contact_Source_KU_Division__c</picklist>
+            <values>
+                <fullName>Admin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Career Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Center for Research</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Continuing Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Partnerships</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Endowment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>N%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technology Transfer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contact_Source_System__c</picklist>
+            <values>
+                <fullName>Advance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Partnerships</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Peoplesoft</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reggie</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sophia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Symplicity</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>KU_Relationship__c</picklist>
+            <values>
+                <fullName>Alumni</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Company</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Not-for-Profit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Faculty</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Staff</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Student</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>Data%2Ecom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing Partnership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IN_PART</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pardot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tremonti</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Lead_Source_System__c</picklist>
+            <values>
+                <fullName>Data%2Ecom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing Partnership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pardot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SFDC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tremonti</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Name</picklist>
+            <values>
+                <fullName>Dr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mrs%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ms%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prof%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>KU_Contacts</fullName>
+        <active>true</active>
+        <description>Used to track KU Employees</description>
+        <label>KU Contacts</label>
+        <picklistValues>
+            <picklist>Advisory_Boards__c</picklist>
+            <values>
+                <fullName>Aerospace Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bioengineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemical %26 Petroleum Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Civil%2C Environmental %26 Arch Engg</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>College of Liberal Arts %26 Sciences</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Edwards Campus Board of Advisors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Edwards Campus Workforce Advisory Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electrical Engg %26 Computer Sciences</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engineering Career Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Geology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KU Innovation %26 Collaboration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mechanical Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pharmacy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>School of Business - Accounting and IS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>School of Business - Career Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>School of Business - Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>School of Business - MBA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>School of Business - Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>School of Business - Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>School of Business - Supply Chain</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>School of Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>School of Engineering</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contact_Services__c</picklist>
+            <values>
+                <fullName>Careerfair</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Mentee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Information Sessions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Job Postings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On-Campus Recruiting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Professional Network</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Profile</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Profile Viewable Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resume Book</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contact_Source_KU_Division__c</picklist>
+            <values>
+                <fullName>Admin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Career Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Center for Research</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Continuing Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Partnerships</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Endowment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>N%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technology Transfer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contact_Source_System__c</picklist>
+            <values>
+                <fullName>Advance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Partnerships</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Peoplesoft</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reggie</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sophia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Symplicity</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>KU_Relationship__c</picklist>
+            <values>
+                <fullName>Alumni</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Faculty</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Staff</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Student</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>Pardot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tremonti</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Lead_Source_System__c</picklist>
+            <values>
+                <fullName>Data%2Ecom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing Partnership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pardot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SFDC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tremonti</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Name</picklist>
+            <values>
+                <fullName>Dr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mrs%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ms%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prof%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>FULL_NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTACT.TITLE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTACT.EMAIL</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTACT.PHONE1</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Contact_Owner__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Is_KU_Alumnus__c</customTabListAdditionalFields>
+        <listViewButtons>Total_Contacts_in_Hierarchy</listViewButtons>
+        <lookupDialogsAdditionalFields>FULL_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CONTACT.TITLE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CONTACT.PHONE1</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CONTACT.EMAIL</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Contact_Owner__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Is_KU_Alumnus__c</lookupDialogsAdditionalFields>
+        <lookupFilterFields>FULL_NAME</lookupFilterFields>
+        <lookupFilterFields>CONTACT.TITLE</lookupFilterFields>
+        <lookupFilterFields>ACCOUNT.NAME</lookupFilterFields>
+        <lookupFilterFields>CONTACT.PHONE1</lookupFilterFields>
+        <lookupFilterFields>CONTACT.EMAIL</lookupFilterFields>
+        <lookupFilterFields>Contact_Owner__c</lookupFilterFields>
+        <lookupFilterFields>Is_KU_Alumnus__c</lookupFilterFields>
+        <lookupPhoneDialogsAdditionalFields>FULL_NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.TITLE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE1</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.EMAIL</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Contact_Owner__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Is_KU_Alumnus__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>CONTACT.FIRST_NAME</searchFilterFields>
+        <searchFilterFields>CONTACT.LAST_NAME</searchFilterFields>
+        <searchFilterFields>CONTACT.TITLE</searchFilterFields>
+        <searchFilterFields>ACCOUNT.NAME</searchFilterFields>
+        <searchFilterFields>CONTACT.PHONE1</searchFilterFields>
+        <searchFilterFields>CONTACT.EMAIL</searchFilterFields>
+        <searchFilterFields>Contact_Owner__c</searchFilterFields>
+        <searchFilterFields>Is_KU_Alumnus__c</searchFilterFields>
+        <searchResultsAdditionalFields>FULL_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.TITLE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.PHONE1</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.EMAIL</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Contact_Owner__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Is_KU_Alumnus__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Either_SourceOrg_OR_MasterOrg_Mandatory</fullName>
+        <active>false</active>
+        <description>A Contact must have a related source Organization or Master Organization</description>
+        <errorConditionFormula>AND(ISBLANK(Contact_Source_Organization__c),ISBLANK(AccountId))</errorConditionFormula>
+        <errorMessage>Please make sure that the Contact has a related Source Organization or Master Organization</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>GoogleMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://maps.google.com/maps?f=q&amp;hl=en&amp;q={!Contact_MailingStreet}+{!Contact_MailingCity}+{!Contact_MailingState}&amp;om=1</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleSearch</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Search</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/search?q={!Contact_FirstName} {!Contact_LastName}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>MA_MapIt_a0Gi000000MFjhMEAT</fullName>
+        <availability>online</availability>
+        <description>Maps this Contact with selected tooltips</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Map It</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/apex/sma__mapanything?recordId={!Contact.Id}&amp;baseObjectId=a0Gi000000MFjhMEAT&amp;tooltipField=Name&amp;tooltipField2=Title&amp;tooltipField3=Phone&amp;tooltipField4=Email&amp;color=%2366FF00</url>
+    </webLinks>
+    <webLinks>
+        <fullName>SendGmail</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Send Gmail</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://mail.google.com/mail?view=cm&amp;tf=0&amp;to={!Contact_Email}&lt;{!Contact_LastName}, {!Contact_FirstName}&gt;&amp;tf=1</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Total_Contacts_in_Hierarchy</fullName>
+        <availability>online</availability>
+        <description>Shows all the contacts in the account hierarchy. Uses the Grandparent Account ID field.</description>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Total Contacts in Hierarchy</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/00Oi0000006auftEAA?pv0={! Account.Grandparent_Account_ID__c }</url>
+    </webLinks>
+    <webLinks>
+        <fullName>YahooMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>true</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>true</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Yahoo! Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>true</showsLocation>
+        <showsStatus>true</showsStatus>
+        <url>http://maps.yahoo.com/py/maps.py?cn={!Contact_MailingCountry}&amp;csz={!Contact_MailingCity}+{!Contact_MailingState}+{!Contact_MailingPostalCode}+&amp;addr={!Contact_MailingAddress}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>YahooWeather</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Yahoo! Weather</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://weather.yahoo.com/search/weather2?p={!Contact_MailingPostalCode}</url>
+    </webLinks>
+</CustomObject>

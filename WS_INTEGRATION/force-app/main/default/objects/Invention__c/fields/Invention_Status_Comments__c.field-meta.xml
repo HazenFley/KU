@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Invention_Status_Comments__c</fullName>
+    <description>Comments that help explain the status of the invention</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Comments that help explain the status of the invention</inlineHelpText>
+    <label>Invention Status Comments</label>
+    <length>32000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

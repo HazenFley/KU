@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Invention_Federally_Funded</fullName>
+    <active>true</active>
+    <label>Invention - Federally Funded</label>
+    <picklistValues>
+        <picklist>Campus__c</picklist>
+        <values>
+            <fullName>Kansas City Medical Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lawrence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wichita</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Disposition__c</picklist>
+        <values>
+            <fullName>Abandoned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assigned to 3rd Party</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Released To Inventor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waived To Government</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Lead_Institution__c</picklist>
+        <values>
+            <fullName>External</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KU Center for Research%2C Inc%2E %28KUCR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KU Center for Technology Commercialization%2C Inc%2E %28KUCTC%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KU School of Medicine-Wichita %28KUSMW%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kansas University Endowment Association %28KUEA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The University of Kansas %28KU%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The University of Kansas Medical Center %28KU%29%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The University of Kansas Medical Center Research Institute%2C Inc%2E %28KUMCRI%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Location__c</picklist>
+        <values>
+            <fullName>Lawrence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical Center</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Material_Type__c</picklist>
+        <values>
+            <fullName>Antibody</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cell Line</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mouse Model</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Primary_Technology_Class__c</picklist>
+        <values>
+            <fullName>Biotechnology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Creative-works</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diagnostics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drug-delivery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy-environment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Materials</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical-devices</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research-tools</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Software</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Therapeutics</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Secondary_Technology_Class__c</picklist>
+        <values>
+            <fullName>Biotechnology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Creative-works</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diagnostics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drug-delivery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy-environment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Materials</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical-devices</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research-tools</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Software</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Therapeutics</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Title_Elected__c</picklist>
+        <values>
+            <fullName>Elect Title</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Licensed as an Unpatented Biological Material or Research Tool</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Elect Title - Waive to Inventor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Elect Title - Waive to Third Party</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Elect Title - Waiver to Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Under Evaluation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

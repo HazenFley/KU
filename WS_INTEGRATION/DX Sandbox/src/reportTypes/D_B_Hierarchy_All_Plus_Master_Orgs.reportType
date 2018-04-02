@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject></baseObject>
+    <category>other</category>
+    <deployed>true</deployed>
+    <description>Show the entire hierarchy of D&amp;B Accounts in the System, and show the associated Master Orgs</description>
+    <label>D&amp;B Hierarchy - All Plus Master Orgs</label>
+    <sections>
+        <masterLabel>D&amp;B Companies</masterLabel>
+    </sections>
+    <sections>
+        <masterLabel>Accounts</masterLabel>
+    </sections>
+</ReportType>

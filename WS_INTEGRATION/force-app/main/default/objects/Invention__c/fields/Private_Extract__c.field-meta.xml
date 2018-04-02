@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Private_Extract__c</fullName>
+    <description>This is internal to KU only!</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is internal to KU only! This text box is rich text and therefore may be formatted.</inlineHelpText>
+    <label>Private Extract</label>
+    <length>100000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

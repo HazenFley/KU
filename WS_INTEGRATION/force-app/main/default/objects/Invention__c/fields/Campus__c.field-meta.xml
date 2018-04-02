@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campus__c</fullName>
+    <description>Defines the Letter on the end of the Track Code</description>
+    <externalId>false</externalId>
+    <label>Campus</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Campus</valueSetName>
+    </valueSet>
+</CustomField>

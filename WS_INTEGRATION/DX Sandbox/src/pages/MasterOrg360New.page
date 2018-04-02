@@ -1,0 +1,620 @@
+<apex:page standardController="Account" sidebar="fasle" showheader="false" renderas="pdf" applyhtmltag="false" >
+<html>
+<head>
+ <style type="text/css">
+@page{size:A4 ; margin: 0mm 5mm 15mm 5mm;
+@bottom-left {width:46%; font-align:right; font-family: Trajan Unicode MS; font-size:13px; color:#0022B4; font-weight:bold;content: "Office of Corporate Partnerships"}
+@bottom-center{width:54%; font-align:left; font-family: Trajan Unicode MS; font-size:13px; color:#0022B4; content:"University of Kansas, 2385 Irving Hill Road, Lawrence, KS 66045     Phone 785.864.9004"}}
+.page-break {display:block; page-break-after:always;}
+body {font-family: Trajan Unicode MS;number-format:}
+.title { font-size:26px; font-weight:bold; color:#0022B4;}
+.contact{font-size:18px; font-weight:bold; color:#0022B4;}
+.contactreg {font-size:17px; font-weight:bold; color:#808080;}
+.subtitle {font-size:20px; font-weight:bold; color:#808080; }
+.section {font-size:20px; font-weight:bold; color:#FFFFFF; background-color:#1589FF;}
+.subsection {font-size: 18px; font-weight:bold; color:#000000; background-color:#A9D0F;}
+.boldText { font-size:16px; font-weight:bold; color:#2E2E2E;}
+.regText { font-size:16px; color:#2E2E2E;}
+.blank_row { height: 10px !important; background-color: #FFFFFF;}
+.blank_rowsmall { height: 4px !important; background-color: #FFFFFF;}
+</style>
+</head>
+
+<body>
+<table width="100%">
+
+<tr>
+ <td width="65%" align="left" class="title" valign="top" colspan="2">
+  <apex:outputText >{!account.name}</apex:outputText>
+ </td>
+ <td width="35%" align="right" class="title" valign="top" colspan="2">
+  <apex:image id="KULogo" value="{!$Resource.KUICLogo}" width="144" height="30"/>
+ </td>
+</tr>
+
+<tr width="100%">
+ <td width="100%" align="left" class="contact" valign="top">
+  <apex:outputText >KU Division Generating Report: {!$UserRole.Name}</apex:outputText>
+ </td>
+</tr>
+
+<tr>
+ <td width="100%" align="left" class="subtitle" valign="top">
+  <apex:outputText value="{0,date,MM.dd.yyyy}">
+   <apex:param value="{!TODAY()}" /> 
+   </apex:outputText>
+ </td>
+</tr>
+</table>
+
+<table>
+<tr width="100%">
+<td width="100%">
+ 
+  <table width="49.5%" align="left" >
+  <tr>
+  <td align="center" class="section" colspan="4">
+  <apex:outputText >KU Relationship</apex:outputText>
+  </td>
+  </tr>
+  
+  <tr class="blank_rowsmall">
+  <td width = "20%"></td>
+  </tr>
+    
+  <tr width="49.5%"> 
+  <td align="left" class="subsection" colspan="4">
+  <apex:outputText >Snapshot</apex:outputText>
+  </td>
+  </tr>
+ 
+  <tr class="blank_rowsmall">
+  <td width = "20%"></td>
+  </tr>
+  
+  <tr>
+  <td align="left" width="24.75%" class="boldText" colspan="2">
+  <apex:outputText >Relationship Since</apex:outputText>
+  </td>
+  <td align="left" width="24.75%" class="regText" colspan="2">
+  <apex:outputtext >{!Year(Account.Earliest_Record_Date__c)}</apex:outputtext>
+  </td>
+  </tr>
+  
+  <tr class="blank_rowsmall">
+  <td width = "20%"></td>
+  </tr>
+
+  <tr>
+  <td align="left" width="24.75%" class="boldText" colspan="2">
+  <apex:outputText >Confidential Disclosure Agreements</apex:outputText>
+  </td>
+  <td align="left" width="24.75%" class="regText" colspan="2">
+  <apex:outputText >{!IF(ISBLANK(Account.T_T_Confidential_Disclosure_Agreements__c)||Account.T_T_Confidential_Disclosure_Agreements__c=0,"None",FLOOR(Account.T_T_Confidential_Disclosure_Agreements__c))}</apex:outputText>
+  </td>
+  </tr>
+
+  <tr class="blank_rowsmall">
+  <td width = "20%"></td>
+  </tr>
+
+  <tr>
+  <td align="left" width="24.75%" class="boldText" colspan="2">
+  <apex:outputText >Endowment Gifts</apex:outputText>
+  </td>
+  <td align="left" width="24.75%" class="regText" colspan="2">
+  <apex:outputText value="${0, number, ###,###,###,###,###,###}"><apex:param value="{!FLOOR(Account.Endowment_Gifts_Total_Value__c)}"/></apex:outputText>
+  </td>
+  </tr>
+  
+  <tr class="blank_rowsmall">
+  <td width = "20%"></td>
+  </tr>
+  
+  <tr>
+  <td align="left" width="24.75%" class="boldText" colspan="2">
+  <apex:outputText >Sponsored Research Projects</apex:outputText>
+  </td>
+  <td align="left" width="24.75%" class="regText" colspan="2">
+  <apex:outputText >{!IF(ISNULL(Account.Sponsored_Research_Projects__c),"None",FLOOR(Account.Sponsored_Research_Projects__c))}</apex:outputText>
+  </td>
+  </tr>
+  
+  <tr class="blank_rowsmall">
+  <td width = "20%"></td>
+  </tr>
+  
+  <tr>
+  <td align="left" width="24.75%" class="boldText" colspan="2">
+  <apex:outputText >Sponsored Research    Value</apex:outputText>
+  </td>
+  <td align="left" width="24.75%" class="regText" colspan="2">
+  <apex:outputText value="${0, number, ###,###,###,###,###,###}"><apex:param value="{!FLOOR(Account.Sponsored_Research_Value__c)}"/></apex:outputText>
+  </td>
+  </tr>
+  
+  <tr class="blank_rowsmall">
+  <td width = "20%"></td>
+  </tr>
+  
+    <tr>
+  <td align="left" width="24.75%" class="boldText" colspan="2">
+  <apex:outputText >Research Affiliate</apex:outputText>
+  </td>
+  <td align="left" width="24.75%" class="regText" colspan="2">
+  <apex:outputText >{!IF(ISBLANK(Account.Research_Affiliate__c)||Account.Research_Affiliate__c=0,"None",FLOOR(Account.Tech_Transfer_Total_Agreements__c))}</apex:outputText>
+  </td>
+  </tr>
+  
+  <tr class="blank_rowsmall">
+  <td width = "20%"></td>
+  </tr>
+
+  <tr>
+  <td align="left" width="24.75%" class="boldText" colspan="2">
+  <apex:outputText >Fee for Service</apex:outputText>
+  </td>
+  <td align="left" width="24.75%" class="regText" colspan="2">
+  <apex:outputText value="${0, number, ###,###,###,###,###,###}"><apex:param value="{!FLOOR(Account.Budgeted_Fee_for_Service__c)}"/></apex:outputText>
+  </td>
+  </tr>
+
+  <tr class="blank_rowsmall">
+  <td width = "20%"></td>
+  </tr>
+ 
+  <tr>
+  <td align="left" width="24.75%" class="boldText" colspan="2">
+  <apex:outputText >License Agreements</apex:outputText>
+  </td>
+  <td align="left" width="24.75%" class="regText" colspan="2">
+  <apex:outputText >{!IF(ISBLANK(Account.Tech_Transfer_Total_Licenses__c)||Account.Tech_Transfer_Total_Licenses__c=0,"None",FLOOR(Account.Tech_Transfer_Total_Licenses__c))}</apex:outputText>
+  </td>
+  </tr>
+ 
+  <tr class="blank_rowsmall">
+  <td width = "20%"></td>
+  </tr>
+  
+  <tr>
+  <td align="left" width="24.75%" class="boldText" colspan="2">
+  <apex:outputText >Outbound Material Transfer Agreements</apex:outputText>
+  </td>
+  <td align="left" width="24.75%" class="regText" colspan="2">
+  <apex:outputText >{!IF(ISBLANK(Account.T_T_Material_Transfer_Outbound_Agreement__c)||Account.T_T_Material_Transfer_Outbound_Agreement__c=0,"None",FLOOR(Account.T_T_Material_Transfer_Outbound_Agreement__c))}</apex:outputText>
+  </td>
+  </tr>
+  
+  <tr class="blank_rowsmall">
+  <td width = "20%"></td>
+  </tr>
+  
+  <tr>
+  <td align="left" width="24.75%" class="boldText" colspan="2">
+  <apex:outputText >Capstone Sponsorships</apex:outputText>
+  </td>
+  <td align="left" width="24.75%" class="regText" colspan="2">
+  <apex:outputText >{!IF(ISBLANK(Account.Tech_Transfer_Capstone_Sponsorships__c)||Account.Tech_Transfer_Capstone_Sponsorships__c=0,"None",FLOOR(Account.Tech_Transfer_Capstone_Sponsorships__c))}</apex:outputText>
+  </td>
+  </tr>
+ 
+  <tr class="blank_rowsmall">
+  <td width = "20%"></td>
+  </tr>
+  
+  <tr>
+  <td align="left" width="24.75%" class="boldText" colspan="2">
+  <apex:outputText >Research Affiliate</apex:outputText>
+  </td>
+  <td align="left" width="24.75%" class="regText" colspan="2">
+  <apex:outputText >{!IF(Account.Research_Affiliate__c>0,"Yes","No")}</apex:outputText>
+  </td>
+  </tr>
+  
+  <tr class="blank_rowsmall">
+  <td width = "20%"></td>
+  </tr>
+  
+  <tr>
+  <td align="left" width="24.75%" class="boldText" colspan="2">
+  <apex:outputText >Master Service Agreement</apex:outputText>
+  </td>
+  <td align="left" width="24.75%" class="regText" colspan="2">
+  <apex:outputText >{!IF(Account.Master_Service_Agreement__c>0,"Yes","No")}</apex:outputText>
+  </td>
+  </tr>
+  
+  <tr class="blank_rowsmall">
+  <td width = "20%"></td>
+  </tr>
+  
+  <tr>
+  <td align="left" width="24.75%" class="boldText" colspan="2">
+  <apex:outputText >Master Research    Agreement</apex:outputText>
+  </td>
+  <td align="left" width="24.75%" class="regText" colspan="2">
+  <apex:outputText >{!IF(Account.Master_Research_Agreement__c>0,"Yes","No")}</apex:outputText>
+  </td>
+  </tr>
+ 
+  <tr class="blank_rowsmall">
+  <td width = "20%"></td>
+  </tr>
+  
+  <tr>
+  <td align="left" width="24.75%" class="boldText" colspan="2">
+  <apex:outputText >Career Fairs</apex:outputText>
+  </td>
+  <td align="left" width="24.75%" class="regText" colspan="2">
+  <apex:outputText >{!IF(ISBLANK(Account.Career_Fairs__c),"None",FLOOR(Account.Career_Fairs__c))}</apex:outputText>
+  </td>
+  </tr>
+  
+  <tr class="blank_rowsmall">
+  <td width = "20%"></td>
+  </tr>
+  
+  <tr class="blank_rowsmall">
+  <td width = "20%"></td>
+  </tr>
+  
+  <tr>
+  <td align="left" width="24.75%" class="boldText" colspan="2">
+  <apex:outputText >Alumni</apex:outputText>
+  </td>
+  <td align="left" width="24.75%" class="regText" colspan="2">
+  <apex:outputText >{!IF(ISBLANK(FLOOR(Account.Alumni__c)),"None",FLOOR(Account.Alumni__c))}</apex:outputText>
+  </td>
+  </tr>
+  
+  <tr class="blank_rowsmall">
+  <td width = "20%"></td>
+  </tr>
+    
+  <tr>
+  <td align="left" width="24.75%" class="boldText" colspan="2">
+  <apex:outputText >Key Alumni</apex:outputText>
+  </td>
+  <td align="left" width="24.75%" class="regText" colspan="2">
+  <apex:outputText >{!IF(ISBLANK(FLOOR(Account.Key_Alumni__c)),"None",FLOOR(Account.Key_Alumni__c))}</apex:outputText>
+  </td>
+  </tr>
+  
+  <tr class="blank_rowsmall">
+  <td width = "20%"></td>
+  </tr>
+    
+  <tr>
+  <td align="left" width="24.75%" class="boldText" colspan="2">
+  <apex:outputText >Cont Ed Contacts</apex:outputText>
+  </td>
+  <td align="left" width="24.75%" class="regText" colspan="2">
+  <apex:outputText >{!FLOOR(Account.Continuing_Education_Contacts__c)}</apex:outputText>
+  </td>
+  </tr>
+  
+  <tr class="blank_rowsmall">
+  <td width = "20%"></td>
+  </tr>
+    
+  <tr>
+  <td align="left" width="24.75%" class="boldText" colspan="2">
+  <apex:outputText >Cont Ed Classes</apex:outputText>
+  </td>
+  <td align="left" width="24.75%" class="regText" colspan="2">
+  <apex:outputText >{!FLOOR(Account.Continuing_Education_Classes__c)}</apex:outputText>
+  </td>
+  </tr>
+     
+  <tr class="blank_rowsmall">
+  <td width = "20%"></td>
+  </tr>
+    
+  <tr>
+  <td align="left" width="24.75%" class="boldText" colspan="2">
+  <apex:outputText >Contacts</apex:outputText>
+  </td>
+  <td align="left" width="24.75%" class="regText" colspan="2">
+  <apex:outputText >{!FLOOR(Account.Total_Contact__c)}</apex:outputText>
+  </td>
+  </tr>
+  
+  <tr class="blank_rowsmall">
+  <td width = "20%"></td>
+  </tr>
+      
+  <tr>
+  <td align="left" width="24.75%" class="boldText" colspan="2">
+  <apex:outputText >Engagements</apex:outputText>
+  </td>
+  <td align="left" width="24.75%" class="regText" colspan="2">
+  <apex:outputText >{!FLOOR(Account.Total_Number_Of_Engagements__c)}</apex:outputText>
+  </td>
+  </tr>
+
+  <tr class="blank_rowsmall">
+  <td width = "20%"></td>
+  </tr>
+
+  <tr>
+  <td align="left" width="24.75%" class="boldText" colspan="2">
+  <apex:outputText >Opportunities</apex:outputText>
+  </td>
+  <td align="left" width="24.75%" class="regText" colspan="2">
+  <apex:outputText >{!FLOOR(Account.Total_Opportunities__c)}</apex:outputText>
+  </td>
+  </tr>
+
+  <tr class="blank_rowsmall">
+  <td width = "20%"></td>
+  </tr>
+
+  <tr> 
+  <td align="center" class="section" colspan="4">
+  <apex:outputText >Company Research Focus Areas</apex:outputText>
+  </td>
+  </tr>
+
+  <tr> 
+  <td align="left" class="regText" colspan="4">
+  <apex:panelGrid columns="1" width="100%">
+  <apex:outputText escape="false" value="{!Account.Key_Focus_Areas__c}"> </apex:outputText>
+  </apex:panelGrid>
+  </td>
+  </tr>
+   
+  <tr class="blank_row">
+  <td width = "20%"></td>
+  </tr>
+       
+</table>
+
+<table width="49.5%" align="right" >
+ <tr>
+  <td align="center" class="section" colspan="4">
+  <apex:outputText >Company Opportunity</apex:outputText>
+  </td>
+  </tr>
+  
+  <tr class="blank_rowsmall">
+  <td width = "20%"></td>
+  </tr>
+  
+  <tr> 
+  <td align="left" class="subsection" colspan="4">
+  <apex:outputText >Overview</apex:outputText>
+  </td>
+  </tr>
+  
+  <tr class="blank_rowsmall">
+  <td width = "20%"></td>
+  </tr>
+   
+  <tr>
+  <td align="left" class="boldText" colspan="4">
+  <apex:outputText >Description</apex:outputText>
+  </td>
+  </tr>
+  
+  <tr>
+  <td align="left" class="regText" colspan="4">
+  <apex:outputText escape="false" value="{!Account.Description}"> </apex:outputText>
+  </td>
+  </tr>
+ 
+  <tr class="blank_rowsmall">
+  <td width = "20%"></td>
+  </tr>
+  
+  <tr>
+  <td align="left" class="boldText" colspan="4">
+  <apex:outputText >NAICS Description</apex:outputText>
+  </td>
+  </tr>
+  
+  <tr>
+  <td align="left" class="regText" colspan="4">
+  <apex:outputText escape="false" value="{!Account.NaicsDesc}"> </apex:outputText>
+  </td>
+  </tr>
+ 
+  <tr class="blank_rowsmall">
+  <td width = "20%"></td>
+  </tr>
+  
+  <tr>
+  <td align="left" class="boldText" colspan="2">
+  <apex:outputText >NAICS Code</apex:outputText>
+  </td>
+  <td align="left" class="regText" colspan="2">
+  <apex:outputText >{!Account.NaicsCode}</apex:outputText>
+  </td>
+  </tr>
+ 
+  <tr class="blank_rowsmall">
+  <td width = "20%"></td>
+  </tr>
+
+  <tr>
+  <td align="left" class="boldText" colspan="4">
+  <apex:outputText >SIC Description</apex:outputText>
+  </td>
+  </tr>
+  
+  <tr>
+  <td align="left" class="regText" colspan="4">
+  <apex:outputText escape="false" value="{!Account.SicDesc}"> </apex:outputText>
+  </td>
+  </tr>
+ 
+  <tr class="blank_rowsmall">
+  <td width = "20%"></td>
+  </tr>
+
+  <tr>
+  <td align="left" class="boldText" colspan="2">
+  <apex:outputText >SIC Code</apex:outputText>
+  </td>
+  <td align="left" class="regText" colspan="2">
+  <apex:outputText >{!Account.sic}</apex:outputText>
+  </td>
+  </tr>
+ 
+  <tr class="blank_rowsmall">
+  <td width = "20%"></td>
+  </tr>
+
+  <tr>
+  <td align="left" class="boldText" colspan="2">
+  <apex:outputText >Website</apex:outputText>
+  </td>
+  <td align="left" class="regText" colspan="2">
+  <apex:outputText >{!Account.Website}</apex:outputText>
+  </td>
+  </tr>
+ 
+  <tr class="blank_rowsmall">
+  <td width = "20%"></td>
+  </tr>
+   
+  <tr> 
+  <td align="left" class="boldText" colspan="4">
+  <apex:outputText >Primary Location</apex:outputText>
+  </td>
+  </tr>
+   
+  <tr>
+  <td align="left" class="regText" colspan="4">
+  <apex:panelGrid columns="1" width="100%">
+  <apex:outputText escape="false">{!Account.BillingStreet}</apex:outputText>
+  <apex:outputText escape="false">{!Account.BillingCity} {!Account.BillingState} {!Account.BillingCountry}</apex:outputText>
+  <apex:outputText escape="false"> {!Account.BillingPostalCode}</apex:outputText>
+  </apex:panelGrid>
+  </td>
+  </tr>
+ 
+  <tr class="blank_rowsmall">
+  <td width = "20%"></td>
+  </tr>
+
+  
+  <tr> 
+  <td align="left" class="subsection" colspan="4">
+  <apex:outputText >Performance</apex:outputText>
+  </td>
+  </tr>
+  
+  <tr class="blank_rowsmall">
+  <td width = "20%"></td>
+  </tr>
+  
+  
+   
+  <tr>
+  <td align="left" width="24.5%" class="boldText" colspan="2">
+  <apex:outputText >Annual Revenue</apex:outputText>
+  </td>
+  <td align="left" width="24.5%" class="regText" colspan="2">
+  <apex:outputText value="${0, number, ###,###,###,###,###,###}"><apex:param value="{!FLOOR(Account.AnnualRevenue)}"/></apex:outputText>
+  </td>
+  </tr>
+  
+  <tr class="blank_rowsmall">
+  <td width = "20%"></td>
+  </tr>
+  
+  <tr>
+  <td align="left" width="24.5%" class="boldText" colspan="2">
+  <apex:outputText >Ticker Symbol</apex:outputText>
+  </td>
+  <td align="left" width="24.5%" class="regText" colspan="2">
+  <apex:outputText >{!Account.TickerSymbol}</apex:outputText>
+  </td>
+  </tr>
+  
+  <tr class="blank_rowsmall">
+  <td width = "20%"></td>
+  </tr>
+  
+  <tr>
+  <td align="left" width="24.5%" class="boldText" colspan="2">
+  <apex:outputText >Year Started</apex:outputText>
+  </td>
+  <td align="left" width="24.5%" class="regText" colspan="2">
+  <apex:outputText >{!Account.D_B_Legal_Structure__c}</apex:outputText>
+  </td>
+  </tr>
+  
+  <tr class="blank_rowsmall">
+  <td width = "20%"></td>
+  </tr>
+  
+  <tr>
+  <td align="left" width="24.5%" class="boldText" colspan="2">
+  <apex:outputText >Employees</apex:outputText>
+  </td>
+  <td align="left" width="24.5%" class="regText" colspan="2">
+  <apex:outputText value="{0, number, ###,###,###,###,###,###}"><apex:param value="{!FLOOR(Account.NumberOfEmployees)}"/></apex:outputText>
+  </td>
+  </tr>
+  
+  <tr class="blank_rowsmall">
+  <td width = "20%"></td>
+  </tr>
+  
+  <tr>
+  <td align="left" width="24.5%" class="boldText" colspan="2">
+  <apex:outputText >Ownership</apex:outputText>
+  </td>
+  <td align="left" width="24.5%" class="regText" colspan="2">
+  <apex:outputText >{!Account.D_B_Ownership_Type_Indicator__c}</apex:outputText>
+  </td>
+  </tr>
+  
+  <tr class="blank_rowsmall">
+  <td width = "20%"></td>
+  </tr>
+  
+  <tr>
+  <td align="left" width="24.5%" class="boldText" colspan="2">
+  <apex:outputText >Industry</apex:outputText>
+  </td>
+  <td align="left" width="24.5%" class="regText" colspan="2">
+  <apex:outputText >{!Account.Industry}</apex:outputText>
+  </td>
+  </tr>
+
+  <tr class="blank_rowsmall">
+  <td width = "20%"></td>
+  </tr>
+  
+   <tr class="blank_rows">
+  <td width = "20%"></td>
+  </tr>
+
+  <tr> 
+  <td align="center" class="section" colspan="4">
+  <apex:outputText >Status of Partnership</apex:outputText>
+  </td>
+  </tr>
+
+  <tr> 
+  <td align="left" class="regText" colspan="4">
+  <apex:panelGrid columns="1" width="100%">
+  <apex:outputText escape="false" value="{!Account.Status_Of_Partnership__c}"> </apex:outputText>
+  </apex:panelGrid>
+  </td>
+  </tr>
+
+
+     
+  </table>
+
+</td>
+</tr>
+</table>
+<br></br>
+
+</body>
+</html>
+</apex:page>

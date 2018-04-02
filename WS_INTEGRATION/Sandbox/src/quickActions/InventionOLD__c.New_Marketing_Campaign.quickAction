@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Creates an Invention Campaign automatically</description>
+    <fieldOverrides>
+        <field>IsActive</field>
+        <formula>TRUE</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Marketed_Invention__c</field>
+        <formula>InventionOLD__c.Id</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Name</field>
+        <formula>InventionOLD__c.Name &amp; &apos; - &apos; &amp; LEFT(InventionOLD__c.Invention_Name__c,40)</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>OwnerId</field>
+        <formula>Invention__c.Owner:User.Id</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>StartDate</field>
+        <formula>TODAY()</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Type</field>
+        <literalValue>Marketed Invention</literalValue>
+    </fieldOverrides>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Name</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>IsActive</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>ParentId</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Type</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>StartDate</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>EndDate</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>OwnerId</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns/>
+    </quickActionLayout>
+    <standardLabel>CreateNew</standardLabel>
+    <successMessage>A campaign has been created successfully</successMessage>
+    <targetObject>Campaign</targetObject>
+    <targetParentField>Marketed_Invention__c</targetParentField>
+    <targetRecordType>Campaign.Invention_Campaign</targetRecordType>
+    <type>Create</type>
+</QuickAction>

@@ -1,0 +1,58 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Contact",
+                "referenceId": "ContactRef1"
+            },
+            "FirstName": "Blue",
+            "LastName": "Ranger",
+            "AccountId": "@AccountRef1"
+        },
+        {
+            "attributes": {
+                "type": "Contact",
+                "referenceId": "ContactRef2"
+            },
+            "FirstName": "Pink",
+            "LastName": "Ranger",
+            "AccountId": "@AccountRef1"
+        },
+        {
+            "attributes": {
+                "type": "Contact",
+                "referenceId": "ContactRef3"
+            },
+            "FirstName": "Red",
+            "LastName": "Ranger",
+            "AccountId": "@AccountRef1"
+        },
+        {
+            "attributes": {
+                "type": "Contact",
+                "referenceId": "ContactRef4"
+            },
+            "FirstName": "Green",
+            "LastName": "Ranger",
+            "AccountId": "@AccountRef1"
+        },
+        {
+            "attributes": {
+                "type": "Contact",
+                "referenceId": "ContactRef5"
+            },
+            "FirstName": "Yellow",
+            "LastName": "Ranger",
+            "AccountId": "@AccountRef1"
+        },
+        {
+            "attributes": {
+                "type": "Contact",
+                "referenceId": "ContactRef6"
+            },
+            "FirstName": "Walker, Texas",
+            "LastName": "Ranger",
+            "AccountId": "@AccountRef2"
+        }
+    ]
+}

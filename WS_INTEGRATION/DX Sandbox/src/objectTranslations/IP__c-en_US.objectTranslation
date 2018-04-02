@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>IP</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>IP</value>
+    </caseValues>
+    <layouts>
+        <layout>IP Layout</layout>
+        <sections>
+            <label><!-- Attorney --></label>
+            <section>Attorney</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Development Only --></label>
+            <section>Development Only</section>
+        </sections>
+        <sections>
+            <label><!-- PCT/EPO Detail --></label>
+            <section>PCT/EPO Detail</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Create Child IP --></label>
+        <name>Child_IP</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Create New IP --></label>
+        <name>Continuation</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New IP Prosecution Deadline --></label>
+        <name>Create_IPPD</name>
+    </quickActions>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

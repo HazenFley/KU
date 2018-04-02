@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject></baseObject>
+    <category>other</category>
+    <deployed>false</deployed>
+    <description>D&amp;B Companies With Master &amp; Source Organizations</description>
+    <label>D&amp;B Companies With Master &amp; Source Organizations</label>
+    <sections>
+        <masterLabel>D&amp;B Companies</masterLabel>
+    </sections>
+    <sections>
+        <masterLabel>Accounts</masterLabel>
+    </sections>
+</ReportType>

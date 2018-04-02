@@ -1,0 +1,10 @@
+[
+    {
+        "sobject": "Division__c",
+        "saveRefs": true,
+        "resolveRefs": false,
+        "files": [
+            "Division__cs.json"
+        ]
+    }
+]

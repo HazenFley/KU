@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_93858780</developerName>
+        <masterLabel>Agreement Type</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Interaction__c$Interaction_Type__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Option</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Option - Amendment</sourceValue>
+            </sourceValues>
+            <value>Option</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>License - Exclusive</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>License - Exclusive - Amendment</sourceValue>
+            </sourceValues>
+            <value>License - Exclusive</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>License - Mixed Exclusive</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>License - Mixed Exclusive - Amendment</sourceValue>
+            </sourceValues>
+            <value>License - Mixed Exclusive</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>License - Non-Exclusive</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>License - Non-Exclusive - Amendment</sourceValue>
+            </sourceValues>
+            <value>License - Non-exclusive</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>VerticalColumnGrouped</chartType>
+        <enableHoverLabels>true</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Interaction__c$Execution_Date__c</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_TOP</location>
+        <secondaryGroupingColumn>BucketField_93858780</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Interaction__c$Interaction_Type__c</field>
+    </columns>
+    <columns>
+        <field>Interaction__c$AccountID__c.Name</field>
+    </columns>
+    <columns>
+        <field>Interaction__c$Title__c</field>
+    </columns>
+    <columns>
+        <field>Interaction__c$Description__c</field>
+    </columns>
+    <columns>
+        <field>Interaction__c$Interaction_Source_System_ID__c</field>
+    </columns>
+    <columns>
+        <field>Interaction__c$Agreement_Track_Code__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Interaction__c$Interaction_Type__c</column>
+            <operator>contains</operator>
+            <value>License,Option</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>FiscalQuarter</dateGranularity>
+        <field>Interaction__c$Execution_Date__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_93858780</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Interaction__c$Status__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>License and Option Agreements by FQ</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Engagements__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Interaction__c$Execution_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

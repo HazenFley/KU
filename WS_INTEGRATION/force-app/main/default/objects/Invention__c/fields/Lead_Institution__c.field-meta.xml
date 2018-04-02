@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Institution__c</fullName>
+    <externalId>false</externalId>
+    <label>Lead Institution</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>The University of Kansas (KU)</fullName>
+                <default>false</default>
+                <label>The University of Kansas (KU)</label>
+            </value>
+            <value>
+                <fullName>The University of Kansas Medical Center (KU) </fullName>
+                <default>false</default>
+                <label>The University of Kansas Medical Center (KU) </label>
+            </value>
+            <value>
+                <fullName>The University of Kansas Medical Center Research Institute, Inc. (KUMCRI)</fullName>
+                <default>false</default>
+                <label>The University of Kansas Medical Center Research Institute, Inc. (KUMCRI)</label>
+            </value>
+            <value>
+                <fullName>KU Center for Technology Commercialization, Inc. (KUCTC)</fullName>
+                <default>false</default>
+                <label>KU Center for Technology Commercialization, Inc. (KUCTC)</label>
+            </value>
+            <value>
+                <fullName>KU School of Medicine-Wichita (KUSMW)</fullName>
+                <default>false</default>
+                <label>KU School of Medicine-Wichita (KUSMW)</label>
+            </value>
+            <value>
+                <fullName>Kansas University Endowment Association (KUEA)</fullName>
+                <default>false</default>
+                <label>Kansas University Endowment Association (KUEA)</label>
+            </value>
+            <value>
+                <fullName>KU Center for Research, Inc. (KUCR)</fullName>
+                <default>false</default>
+                <label>KU Center for Research, Inc. (KUCR)</label>
+            </value>
+            <value>
+                <fullName>External</fullName>
+                <default>false</default>
+                <label>External</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,1048 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Publicly disclosed inventions from KU</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <label>Invention</label>
+    <nameField>
+        <label>Invention Track Code</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Inventions</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>Campus__c</fullName>
+        <description>Defines the Letter on the end of the Track Code</description>
+        <externalId>false</externalId>
+        <label>Campus</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Campus</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Closeout_Comments__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What are the reasons this invention is being closed out?</inlineHelpText>
+        <label>Closeout Comments</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Close_Invention__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Mark the invention as closed and start closeout steps.</inlineHelpText>
+        <label>Close Invention</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Comments__c</fullName>
+        <description>General comments regarding the invention</description>
+        <externalId>false</externalId>
+        <inlineHelpText>General comments regarding the invention</inlineHelpText>
+        <label>Comments</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Confidential_Summary__c</fullName>
+        <externalId>false</externalId>
+        <label>Confidential Summary</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Date_Elected_Title_Waived__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Elected Title/Waived</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Days_Since_Disclosure__c</fullName>
+        <description>Total number of days since receipt of disclosure.</description>
+        <externalId>false</externalId>
+        <formula>TODAY() -  KU_Disclosure_Date__c</formula>
+        <inlineHelpText>Auto-updated field</inlineHelpText>
+        <label>Days Since Disclosure</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Deleted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Invention records should not be deleted. Instead, they are marked as deleted with this checkbox.</description>
+        <externalId>false</externalId>
+        <label>Deleted</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Disclosure_Execution_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Disclosure Execution Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Disposition__c</fullName>
+        <description>Closeout results</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Closeout results</inlineHelpText>
+        <label>Disposition</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Disposition</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>EIR_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>EIR Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>External_Assessment_Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>External Assessment Comments</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>External_Assessment_Score__c</fullName>
+        <externalId>false</externalId>
+        <label>External Assessment Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>External_Lead_Institution__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>An Account must be linked if the Lead Institution is marked as "External"</description>
+        <externalId>false</externalId>
+        <inlineHelpText>An Account must be linked if the Lead Institution is marked as "External"</inlineHelpText>
+        <label>External Lead Institution</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Lead Institution Inventions</relationshipLabel>
+        <relationshipName>Inventions1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Federal_Funding_Used__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Federal Funding Used</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Fiscal_Year__c</fullName>
+        <description>Auto generated value from Apex Invention Class</description>
+        <externalId>false</externalId>
+        <label>Fiscal Year</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Funding_Grant_or_Contact_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Funding Grant or Contact Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>iEdison_Notified_of_Intent_to_Abandon__c</fullName>
+        <description>Date</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date iEdison was notified</inlineHelpText>
+        <label>iEdison Notified of Intent to Abandon</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>iEdison_Reporting_Comment__c</fullName>
+        <externalId>false</externalId>
+        <label>iEdison Reporting Comment</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>iEdison_Reporting_Required__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>iEdison Reporting Required</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Initial_Contact_Date__c</fullName>
+        <defaultValue>TODAY()</defaultValue>
+        <description>Used in Anticipated Disclosures.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>First date any information was given to the Licensing Officer.</inlineHelpText>
+        <label>Initial Contact Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Internal_Assessment_Comments__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is rich text and may be formatted</inlineHelpText>
+        <label>Internal Assessment Comments</label>
+        <length>100000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Internal_Assessment_Score__c</fullName>
+        <externalId>false</externalId>
+        <label>Internal Assessment Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Invention_Status_Comments__c</fullName>
+        <description>Comments that help explain the status of the invention</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Comments that help explain the status of the invention</inlineHelpText>
+        <label>Invention Status Comments</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Invention_Title__c</fullName>
+        <description>Short description of the invention</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Short description of the invention</inlineHelpText>
+        <label>Invention Title</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Inventor_Listing__c</fullName>
+        <description>Listing of all inventors separated by a semicolon. Filled in automatically through code.</description>
+        <externalId>false</externalId>
+        <label>Inventor Listing</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>KU_Disclosure_Date__c</fullName>
+        <defaultValue>TODAY()</defaultValue>
+        <description>Date the invention was disclosed to KU</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date the invention was disclosed to KU</inlineHelpText>
+        <label>KU Disclosure Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>KU_Financial_Account__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>External ID to Peoplesoft for accounting purposes</description>
+        <externalId>true</externalId>
+        <inlineHelpText>External ID to Peoplesoft for accounting purposes</inlineHelpText>
+        <label>KU Financial Account</label>
+        <length>25</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Lead_Institution__c</fullName>
+        <externalId>false</externalId>
+        <label>Lead Institution</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>The University of Kansas (KU)</fullName>
+                    <default>false</default>
+                    <label>The University of Kansas (KU)</label>
+                </value>
+                <value>
+                    <fullName>The University of Kansas Medical Center (KU) </fullName>
+                    <default>false</default>
+                    <label>The University of Kansas Medical Center (KU) </label>
+                </value>
+                <value>
+                    <fullName>The University of Kansas Medical Center Research Institute, Inc. (KUMCRI)</fullName>
+                    <default>false</default>
+                    <label>The University of Kansas Medical Center Research Institute, Inc. (KUMCRI)</label>
+                </value>
+                <value>
+                    <fullName>KU Center for Technology Commercialization, Inc. (KUCTC)</fullName>
+                    <default>false</default>
+                    <label>KU Center for Technology Commercialization, Inc. (KUCTC)</label>
+                </value>
+                <value>
+                    <fullName>KU School of Medicine-Wichita (KUSMW)</fullName>
+                    <default>false</default>
+                    <label>KU School of Medicine-Wichita (KUSMW)</label>
+                </value>
+                <value>
+                    <fullName>Kansas University Endowment Association (KUEA)</fullName>
+                    <default>false</default>
+                    <label>Kansas University Endowment Association (KUEA)</label>
+                </value>
+                <value>
+                    <fullName>KU Center for Research, Inc. (KUCR)</fullName>
+                    <default>false</default>
+                    <label>KU Center for Research, Inc. (KUCR)</label>
+                </value>
+                <value>
+                    <fullName>External</fullName>
+                    <default>false</default>
+                    <label>External</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Lead_Inventor__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Lead Inventor</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Primary Inventions</relationshipLabel>
+        <relationshipName>PrimaryInventions</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Licensing_Associate__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>KUIC Licensing Associate coordinating with the inventors for this invention</description>
+        <externalId>false</externalId>
+        <inlineHelpText>KUIC Licensing Associate coordinating with the inventors for this invention</inlineHelpText>
+        <label>Licensing Associate</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Inventions</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Location__c</fullName>
+        <description>Campus origin of the invention</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the Campus this invention originated from</inlineHelpText>
+        <label>Location</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Lawrence</fullName>
+                    <default>false</default>
+                    <label>Lawrence</label>
+                </value>
+                <value>
+                    <fullName>Medical Center</fullName>
+                    <default>false</default>
+                    <label>Medical Center</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Material_Sent_to_iEdison__c</fullName>
+        <description>Date</description>
+        <externalId>false</externalId>
+        <label>Material Sent to iEdison</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Material_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Material Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Antibody</fullName>
+                    <default>false</default>
+                    <label>Antibody</label>
+                </value>
+                <value>
+                    <fullName>Cell Line</fullName>
+                    <default>false</default>
+                    <label>Cell Line</label>
+                </value>
+                <value>
+                    <fullName>Mouse Model</fullName>
+                    <default>false</default>
+                    <label>Mouse Model</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>On_Hold_Comments__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Comments are required if an invention is on hold.</inlineHelpText>
+        <label>On Hold Comments</label>
+        <length>5000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>On_Hold__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Mark the invention as being on hold, which will change the status to "Hold" until this box is unchecked.</inlineHelpText>
+        <label>On Hold</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Patent_Bar_Date__c</fullName>
+        <description>Bar date of patentability, based upon public disclosure date</description>
+        <externalId>false</externalId>
+        <formula>Public_Disclosure_Date__c + 366</formula>
+        <inlineHelpText>Auto-updated field</inlineHelpText>
+        <label>Patent Bar Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Primary_Contact__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>Filled in with code, should not be forward visible</description>
+        <externalId>false</externalId>
+        <label>Primary Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Inventions (Primary Contact)</relationshipLabel>
+        <relationshipName>PrimaryInvention</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Primary_Technology_Class__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary Technology Class</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Technology_Class</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Prior_Art_Searcher__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Prior Art Searcher</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Prior_Art_Searches</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Prior_Art_Search_Comments__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Some comment is required.</inlineHelpText>
+        <label>Prior Art Search Comments</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Prior_Art_Search_Completed_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Prior Art Search Completed Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Private_Extract__c</fullName>
+        <description>This is internal to KU only!</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is internal to KU only! This text box is rich text and therefore may be formatted.</inlineHelpText>
+        <label>Private Extract</label>
+        <length>100000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Public_Disclosure_Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Public Disclosure Comments</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Public_Disclosure_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Public Disclosure Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Public_Extract__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is rich text, so you may format the text inside.</inlineHelpText>
+        <label>Public Extract</label>
+        <length>100000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Ready_for_Market__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Marks the invention status as Marketing.</inlineHelpText>
+        <label>Ready for Market</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Reported_to_iEdison__c</fullName>
+        <description>Date</description>
+        <externalId>false</externalId>
+        <label>Reported to iEdison</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SBIR_Funding__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Small Business Innovation Research</inlineHelpText>
+        <label>SBIR Funding</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Secondary_Technology_Class__c</fullName>
+        <externalId>false</externalId>
+        <label>Secondary Technology Class</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Technology_Class</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Subject_to_Export_Control__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Checking this box will limit visibility of this invention to others.</inlineHelpText>
+        <label>Subject to Export Control</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Title_Elected__c</fullName>
+        <description>Indicates what title has been elected for Invention through iEdison</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicate what title has been elected for Invention through iEdison</inlineHelpText>
+        <label>Title Elected</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Under Evaluation</fullName>
+                    <default>false</default>
+                    <label>Under Evaluation</label>
+                </value>
+                <value>
+                    <fullName>Elect Title</fullName>
+                    <default>false</default>
+                    <label>Elect Title</label>
+                </value>
+                <value>
+                    <fullName>Licensed as an Unpatented Biological Material or Research Tool</fullName>
+                    <default>false</default>
+                    <label>Licensed as an Unpatented Biological Material or Research Tool</label>
+                </value>
+                <value>
+                    <fullName>Not Elect Title - Waive to Third Party</fullName>
+                    <default>false</default>
+                    <label>Not Elect Title - Waive to Third Party</label>
+                </value>
+                <value>
+                    <fullName>Not Elect Title - Waiver to Government</fullName>
+                    <default>false</default>
+                    <label>Not Elect Title - Waiver to Government</label>
+                </value>
+                <value>
+                    <fullName>Not Elect Title - Waive to Inventor</fullName>
+                    <default>false</default>
+                    <label>Not Elect Title - Waive to Inventor</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Title_Election_Deadline__c</fullName>
+        <description>Auto-updated when record is saved</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Auto-updated when record is saved.</inlineHelpText>
+        <label>Title Election Deadline</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Track_Code_Counter__c</fullName>
+        <description>Used to calculate the next counter number for the track code</description>
+        <externalId>false</externalId>
+        <label>Track Code Counter</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Working_Title__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Something to differentiate the different inventions in the anticipated status. This will not be the final title.</inlineHelpText>
+        <label>Working Title</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X1_Year_Elect_Extension_Request_Date__c</fullName>
+        <description>1 year extension to elect title was requested</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter date that a 1 year extension to elect title was requested</inlineHelpText>
+        <label>1 Year Elect Extension Request Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>X1_Year_Elect_Title_Extension_Filed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Indicates whether an extension of 1 year to elect title was filed</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check if an extension for 1 year to elect title was filed</inlineHelpText>
+        <label>1 Year Elect Title Extension Filed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>X1_Year_Extension_to_File_Requested__c</fullName>
+        <description>1 year extension to file was requested</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the date a 1 year extension to file was requested</inlineHelpText>
+        <label>1 Year Extension to File Requested</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>X1_Year_Filing_Extension__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Updated iEdison to extend patent filing deadline by 1 year</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check box if an extension to file for 1 year has been submitted in iEdison</inlineHelpText>
+        <label>1 Year Filing Extension</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>X2_Year_Elect_Extension_Request_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter date that an additional year to elect title was requested</inlineHelpText>
+        <label>2 Year Elect Extension Request Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>X2_Year_Elect_Title_Extension_Filed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Check if 2 year extension to Elect Title was filed in iEdison</inlineHelpText>
+        <label>2 Year Elect Title Extension Filed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <recordTypes>
+        <fullName>Anticipated</fullName>
+        <active>true</active>
+        <description>This invention has not been disclosed formally to KU.</description>
+        <label>Anticipated</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Copywright</fullName>
+        <active>true</active>
+        <label>Copywright</label>
+        <picklistValues>
+            <picklist>Material_Type__c</picklist>
+            <values>
+                <fullName>Antibody</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cell Line</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mouse Model</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Title_Elected__c</picklist>
+            <values>
+                <fullName>Elect Title</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Licensed as an Unpatented Biological Material or Research Tool</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Elect Title - Waive to Inventor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Elect Title - Waive to Third Party</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Elect Title - Waiver to Government</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Under Evaluation</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Exception</fullName>
+        <active>true</active>
+        <description>This record type can only be made by admins. There are not any requirements for this record type.</description>
+        <label>Exception</label>
+        
+    </recordTypes>
+    <recordTypes>
+        <fullName>Invention_Federally_Funded</fullName>
+        <active>true</active>
+        <label>Invention - Federally Funded</label>
+        <picklistValues>
+            <picklist>Material_Type__c</picklist>
+            <values>
+                <fullName>Antibody</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cell Line</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mouse Model</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Title_Elected__c</picklist>
+            <values>
+                <fullName>Elect Title</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Licensed as an Unpatented Biological Material or Research Tool</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Elect Title - Waive to Inventor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Elect Title - Waive to Third Party</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Elect Title - Waiver to Government</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Under Evaluation</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Invention_Non_Federally_Funded</fullName>
+        <active>true</active>
+        <label>Invention - Non-Federally Funded</label>
+        <picklistValues>
+            <picklist>Material_Type__c</picklist>
+            <values>
+                <fullName>Antibody</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cell Line</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mouse Model</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Title_Elected__c</picklist>
+            <values>
+                <fullName>Elect Title</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Licensed as an Unpatented Biological Material or Research Tool</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Elect Title - Waive to Inventor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Elect Title - Waive to Third Party</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Elect Title - Waiver to Government</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Under Evaluation</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <validationRules>
+        <fullName>Closeout_Comments</fullName>
+        <active>true</active>
+        <description>Require Closeout Comments if invention is closed</description>
+        <errorConditionFormula>AND(  Close_Invention__c = TRUE ,  ISBLANK(Closeout_Comments__c) )</errorConditionFormula>
+        <errorMessage>Closeout Comments are required if you mark the invention as closed</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Closeout_Disposition</fullName>
+        <active>true</active>
+        <description>Require a Disposition when an invention is marked as closed</description>
+        <errorConditionFormula>AND(  Close_Invention__c = TRUE ,  ISBLANK(TEXT(Disposition__c)) )</errorConditionFormula>
+        <errorMessage>A disposition must be selected to close out an invention</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>On_Hold_Comments</fullName>
+        <active>true</active>
+        <description>Require "On Hold Comments" if "On Hold" is checked</description>
+        <errorConditionFormula>AND( On_Hold__c ,  ISBLANK( On_Hold_Comments__c ) )</errorConditionFormula>
+        <errorMessage>A comment is required in the field "On Hold Comments" since the invention is marked as "On Hold"</errorMessage>
+    </validationRules>
+</CustomObject>
