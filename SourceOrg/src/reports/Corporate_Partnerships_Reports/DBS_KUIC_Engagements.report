@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Interaction__c$Name</field>
+    </columns>
+    <columns>
+        <field>Interaction__c$Title__c</field>
+    </columns>
+    <columns>
+        <field>Interaction__c$Interaction_Type__c</field>
+    </columns>
+    <columns>
+        <field>Interaction__c$Agreement_Type__c</field>
+    </columns>
+    <description>Dash Board Source for tracking Engagements belonging to KUIC</description>
+    <filter>
+        <criteriaItems>
+            <column>Interaction__c$Dashboard_Category__c</column>
+            <operator>equals</operator>
+            <value>CDAs,Visits,Outreach - Calls and Emails,Industry Sponsored Research,Capstone,Service Agreements,Joint Patents,Licensing,MTAs,Research Affiliate</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Interaction__c$Dashboard_Category__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>DBS: KUIC Engagements</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Engagements__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Interaction__c$Activity_Due_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,2208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Organization data flowing into Salesforce or imported  from one of the multiple Source Systems (Including but not limited to PS Financials, Advance, Reggie, Sofia)</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Address_Line1__c</fullName>
+        <description>Address for communication - Line 1</description>
+        <externalId>false</externalId>
+        <label>Address Line1</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Address_Line2__c</fullName>
+        <description>Address for communication - Line 2</description>
+        <externalId>false</externalId>
+        <label>Address Line2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CALC_MasterOrg_ID__c</fullName>
+        <description>Field used for reports - not used anywhere else</description>
+        <externalId>false</externalId>
+        <formula>Master_Organization__r.Id</formula>
+        <inlineHelpText>Field used for reports - not used anywhere else</inlineHelpText>
+        <label>CALC MasterOrg ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>City__c</fullName>
+        <description>Name Of City</description>
+        <externalId>false</externalId>
+        <label>City</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CollaborativePolicyChangingActivities__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Manual Entry -  # CollaborativePolicyChangingActivities</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Manual Entry -  # CollaborativePolicyChangingActivities</inlineHelpText>
+        <label># CollaborativePolicyChangingActivities</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cost_Savings__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Sum Of $ Cost Saving From All Related Interactions</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Sum Of $ Cost Saving From All Related Interactions</inlineHelpText>
+        <label>$ Cost Savings</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Country__c</fullName>
+        <description>Address for communication - Country</description>
+        <externalId>false</externalId>
+        <label>Country</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>D_From_SBIR_STTR_Grants__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>$ From SBIR/STTR Grants</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>D_Generated_From_Licenses__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Manual Entry - $ Generated from Active Licenses</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Manual Entry - $ Generated from Active Licenses</inlineHelpText>
+        <label>$ Generated From Licenses</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Email__c</fullName>
+        <description>Source Organization Primary Email</description>
+        <externalId>false</externalId>
+        <label>Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Endowment_Active_Proposals__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Count of all active Endowment fundraising initiatives (Advance &quot;proposals&quot;)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Count of all active Endowment fundraising initiatives (Advance &quot;proposals&quot;)</inlineHelpText>
+        <label>Endowment Active Proposals</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Endowment_Contact_Reports_Visits__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Count of contact report visits recorded by Endowment</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Count of contact report visits recorded by Endowment</inlineHelpText>
+        <label>Endowment Contact Reports Visits</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Endowment_Contact_Reports__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Count of all contact reports recorded by Endowment</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Count of all contact reports recorded by Endowment</inlineHelpText>
+        <label>Endowment Contact Reports</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Endowment_Gitft_Total__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Endowment Gift Total For Each Organization - This is a one to one mapping with Endowment ID</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Endowment Gift Total For Each Organization - This is a one to one mapping with Endowment ID</inlineHelpText>
+        <label>Endowment Unit Gift Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Endowment_KnownAlumniCount__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Count of known alumni employees - Received from Endowment DB</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Count of known alumni employees - Received from Endowment DB</inlineHelpText>
+        <label>Endowment KnownAlumniCount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Endowment_KnownNonAlumniCount__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Known living non-alumni donors linked to organization ID as employees - Received from Endowment DB</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Known living non-alumni donors linked to organization ID as employees - Received from Endowment DB</inlineHelpText>
+        <label>Endowment KnownNonAlumniCount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Endowment_Last_Contact_Date__c</fullName>
+        <description>Date of most recent contact report</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date of most recent contact report</inlineHelpText>
+        <label>Endowment Last Contact Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Endowment_Last_Contact_Description__c</fullName>
+        <description>Very brief one-line summary of last contact</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Very brief one-line summary of last contact</inlineHelpText>
+        <label>Endowment Last Contact Description</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Endowment_Last_Contact_Purpose__c</fullName>
+        <description>Code description - purpose of last contact</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Code description - purpose of last contact</inlineHelpText>
+        <label>Endowment Last Contact Purpose</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Qualification</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cultivation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Stewardship</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Follow-up</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other Purpose</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Non Major Gift Solicitation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Solicitation - Major Gift</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Provide/Request Info</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Endowment_Last_Contact_Type__c</fullName>
+        <description>Code description - type of last contact</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Code description - type of last contact</inlineHelpText>
+        <label>Endowment Last Contact Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Visit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Phone Call/Letter/Email</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Non-Contact Move</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Event</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Endowment_Last_Gift_Date__c</fullName>
+        <description>Date of most recent legal gift recorded</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date of most recent legal gift recorded</inlineHelpText>
+        <label>Endowment Last Gift Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Endowment_Last_Match_Date__c</fullName>
+        <description>Date of most recent matching gift</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date of most recent matching gift</inlineHelpText>
+        <label>Endowment Last Match Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Endowment_Latest_Stage__c</fullName>
+        <description>Description of most advanced stage of active fundraising initiatives</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Description of most advanced stage of active fundraising initiatives</inlineHelpText>
+        <label>Endowment Latest Stage</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Advanced Cultivation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ask Made</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Early Cultivation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Estate (Entity Deceased)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Follow-up</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Long-term Cultiv/Stewardship</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Qualification</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Stewardship</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Entity_Type__c</fullName>
+        <description>Business Entity Type</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select Business Entity Type</inlineHelpText>
+        <label>Entity Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Company</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Private For-Profit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FOP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FOR</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>FPrimary_Source_Org_Flag__c</fullName>
+        <description>Hidden Field - Used as a Flag to indicate that a SourceOrganization has been marked as &quot;Primary&quot;</description>
+        <externalId>false</externalId>
+        <formula>IF( Primary_Source_Org__c = True, 1, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Hidden Field - Used as a Flag to indicate that a SourceOrganization has been marked as &quot;Primary&quot;</inlineHelpText>
+        <label>Primary Source Organization Flag</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FTE_Located_In_KU_BTBC__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Input the # of FTE in BTBC</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Input the # of FTE in BTBC</inlineHelpText>
+        <label># FTE Located In KU BTBC</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>From_External_Investment__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>$ of external investment into the company.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>$ of external investment into the company.</inlineHelpText>
+        <label>$ From External Investment</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>From_Leased_Equipment__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Funds received from companies who have leased KU equipment.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Funds received from companies who have leased KU equipment.</inlineHelpText>
+        <label>$ From Leased Equipment</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Generated_From_Joint_Patents__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Manual Entry -  $ Generated From Joint Patents</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Manual Entry -  $ Generated From Joint Patents</inlineHelpText>
+        <label>$ Generated From Joint Patents</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>IT_Vendor_Spending__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>$ IT Vendor Spending for Key IT Vendors</description>
+        <externalId>false</externalId>
+        <inlineHelpText>$ IT Vendor Spending for Key IT Vendors</inlineHelpText>
+        <label>$ IT Vendor Spending</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Inactive__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Indicates whether this Organization Data is active or not valid/updated anymore. This will be Unchecked by default. This will be checked based on input from the source systems if any of the data is flagged as invalid/duplicate. Only KU Admins can edit this field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this box only if the source data record has been deleted (purged) or has been merged with another record and is not going to be updated in future. This can be unchecked if the record gets restored/added and will continue getting updates.</inlineHelpText>
+        <label>Inactive?</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Interviews_on_Campus__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label># Of Interviews On Campus</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Is_Endowment_Unit_Matching__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Does the Organization match employee contribution</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Does the Organization match employee contribution</inlineHelpText>
+        <label>Endowment Unit Matching?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_KU_A_Strategic_Hiring_Partner__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Is KU considered a strategic hiring partner by the Company?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Is KU considered a strategic hiring partner by the Company?</inlineHelpText>
+        <label>Is KU A Strategic Hiring Partner?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_KU_Spinoff_Company__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Check this if the Company is a KU Spinoff Company</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this if the Company is a KU Spinoff Company</inlineHelpText>
+        <label>Is KU Spinoff Company?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_Master_RA_In_Place__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Select this if the Master RA is in place for the Organization</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this if the Master RA is in place for the Organization</inlineHelpText>
+        <label>Is Master RA In Place?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Legth_Relationship_From_Source_Org__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+AND( 
+ISNULL( Length_Relationship_In_Source_Org_Level__c ), 
+ISNULL( Longest_length_Relation_From_Interaction__c )
+), 
+0, 
+MAX( Length_Relationship_In_Source_Org_Level__c, Longest_length_Relation_From_Interaction__c )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Length Relationship From Source Org</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Length_Relationship_In_Source_Org_Level__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+AND( 
+ISNULL( Endowment_Last_Contact_Date__c ), 
+ISNULL( Endowment_Last_Gift_Date__c ),   
+ISNULL( Endowment_Last_Match_Date__c ),  
+ISNULL( LastActivityDate ),
+ISNULL( Source_System_Created_Date__c ),
+ISNULL( Source_System_Last_Modified_Date__c )
+), 
+0, 
+MAX( 
+IF(ISNULL( Endowment_Last_Contact_Date__c ),0,TODAY() - Endowment_Last_Contact_Date__c), 
+IF(ISNULL( Endowment_Last_Gift_Date__c ),0,TODAY() - Endowment_Last_Gift_Date__c ), 
+IF(ISNULL( Endowment_Last_Match_Date__c ),0,TODAY() - Endowment_Last_Match_Date__c  ), 
+IF(ISNULL( LastActivityDate ),0,TODAY() - LastActivityDate ), 
+IF(ISNULL( Source_System_Created_Date__c ),0,TODAY() - Source_System_Created_Date__c ),
+IF(ISNULL( Source_System_Last_Modified_Date__c ),0,TODAY() - Source_System_Last_Modified_Date__c )
+))</formula>
+        <label>Length Relationship In Source Org Level</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>License_Revenue_From_Spin_Off__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>$ Licensing revenue from KU Spin-off companies. Value not shown.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>$ Licensing revenue from KU Spin-off companies. Value not shown.</inlineHelpText>
+        <label>$ License Revenue From Spin-Off</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Longest_length_Relation_From_Interaction__c</fullName>
+        <externalId>false</externalId>
+        <label>Longest length Relation From Interaction</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Master_Organization__c</fullName>
+        <description>This is the Master Organization that the Source Organization is an entity/part of</description>
+        <externalId>false</externalId>
+        <label>Master Organization</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Related Source Organizations</relationshipLabel>
+        <relationshipName>Related_Organizations</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Mof_Sponsored_Research_Awards__c</fullName>
+        <externalId>false</externalId>
+        <label>$ Of Sponsored Research Awards</label>
+        <summarizedField>Interaction__c.Amount__c</summarizedField>
+        <summaryFilterItems>
+            <field>Interaction__c.Interaction_Type__c</field>
+            <operation>equals</operation>
+            <value>Research Grant</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Interaction__c.Source_Organization__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Mof_service_agreements__c</fullName>
+        <externalId>false</externalId>
+        <label>$ Of Service Agreements</label>
+        <summarizedField>Interaction__c.Amount__c</summarizedField>
+        <summaryFilterItems>
+            <field>Interaction__c.Interaction_Type__c</field>
+            <operation>equals</operation>
+            <value>Service Agreement</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Interaction__c.Source_Organization__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>N_COKeyExecutiveVisitsToKU__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label># CO Key Executive Visits To KU</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>N_KUVisitsToCOHQ__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label># KU Visits To CO HQ</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>N_OfCallsToFirm__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label># Of Calls To Firm</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>N_OfEmailsToFirm__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label># Of Emails To Firm</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>N_OfFirmExpertVisitsToUniversity__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label># Of Firm Expert Visits To University</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>N_OfJointInventionDisclosuresReceive__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label># Of Joint Invention Disclosures</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>N_OfJointPCTPatentsFiled__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label># Of Joint PCT Patents Filed</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>N_OfJointPCTPatentsIssued__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label># Of Joint PCT Patents Issued</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>N_OfJointPatentsFiled__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label># Of Joint Patents Filed</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>N_OfJointPatentsIssued__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label># Of Joint Patents Issued</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>N_OfUniversityResearcherstoFirmsForSabb__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Rollup From Agreement Type = Visiting Scientist</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Rollup From Agreement Type = Visiting Scientist</inlineHelpText>
+        <label># Of KU Researchers For Sabbatical</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>N_ofjointsupervisorsofPhDandMasterThesis__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label># Joint Supervisors Of PhD &amp; Masters</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Of_Citations_For_Published_Research__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Manual Entry - # of citations for university-firm published research</description>
+        <externalId>false</externalId>
+        <inlineHelpText># Joint publications with the company and KU faculty as authors</inlineHelpText>
+        <label># Of Citations For Published Research</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Of_Courses_With_Firm_Input__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description># of KU classes for which the company has had input.</description>
+        <externalId>false</externalId>
+        <inlineHelpText># of KU classes for which the company has had input.</inlineHelpText>
+        <label># Of Courses With Firm Input</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Of_Firm_Collaborations_With_Other_Univ__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description># of company collaboration with other universities.</description>
+        <externalId>false</externalId>
+        <inlineHelpText># of company collaboration with other universities.</inlineHelpText>
+        <label># Of Firm Collaborations With Other Univ</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Of_KU_Alumni_On_Firm_Board__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description># of KU Alumni on the Company&apos;s Board of Directors.</description>
+        <externalId>false</externalId>
+        <inlineHelpText># of KU Alumni on the Company&apos;s Board of Directors.</inlineHelpText>
+        <label># Of KU Alumni On Firm Board</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Of_KU_Facilities_Used_By_Firm__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Manual Entry - # OfKUFacilitiesUsedByFirm</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Manual Entry - # OfKUFacilitiesUsedByFirm</inlineHelpText>
+        <label># Of KU Facilities Used By Firm</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Of_KU_Faculty_Consulting_For_Firm__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Manual Entry - # of KU faculty and staff consulting for firm</description>
+        <externalId>false</externalId>
+        <inlineHelpText># KU faculty/staff consulting for the company</inlineHelpText>
+        <label># Of KU Faculty Consulting For Firm</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Of_KU_Faculty_On_Firm_Board__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description># of KU faculty on the Company&apos;s Board of Directors.</description>
+        <externalId>false</externalId>
+        <inlineHelpText># of KU faculty on the Company&apos;s Board of Directors.</inlineHelpText>
+        <label># Of KU Faculty On Firm Board</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Of_Key_Leadership_Alumni__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Total # Of Key/Leadership Alumni From All Related Contacts</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total # Of Key/Leadership Alumni From All Related Contacts</inlineHelpText>
+        <label># Of Key/Leadership Alumni</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Of_Key_Non_Alumni_On_Firm_Board__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Manual Entry - # of Key non-alumni on firm board</description>
+        <externalId>false</externalId>
+        <inlineHelpText># Directors, VP, C-Suite friends of KU (non-alumni) on company board.</inlineHelpText>
+        <label># Of Key Non-Alumni On Firm Board</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Of_NewsStories_Of_Firm_KU_Partnership__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Manual Entry # of news stories of firm and KU partnership</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Manual Entry # of news stories of firm and KU partnership</inlineHelpText>
+        <label># Of NewsStories Of Firm-KU Partnership</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Of_Seminars_Given_By_Firm_At_KU__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Manual Entry - # Of Seminars Given By Firm At KU</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Manual Entry - # Of Seminars Given By Firm At KU</inlineHelpText>
+        <label># Of Seminars Given By Firm At KU</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Of_Sponsored_Professorships__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label># Of Sponsored Professorships</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Of_Sponsored_Research_Proposals__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description># Of Sponsored Research Proposals</description>
+        <externalId>false</externalId>
+        <inlineHelpText># Of Sponsored Research Proposals</inlineHelpText>
+        <label># Of Sponsored Research Proposals</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Of_Times_KU_Equipment_Leased__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description># of times KU equipment has been leased by a company.</description>
+        <externalId>false</externalId>
+        <inlineHelpText># KU facilities used by the company</inlineHelpText>
+        <label># Of Times KU Equipment Leased</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Of_University_Colleges_Collaborating__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description># of major entities collaborating with the Company.</description>
+        <externalId>false</externalId>
+        <inlineHelpText># of major entities collaborating with the Company.</inlineHelpText>
+        <label># Of MajorEntities CollaboratingWithFirm</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Organization_Alias__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Organization Alias</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Optionally, enter an Alias</inlineHelpText>
+        <label>Source Organization Alias</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Organization_Division__c</fullName>
+        <description>Company Division</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Company Division</inlineHelpText>
+        <label>Source Organization Division</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Organization_Short_Name__c</fullName>
+        <description>Organization Short Name</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Organization Short Name</inlineHelpText>
+        <label>Source Organization Short Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Organization_Source_System_ID__c</fullName>
+        <description>Unique ID of Organization from Source System - Applicable only for imported Organizations</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Unique ID of Organization from Source System - Applicable only for imported Organizations</inlineHelpText>
+        <label>Source System ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Phone__c</fullName>
+        <description>Source Organization Phone Number</description>
+        <externalId>false</externalId>
+        <label>Phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Postal_Code__c</fullName>
+        <description>Address For Communication - Postal Code</description>
+        <externalId>false</externalId>
+        <label>Postal Code</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Primary_Source_Org__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used to Flag one of the Source Organizations related to a Master Organization as &quot;Primary&quot;.
+Checked if this is Primary Source Org for the Master.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to Flag one of the Source Organizations related to a Master Organization as &quot;Primary&quot;. Check this if this is Primary Source Org for the Master</inlineHelpText>
+        <label>Primary Source Org?</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>RU_Count_Master_RA_Src__c</fullName>
+        <description>Hidden field to count Master RA</description>
+        <externalId>false</externalId>
+        <formula>IF(Is_Master_RA_In_Place__c = True, 1, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Hidden field to count Master RA</inlineHelpText>
+        <label>RU Count Master RA Src</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RU_Count_Strategic_Hiring_Partner_Src__c</fullName>
+        <description>Hidden Field To Count Strategic Partner Designation</description>
+        <externalId>false</externalId>
+        <formula>IF(Is_KU_A_Strategic_Hiring_Partner__c = True,1,0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Hidden Field To Count Strategic Partner Designation</inlineHelpText>
+        <label>RU Count Strategic Hiring Partner Src</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RV_Spinoff_Count__c</fullName>
+        <description>This is a hidden field used to calculate the number of spinoff companies at the Master Org using Rollup. This is set to 1 if any Source Org is a Spin Off Company.</description>
+        <externalId>false</externalId>
+        <formula>IF((Is_KU_Spinoff_Company__c = True),1,0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This is a hidden field used to calculate the number of spinoff companies at the Master Org using Rollup. This is set to 1 if any Source Org is a Spin Off Company.</inlineHelpText>
+        <label>RV Spinoff Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ResearchersWith_NonKU_Relationship__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description># KU faculty with a non-KU relationship with the Company.</description>
+        <externalId>false</externalId>
+        <inlineHelpText># KU faculty with a non-KU relationship with the Company.</inlineHelpText>
+        <label># ResearchersWith NonKU Relationship</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBIR_STTR_Proposals_Awarded__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label># SBIR STTR Proposals Awarded</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBIR_STTR_Proposals_Not_Awarded__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label># SBIR STTR Proposals Not Awarded</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBIR_STTR_Proposals__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description># SBIR STTR Proposals Applied</description>
+        <externalId>false</externalId>
+        <inlineHelpText># SBIR STTR Proposals Applied</inlineHelpText>
+        <label># SBIR STTR Proposals Applied</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Source_KU_Division__c</fullName>
+        <description>The KU Division that the data is received from</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The KU Division that the data is received from</inlineHelpText>
+        <label>Source Organization Owner</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Career Services</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Center For Research</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Continuing Education</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Corporate Partnerships</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Endowment</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Technology Transfer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>N/A</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Source_System_Created_Date__c</fullName>
+        <description>Created date in the source system.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Created date in the source system.</inlineHelpText>
+        <label>Source System Created Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Source_System_Is_Deleted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Check if Source System is deleted in the source system.</description>
+        <externalId>false</externalId>
+        <label>Source System Is Deleted</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Source_System_Last_Modified_Date__c</fullName>
+        <description>Last modified date in the source system.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Last modified date in the source system.</inlineHelpText>
+        <label>Source System Last Modified Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Source_System__c</fullName>
+        <description>Source system from where this Organization&apos;s (Account) data was received</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Choose from the list of Source Systems to indicate where this data was received from</inlineHelpText>
+        <label>Source System</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Advance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PeopleSoft</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Reggie</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sophia</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Symplicity</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Manual Entry</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>StateORProvince__c</fullName>
+        <description>Address For Communication - State/Province</description>
+        <externalId>false</externalId>
+        <label>State/Province</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_SO_Contacts__c</fullName>
+        <externalId>false</externalId>
+        <label>Total # SO Contacts</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Website__c</fullName>
+        <description>Source Organization Website</description>
+        <externalId>false</externalId>
+        <label>Website</label>
+        <length>200</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ZIP_Code__c</fullName>
+        <description>Address for communication - Zip Code</description>
+        <externalId>false</externalId>
+        <label>ZIP Code</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>of_Jobs_posted__c</fullName>
+        <externalId>false</externalId>
+        <label># Of Jobs Posted</label>
+        <summaryFilterItems>
+            <field>Interaction__c.Interaction_Type__c</field>
+            <operation>equals</operation>
+            <value>Job Posting</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Interaction__c.Source_Organization__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>of_Sponsored_Research_Awards__c</fullName>
+        <externalId>false</externalId>
+        <label># Of Sponsored Research Awards</label>
+        <summaryFilterItems>
+            <field>Interaction__c.Interaction_Type__c</field>
+            <operation>equals</operation>
+            <value>Research Grant</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Interaction__c.Source_Organization__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>of_career_fair_events__c</fullName>
+        <externalId>false</externalId>
+        <label># Of Career Fair Events</label>
+        <summaryFilterItems>
+            <field>Interaction__c.Interaction_Type__c</field>
+            <operation>equals</operation>
+            <value>Event - Career Services</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Interaction__c.Source_Organization__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>of_internships__c</fullName>
+        <externalId>false</externalId>
+        <label># Of Internships</label>
+        <summaryFilterItems>
+            <field>Interaction__c.Interaction_Type__c</field>
+            <operation>equals</operation>
+            <value>Internship</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Interaction__c.Source_Organization__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>of_licenses_executed__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label># Of Licenses Executed</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>of_service_agreements__c</fullName>
+        <externalId>false</externalId>
+        <label># Of Service Agreements</label>
+        <summaryFilterItems>
+            <field>Interaction__c.Interaction_Type__c</field>
+            <operation>equals</operation>
+            <value>Service Agreement</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Interaction__c.Source_Organization__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>of_workshops__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label># Of Workshops</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Source Organization</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Master_Organization__c</columns>
+        <columns>Source_KU_Division__c</columns>
+        <columns>Source_System__c</columns>
+        <columns>Organization_Source_System_ID__c</columns>
+        <columns>Source_System_Created_Date__c</columns>
+        <columns>City__c</columns>
+        <columns>StateORProvince__c</columns>
+        <columns>ZIP_Code__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Source Organizations</label>
+        <sharedTo>
+            <group>All_KU_System_Administrators</group>
+            <group>KU_Read_Only_Profile</group>
+            <group>KU_User_Profile</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>All_Primary_Source_Organizations</fullName>
+        <columns>NAME</columns>
+        <columns>Master_Organization__c</columns>
+        <columns>Source_KU_Division__c</columns>
+        <columns>Source_System__c</columns>
+        <columns>Organization_Source_System_ID__c</columns>
+        <columns>Source_System_Created_Date__c</columns>
+        <columns>City__c</columns>
+        <columns>StateORProvince__c</columns>
+        <columns>ZIP_Code__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Primary_Source_Org__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>All Primary Source Organizations</label>
+        <sharedTo>
+            <group>All_KU_System_Administrators</group>
+            <group>KU_Read_Only_Profile</group>
+            <group>KU_User_Profile</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Source_Center_for_Research</fullName>
+        <columns>NAME</columns>
+        <columns>Master_Organization__c</columns>
+        <columns>Source_KU_Division__c</columns>
+        <columns>Source_System__c</columns>
+        <columns>Organization_Source_System_ID__c</columns>
+        <columns>Source_System_Created_Date__c</columns>
+        <columns>City__c</columns>
+        <columns>StateORProvince__c</columns>
+        <columns>ZIP_Code__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Source_KU_Division__c</field>
+            <operation>equals</operation>
+            <value>Center For Research</value>
+        </filters>
+        <label>Source = Center for Research</label>
+    </listViews>
+    <listViews>
+        <fullName>Source_Continuing_Education</fullName>
+        <columns>NAME</columns>
+        <columns>Master_Organization__c</columns>
+        <columns>Source_KU_Division__c</columns>
+        <columns>Source_System__c</columns>
+        <columns>Organization_Source_System_ID__c</columns>
+        <columns>Source_System_Created_Date__c</columns>
+        <columns>City__c</columns>
+        <columns>StateORProvince__c</columns>
+        <columns>ZIP_Code__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Source_KU_Division__c</field>
+            <operation>equals</operation>
+            <value>Continuing Education</value>
+        </filters>
+        <label>Source = Continuing Education</label>
+    </listViews>
+    <listViews>
+        <fullName>Source_Endowment</fullName>
+        <columns>NAME</columns>
+        <columns>Master_Organization__c</columns>
+        <columns>Source_KU_Division__c</columns>
+        <columns>Source_System__c</columns>
+        <columns>Organization_Source_System_ID__c</columns>
+        <columns>Source_System_Created_Date__c</columns>
+        <columns>City__c</columns>
+        <columns>StateORProvince__c</columns>
+        <columns>ZIP_Code__c</columns>
+        <columns>Endowment_KnownAlumniCount__c</columns>
+        <columns>Endowment_KnownNonAlumniCount__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Source_KU_Division__c</field>
+            <operation>equals</operation>
+            <value>Endowment</value>
+        </filters>
+        <label>Source = Endowment</label>
+    </listViews>
+    <listViews>
+        <fullName>Source_Manual_Entry</fullName>
+        <columns>NAME</columns>
+        <columns>Master_Organization__c</columns>
+        <columns>Source_KU_Division__c</columns>
+        <columns>Source_System__c</columns>
+        <columns>Organization_Source_System_ID__c</columns>
+        <columns>Source_System_Created_Date__c</columns>
+        <columns>City__c</columns>
+        <columns>StateORProvince__c</columns>
+        <columns>ZIP_Code__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Source_KU_Division__c</field>
+            <operation>equals</operation>
+            <value>Manual Entry</value>
+        </filters>
+        <label>Source = Manual Entry</label>
+    </listViews>
+    <listViews>
+        <fullName>Source_Technology_Transfer</fullName>
+        <columns>NAME</columns>
+        <columns>Master_Organization__c</columns>
+        <columns>Source_KU_Division__c</columns>
+        <columns>Source_System__c</columns>
+        <columns>Organization_Source_System_ID__c</columns>
+        <columns>Source_System_Created_Date__c</columns>
+        <columns>City__c</columns>
+        <columns>StateORProvince__c</columns>
+        <columns>ZIP_Code__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Source_KU_Division__c</field>
+            <operation>equals</operation>
+            <value>Technology Transfer</value>
+        </filters>
+        <label>Source = Technology Transfer</label>
+    </listViews>
+    <listViews>
+        <fullName>Source_University_Career_Center</fullName>
+        <columns>NAME</columns>
+        <columns>Master_Organization__c</columns>
+        <columns>Source_KU_Division__c</columns>
+        <columns>Source_System__c</columns>
+        <columns>Organization_Source_System_ID__c</columns>
+        <columns>Source_System_Created_Date__c</columns>
+        <columns>City__c</columns>
+        <columns>StateORProvince__c</columns>
+        <columns>ZIP_Code__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Source_KU_Division__c</field>
+            <operation>equals</operation>
+            <value>Career Services</value>
+        </filters>
+        <label>Source = University Career Center</label>
+    </listViews>
+    <nameField>
+        <label>Source Organization Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Source Organizations</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Excluded</fullName>
+        <active>true</active>
+        <description>Not visible by anyone but admins. Allows for matching when importing without having to use Exclude List.</description>
+        <label>Excluded</label>
+        <picklistValues>
+            <picklist>Endowment_Last_Contact_Purpose__c</picklist>
+            <values>
+                <fullName>Cultivation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow-up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non Major Gift Solicitation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Purpose</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provide%2FRequest Info</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Qualification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Solicitation - Major Gift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stewardship</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Endowment_Last_Contact_Type__c</picklist>
+            <values>
+                <fullName>Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Contact Move</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Call%2FLetter%2FEmail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visit</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Endowment_Latest_Stage__c</picklist>
+            <values>
+                <fullName>Advanced Cultivation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ask Made</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Early Cultivation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Estate %28Entity Deceased%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow-up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Long-term Cultiv%2FStewardship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Qualification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stewardship</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Entity_Type__c</picklist>
+            <values>
+                <fullName>Company</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FOP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FOR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Private For-Profit</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Source_KU_Division__c</picklist>
+            <values>
+                <fullName>Career Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Center For Research</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Continuing Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Partnerships</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Endowment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>N%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technology Transfer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Source_System__c</picklist>
+            <values>
+                <fullName>Advance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manual Entry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PeopleSoft</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reggie</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sophia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Symplicity</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Standard_SO</fullName>
+        <active>true</active>
+        <label>Standard SO</label>
+        <picklistValues>
+            <picklist>Endowment_Last_Contact_Purpose__c</picklist>
+            <values>
+                <fullName>Cultivation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow-up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non Major Gift Solicitation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Purpose</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provide%2FRequest Info</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Qualification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Solicitation - Major Gift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stewardship</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Endowment_Last_Contact_Type__c</picklist>
+            <values>
+                <fullName>Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Contact Move</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Call%2FLetter%2FEmail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visit</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Endowment_Latest_Stage__c</picklist>
+            <values>
+                <fullName>Advanced Cultivation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ask Made</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Early Cultivation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Estate %28Entity Deceased%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow-up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Long-term Cultiv%2FStewardship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Qualification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stewardship</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Entity_Type__c</picklist>
+            <values>
+                <fullName>Company</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FOP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FOR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Private For-Profit</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Source_KU_Division__c</picklist>
+            <values>
+                <fullName>Career Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Center For Research</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Continuing Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Partnerships</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Endowment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>N%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technology Transfer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Source_System__c</picklist>
+            <values>
+                <fullName>Advance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manual Entry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PeopleSoft</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reggie</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sophia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Symplicity</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>Master_Organization__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Source_System__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Source_KU_Division__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Master_Organization__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Source_System__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Source_KU_Division__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CREATEDBY_USER.ALIAS</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CREATED_DATE</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Master_Organization__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Source_System__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Source_KU_Division__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CREATEDBY_USER.ALIAS</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CREATED_DATE</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>Master_Organization__c</searchFilterFields>
+        <searchFilterFields>Source_System__c</searchFilterFields>
+        <searchFilterFields>Source_KU_Division__c</searchFilterFields>
+        <searchFilterFields>CREATEDBY_USER.ALIAS</searchFilterFields>
+        <searchFilterFields>CREATED_DATE</searchFilterFields>
+        <searchFilterFields>StateORProvince__c</searchFilterFields>
+        <searchFilterFields>City__c</searchFilterFields>
+        <searchResultsAdditionalFields>Master_Organization__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Source_System__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Source_KU_Division__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CREATED_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CREATEDBY_USER.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Only_One_Primary_Source_Per_Master</fullName>
+        <active>true</active>
+        <description>Validation to ensure only one Primary SourceOrg per MasterOrg exists</description>
+        <errorConditionFormula>AND(ISCHANGED(Primary_Source_Org__c),Master_Organization__r.Primary_Source_Org_Count__c =1,Primary_Source_Org__c = True)</errorConditionFormula>
+        <errorMessage>Primary SourceOrganization already exists for this MasterOrganization. If you want to select this as the PrimarySource, please uncheck the &quot;Primary&quot; checkbox from the current PrimarySource</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SourceOrgOwner_CannotChange</fullName>
+        <active>true</active>
+        <description>To ensure that Only System Administrator Can Change The Source Organization Owner.</description>
+        <errorConditionFormula>AND(!($Profile.Name == &apos;System Administrator&apos;),
+OR($Profile.Name == &apos;System Administrator Clone&apos;),
+ISCHANGED(Source_KU_Division__c),
+ISCHANGED(Master_Organization__c)
+)</errorConditionFormula>
+        <errorMessage>Only System Administrator Can Change The Source Organization Owner/Master Organization - Please Contact Your System Administrator</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Create_MO</fullName>
+        <availability>online</availability>
+        <description>Use this button to create a Master Organization based on the Source Organization.</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Create MO</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&apos;/soap/ajax/27.0/connection.js&apos;)}
+
+var mo = new sforce.SObject(&apos;Account&apos;);
+
+mo.Name = &quot;{!Source_Organization__c.Name}&quot;;
+mo.Phone = &quot;{!Source_Organization__c.Phone__c}&quot;;
+mo.Website = &quot;{!Source_Organization__c.Website__c}&quot;;
+mo.BillingStreet = &quot;{!Source_Organization__c.Address_Line1__c} {!Source_Organization__c.Address_Line2__c}&quot;;
+mo.BillingCity =&quot;{!Source_Organization__c.City__c}&quot;;
+mo.BillingCountry = &quot;{!Source_Organization__c.Country__c}&quot;;
+mo.BillingState = &quot;{!Source_Organization__c.StateORProvince__c}&quot;;
+
+result = sforce.connection.create([mo]);
+
+if(result[0].success == &quot;true&quot;){
+
+     var soupdate = [];
+     var so = new sforce.SObject(&quot;Source_Organization__c&quot;);
+
+     so.id = &quot;{!Source_Organization__c.Id}&quot;;
+
+     so.Master_Organization__c = result[0].id;
+
+     soupdate.push(so);
+
+     result2 = sforce.connection.update(soupdate);
+
+     window.location.reload();
+
+     alert(&apos;New Master Organization was created!&apos;);
+
+} else {
+     alert(result[0]);
+}</url>
+    </webLinks>
+</CustomObject>

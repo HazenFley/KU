@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Invention</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Inventions</value>
+    </caseValues>
+    <fields>
+        <help><!-- Name of the Invention --></help>
+        <label><!-- Invention Name --></label>
+        <name>Invention_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCS URL --></label>
+        <name>NCS_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- PrimaryInventor --></label>
+        <lookupFilter>
+            <errorMessage><!-- Only a KU Contact can be selected --></errorMessage>
+        </lookupFilter>
+        <name>PrimaryInventor__c</name>
+        <relationshipLabel><!-- Inventions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Technology --></label>
+        <name>Technology__c</name>
+        <picklistValues>
+            <masterLabel>Biotechnology</masterLabel>
+            <translation><!-- Biotechnology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Creative Works</masterLabel>
+            <translation><!-- Creative Works --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diagnostics</masterLabel>
+            <translation><!-- Diagnostics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Drug Delivery</masterLabel>
+            <translation><!-- Drug Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education</masterLabel>
+            <translation><!-- Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Energy &amp; Environment</masterLabel>
+            <translation><!-- Energy &amp; Environment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering</masterLabel>
+            <translation><!-- Engineering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Materials</masterLabel>
+            <translation><!-- Materials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Devices</masterLabel>
+            <translation><!-- Medical Devices --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research Tools</masterLabel>
+            <translation><!-- Research Tools --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Software</masterLabel>
+            <translation><!-- Software --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Therapeutics</masterLabel>
+            <translation><!-- Therapeutics --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Invention Track Code - Unique External ID - For reference to Wellspring --></help>
+        <label><!-- Track Code --></label>
+        <name>Track_Code__c</name>
+    </fields>
+    <layouts>
+        <layout>Invention Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Vowel</startsWith>
+    <webLinks>
+        <label><!-- Leads_By_Invention --></label>
+        <name>Leads_By_Invention</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Leads_and_Converted_Information --></label>
+        <name>Leads_and_Converted_Information</name>
+    </webLinks>
+</CustomObjectTranslation>

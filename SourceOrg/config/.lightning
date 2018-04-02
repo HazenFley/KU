@@ -1,0 +1,53 @@
+[
+    {
+        "attributes": {
+            "type": "AuraDefinition",
+            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Ad8A0000000ucOSAQ"
+        },
+        "Id": "0Ad8A0000000ucOSAQ",
+        "AuraDefinitionBundleId": "0Ab8A00000003ZYSAY",
+        "AuraDefinitionBundle": {
+            "attributes": {
+                "type": "AuraDefinitionBundle",
+                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Ab8A00000003ZYSAY"
+            },
+            "DeveloperName": "MAMiniMapLightningComponent"
+        },
+        "DefType": "COMPONENT",
+        "Format": "XML"
+    },
+    {
+        "attributes": {
+            "type": "AuraDefinition",
+            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Ad8A0000000ucPSAQ"
+        },
+        "Id": "0Ad8A0000000ucPSAQ",
+        "AuraDefinitionBundleId": "0Ab8A00000003ZYSAY",
+        "AuraDefinitionBundle": {
+            "attributes": {
+                "type": "AuraDefinitionBundle",
+                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Ab8A00000003ZYSAY"
+            },
+            "DeveloperName": "MAMiniMapLightningComponent"
+        },
+        "DefType": "CONTROLLER",
+        "Format": "JS"
+    },
+    {
+        "attributes": {
+            "type": "AuraDefinition",
+            "url": "/services/data/v36.0/tooling/sobjects/AuraDefinition/0Ad8A0000000ucQSAQ"
+        },
+        "Id": "0Ad8A0000000ucQSAQ",
+        "AuraDefinitionBundleId": "0Ab8A00000003ZYSAY",
+        "AuraDefinitionBundle": {
+            "attributes": {
+                "type": "AuraDefinitionBundle",
+                "url": "/services/data/v36.0/tooling/sobjects/AuraDefinitionBundle/0Ab8A00000003ZYSAY"
+            },
+            "DeveloperName": "MAMiniMapLightningComponent"
+        },
+        "DefType": "DESIGN",
+        "Format": "XML"
+    }
+]

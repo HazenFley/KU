@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Joins Wellspring and Reggie Contacts to engagements</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Connects the Junction Object to the Contact Object</description>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Additional Engagements</relationshipLabel>
+        <relationshipName>Junction_Objects</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Engagement_Owner__c</fullName>
+        <description>Shows where the Junction Object originates from</description>
+        <externalId>false</externalId>
+        <label>Engagement Owner</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Engagement__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Connects the Junction Object to the Engagement Object</description>
+        <externalId>false</externalId>
+        <label>Engagement</label>
+        <referenceTo>Interaction__c</referenceTo>
+        <relationshipLabel>Junction Objects</relationshipLabel>
+        <relationshipName>Junction_Objects</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Reggie_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Connects the Junction Object to the Reggie Contact</description>
+        <externalId>false</externalId>
+        <label>Reggie Contact</label>
+        <referenceTo>Reggie_Contact__c</referenceTo>
+        <relationshipLabel>Junction Objects</relationshipLabel>
+        <relationshipName>Junction_Objects</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Source_Organization__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Connects the Junction Object to the Source Org Object</description>
+        <externalId>false</externalId>
+        <label>Source Organization</label>
+        <referenceTo>Source_Organization__c</referenceTo>
+        <relationshipLabel>Junction Objects</relationshipLabel>
+        <relationshipName>Junction_Objects</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Junction Object</label>
+    <nameField>
+        <displayFormat>J{0}</displayFormat>
+        <label>Junction Object Number</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Junction Objects</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>Read</sharingModel>
+</CustomObject>

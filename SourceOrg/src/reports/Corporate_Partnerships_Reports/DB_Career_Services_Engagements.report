@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Interaction__c$Name</field>
+    </columns>
+    <columns>
+        <field>Interaction__c$Related_Master_Organization__c</field>
+    </columns>
+    <columns>
+        <field>Interaction__c$Title__c</field>
+    </columns>
+    <description>Report listing All Career Service Engagments grouped by Engagement Type</description>
+    <filter>
+        <criteriaItems>
+            <column>Interaction__c$Interaction_Source_KU_Division__c</column>
+            <operator>equals</operator>
+            <value>Career Services</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Interaction__c$Interaction_Type__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>DB: Career Services Engagements</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Engagements__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Interaction__c$Activity_Due_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

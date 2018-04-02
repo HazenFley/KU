@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Source Organization</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Source Organizations</value>
+    </caseValues>
+    <fields>
+        <label><!-- Address Line1 --></label>
+        <name>Address_Line1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Line2 --></label>
+        <name>Address_Line2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Field used for reports - not used anywhere else --></help>
+        <label><!-- CALC MasterOrg ID --></label>
+        <name>CALC_MasterOrg_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <help><!-- Manual Entry -  # CollaborativePolicyChangingActivities --></help>
+        <label><!-- # CollaborativePolicyChangingActivities --></label>
+        <name>CollaborativePolicyChangingActivities__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sum Of $ Cost Saving From All Related Interactions --></help>
+        <label><!-- $ Cost Savings --></label>
+        <name>Cost_Savings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- $ From SBIR/STTR Grants --></label>
+        <name>D_From_SBIR_STTR_Grants__c</name>
+    </fields>
+    <fields>
+        <help><!-- Manual Entry - $ Generated from Active Licenses --></help>
+        <label><!-- $ Generated From Licenses --></label>
+        <name>D_Generated_From_Licenses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Count of all active Endowment fundraising initiatives (Advance &quot;proposals&quot;) --></help>
+        <label><!-- Endowment Active Proposals --></label>
+        <name>Endowment_Active_Proposals__c</name>
+    </fields>
+    <fields>
+        <help><!-- Count of contact report visits recorded by Endowment --></help>
+        <label><!-- Endowment Contact Reports Visits --></label>
+        <name>Endowment_Contact_Reports_Visits__c</name>
+    </fields>
+    <fields>
+        <help><!-- Count of all contact reports recorded by Endowment --></help>
+        <label><!-- Endowment Contact Reports --></label>
+        <name>Endowment_Contact_Reports__c</name>
+    </fields>
+    <fields>
+        <help><!-- Endowment Gift Total For Each Organization - This is a one to one mapping with Endowment ID --></help>
+        <label><!-- Endowment Unit Gift Total --></label>
+        <name>Endowment_Gitft_Total__c</name>
+    </fields>
+    <fields>
+        <help><!-- Count of known alumni employees - Received from Endowment DB --></help>
+        <label><!-- Endowment KnownAlumniCount --></label>
+        <name>Endowment_KnownAlumniCount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Known living non-alumni donors linked to organization ID as employees - Received from Endowment DB --></help>
+        <label><!-- Endowment KnownNonAlumniCount --></label>
+        <name>Endowment_KnownNonAlumniCount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date of most recent contact report --></help>
+        <label><!-- Endowment Last Contact Date --></label>
+        <name>Endowment_Last_Contact_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Very brief one-line summary of last contact --></help>
+        <label><!-- Endowment Last Contact Description --></label>
+        <name>Endowment_Last_Contact_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Code description - purpose of last contact --></help>
+        <label><!-- Endowment Last Contact Purpose --></label>
+        <name>Endowment_Last_Contact_Purpose__c</name>
+        <picklistValues>
+            <masterLabel>Cultivation</masterLabel>
+            <translation><!-- Cultivation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Follow-up</masterLabel>
+            <translation><!-- Follow-up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non Major Gift Solicitation</masterLabel>
+            <translation><!-- Non Major Gift Solicitation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Purpose</masterLabel>
+            <translation><!-- Other Purpose --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Provide/Request Info</masterLabel>
+            <translation><!-- Provide/Request Info --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualification</masterLabel>
+            <translation><!-- Qualification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solicitation - Major Gift</masterLabel>
+            <translation><!-- Solicitation - Major Gift --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stewardship</masterLabel>
+            <translation><!-- Stewardship --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Code description - type of last contact --></help>
+        <label><!-- Endowment Last Contact Type --></label>
+        <name>Endowment_Last_Contact_Type__c</name>
+        <picklistValues>
+            <masterLabel>Event</masterLabel>
+            <translation><!-- Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Contact Move</masterLabel>
+            <translation><!-- Non-Contact Move --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone Call/Letter/Email</masterLabel>
+            <translation><!-- Phone Call/Letter/Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Visit</masterLabel>
+            <translation><!-- Visit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Date of most recent legal gift recorded --></help>
+        <label><!-- Endowment Last Gift Date --></label>
+        <name>Endowment_Last_Gift_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date of most recent matching gift --></help>
+        <label><!-- Endowment Last Match Date --></label>
+        <name>Endowment_Last_Match_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Description of most advanced stage of active fundraising initiatives --></help>
+        <label><!-- Endowment Latest Stage --></label>
+        <name>Endowment_Latest_Stage__c</name>
+        <picklistValues>
+            <masterLabel>Advanced Cultivation</masterLabel>
+            <translation><!-- Advanced Cultivation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ask Made</masterLabel>
+            <translation><!-- Ask Made --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Early Cultivation</masterLabel>
+            <translation><!-- Early Cultivation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Estate (Entity Deceased)</masterLabel>
+            <translation><!-- Estate (Entity Deceased) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Follow-up</masterLabel>
+            <translation><!-- Follow-up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Long-term Cultiv/Stewardship</masterLabel>
+            <translation><!-- Long-term Cultiv/Stewardship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualification</masterLabel>
+            <translation><!-- Qualification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stewardship</masterLabel>
+            <translation><!-- Stewardship --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select Business Entity Type --></help>
+        <label><!-- Entity Type --></label>
+        <name>Entity_Type__c</name>
+        <picklistValues>
+            <masterLabel>Company</masterLabel>
+            <translation><!-- Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FOP</masterLabel>
+            <translation><!-- FOP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FOR</masterLabel>
+            <translation><!-- FOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private For-Profit</masterLabel>
+            <translation><!-- Private For-Profit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Hidden Field - Used as a Flag to indicate that a SourceOrganization has been marked as &quot;Primary&quot; --></help>
+        <label><!-- Primary Source Organization Flag --></label>
+        <name>FPrimary_Source_Org_Flag__c</name>
+    </fields>
+    <fields>
+        <help><!-- Input the # of FTE in BTBC --></help>
+        <label><!-- # FTE Located In KU BTBC --></label>
+        <name>FTE_Located_In_KU_BTBC__c</name>
+    </fields>
+    <fields>
+        <help><!-- $ of external investment into the company. --></help>
+        <label><!-- $ From External Investment --></label>
+        <name>From_External_Investment__c</name>
+    </fields>
+    <fields>
+        <help><!-- Funds received from companies who have leased KU equipment. --></help>
+        <label><!-- $ From Leased Equipment --></label>
+        <name>From_Leased_Equipment__c</name>
+    </fields>
+    <fields>
+        <help><!-- Manual Entry -  $ Generated From Joint Patents --></help>
+        <label><!-- $ Generated From Joint Patents --></label>
+        <name>Generated_From_Joint_Patents__c</name>
+    </fields>
+    <fields>
+        <help><!-- $ IT Vendor Spending for Key IT Vendors --></help>
+        <label><!-- $ IT Vendor Spending --></label>
+        <name>IT_Vendor_Spending__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box only if the source data record has been deleted (purged) or has been merged with another record and is not going to be updated in future. This can be unchecked if the record gets restored/added and will continue getting updates. --></help>
+        <label><!-- Inactive? --></label>
+        <name>Inactive__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Of Interviews On Campus --></label>
+        <name>Interviews_on_Campus__c</name>
+    </fields>
+    <fields>
+        <help><!-- Does the Organization match employee contribution --></help>
+        <label><!-- Endowment Unit Matching? --></label>
+        <name>Is_Endowment_Unit_Matching__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is KU considered a strategic hiring partner by the Company? --></help>
+        <label><!-- Is KU A Strategic Hiring Partner? --></label>
+        <name>Is_KU_A_Strategic_Hiring_Partner__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this if the Company is a KU Spinoff Company --></help>
+        <label><!-- Is KU Spinoff Company? --></label>
+        <name>Is_KU_Spinoff_Company__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this if the Master RA is in place for the Organization --></help>
+        <label><!-- Is Master RA In Place? --></label>
+        <name>Is_Master_RA_In_Place__c</name>
+    </fields>
+    <fields>
+        <label><!-- Length Relationship From Source Org --></label>
+        <name>Legth_Relationship_From_Source_Org__c</name>
+    </fields>
+    <fields>
+        <label><!-- Length Relationship In Source Org Level --></label>
+        <name>Length_Relationship_In_Source_Org_Level__c</name>
+    </fields>
+    <fields>
+        <help><!-- $ Licensing revenue from KU Spin-off companies. Value not shown. --></help>
+        <label><!-- $ License Revenue From Spin-Off --></label>
+        <name>License_Revenue_From_Spin_Off__c</name>
+    </fields>
+    <fields>
+        <label><!-- Longest length Relation From Interaction --></label>
+        <name>Longest_length_Relation_From_Interaction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Master Organization --></label>
+        <name>Master_Organization__c</name>
+        <relationshipLabel><!-- Related Source Organizations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- $ Of Sponsored Research Awards --></label>
+        <name>Mof_Sponsored_Research_Awards__c</name>
+    </fields>
+    <fields>
+        <label><!-- $ Of Service Agreements --></label>
+        <name>Mof_service_agreements__c</name>
+    </fields>
+    <fields>
+        <label><!-- # CO Key Executive Visits To KU --></label>
+        <name>N_COKeyExecutiveVisitsToKU__c</name>
+    </fields>
+    <fields>
+        <label><!-- # KU Visits To CO HQ --></label>
+        <name>N_KUVisitsToCOHQ__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Of Calls To Firm --></label>
+        <name>N_OfCallsToFirm__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Of Emails To Firm --></label>
+        <name>N_OfEmailsToFirm__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Of Firm Expert Visits To University --></label>
+        <name>N_OfFirmExpertVisitsToUniversity__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Of Joint Invention Disclosures --></label>
+        <name>N_OfJointInventionDisclosuresReceive__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Of Joint PCT Patents Filed --></label>
+        <name>N_OfJointPCTPatentsFiled__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Of Joint PCT Patents Issued --></label>
+        <name>N_OfJointPCTPatentsIssued__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Of Joint Patents Filed --></label>
+        <name>N_OfJointPatentsFiled__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Of Joint Patents Issued --></label>
+        <name>N_OfJointPatentsIssued__c</name>
+    </fields>
+    <fields>
+        <help><!-- Rollup From Agreement Type = Visiting Scientist --></help>
+        <label><!-- # Of KU Researchers For Sabbatical --></label>
+        <name>N_OfUniversityResearcherstoFirmsForSabb__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Joint Supervisors Of PhD &amp; Masters --></label>
+        <name>N_ofjointsupervisorsofPhDandMasterThesis__c</name>
+    </fields>
+    <fields>
+        <help><!-- # Joint publications with the company and KU faculty as authors --></help>
+        <label><!-- # Of Citations For Published Research --></label>
+        <name>Of_Citations_For_Published_Research__c</name>
+    </fields>
+    <fields>
+        <help><!-- # of KU classes for which the company has had input. --></help>
+        <label><!-- # Of Courses With Firm Input --></label>
+        <name>Of_Courses_With_Firm_Input__c</name>
+    </fields>
+    <fields>
+        <help><!-- # of company collaboration with other universities. --></help>
+        <label><!-- # Of Firm Collaborations With Other Univ --></label>
+        <name>Of_Firm_Collaborations_With_Other_Univ__c</name>
+    </fields>
+    <fields>
+        <help><!-- # of KU Alumni on the Company&apos;s Board of Directors. --></help>
+        <label><!-- # Of KU Alumni On Firm Board --></label>
+        <name>Of_KU_Alumni_On_Firm_Board__c</name>
+    </fields>
+    <fields>
+        <help><!-- Manual Entry - # OfKUFacilitiesUsedByFirm --></help>
+        <label><!-- # Of KU Facilities Used By Firm --></label>
+        <name>Of_KU_Facilities_Used_By_Firm__c</name>
+    </fields>
+    <fields>
+        <help><!-- # KU faculty/staff consulting for the company --></help>
+        <label><!-- # Of KU Faculty Consulting For Firm --></label>
+        <name>Of_KU_Faculty_Consulting_For_Firm__c</name>
+    </fields>
+    <fields>
+        <help><!-- # of KU faculty on the Company&apos;s Board of Directors. --></help>
+        <label><!-- # Of KU Faculty On Firm Board --></label>
+        <name>Of_KU_Faculty_On_Firm_Board__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total # Of Key/Leadership Alumni From All Related Contacts --></help>
+        <label><!-- # Of Key/Leadership Alumni --></label>
+        <name>Of_Key_Leadership_Alumni__c</name>
+    </fields>
+    <fields>
+        <help><!-- # Directors, VP, C-Suite friends of KU (non-alumni) on company board. --></help>
+        <label><!-- # Of Key Non-Alumni On Firm Board --></label>
+        <name>Of_Key_Non_Alumni_On_Firm_Board__c</name>
+    </fields>
+    <fields>
+        <help><!-- Manual Entry # of news stories of firm and KU partnership --></help>
+        <label><!-- # Of NewsStories Of Firm-KU Partnership --></label>
+        <name>Of_NewsStories_Of_Firm_KU_Partnership__c</name>
+    </fields>
+    <fields>
+        <help><!-- Manual Entry - # Of Seminars Given By Firm At KU --></help>
+        <label><!-- # Of Seminars Given By Firm At KU --></label>
+        <name>Of_Seminars_Given_By_Firm_At_KU__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Of Sponsored Professorships --></label>
+        <name>Of_Sponsored_Professorships__c</name>
+    </fields>
+    <fields>
+        <help><!-- # Of Sponsored Research Proposals --></help>
+        <label><!-- # Of Sponsored Research Proposals --></label>
+        <name>Of_Sponsored_Research_Proposals__c</name>
+    </fields>
+    <fields>
+        <help><!-- # KU facilities used by the company --></help>
+        <label><!-- # Of Times KU Equipment Leased --></label>
+        <name>Of_Times_KU_Equipment_Leased__c</name>
+    </fields>
+    <fields>
+        <help><!-- # of major entities collaborating with the Company. --></help>
+        <label><!-- # Of MajorEntities CollaboratingWithFirm --></label>
+        <name>Of_University_Colleges_Collaborating__c</name>
+    </fields>
+    <fields>
+        <help><!-- Optionally, enter an Alias --></help>
+        <label><!-- Source Organization Alias --></label>
+        <name>Organization_Alias__c</name>
+    </fields>
+    <fields>
+        <help><!-- Company Division --></help>
+        <label><!-- Source Organization Division --></label>
+        <name>Organization_Division__c</name>
+    </fields>
+    <fields>
+        <help><!-- Organization Short Name --></help>
+        <label><!-- Source Organization Short Name --></label>
+        <name>Organization_Short_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Unique ID of Organization from Source System - Applicable only for imported Organizations --></help>
+        <label><!-- Source System ID --></label>
+        <name>Organization_Source_System_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Postal Code --></label>
+        <name>Postal_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used to Flag one of the Source Organizations related to a Master Organization as &quot;Primary&quot;. Check this if this is Primary Source Org for the Master --></help>
+        <label><!-- Primary Source Org? --></label>
+        <name>Primary_Source_Org__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hidden field to count Master RA --></help>
+        <label><!-- RU Count Master RA Src --></label>
+        <name>RU_Count_Master_RA_Src__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hidden Field To Count Strategic Partner Designation --></help>
+        <label><!-- RU Count Strategic Hiring Partner Src --></label>
+        <name>RU_Count_Strategic_Hiring_Partner_Src__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is a hidden field used to calculate the number of spinoff companies at the Master Org using Rollup. This is set to 1 if any Source Org is a Spin Off Company. --></help>
+        <label><!-- RV Spinoff Count --></label>
+        <name>RV_Spinoff_Count__c</name>
+    </fields>
+    <fields>
+        <help><!-- # KU faculty with a non-KU relationship with the Company. --></help>
+        <label><!-- # ResearchersWith NonKU Relationship --></label>
+        <name>ResearchersWith_NonKU_Relationship__c</name>
+    </fields>
+    <fields>
+        <label><!-- # SBIR STTR Proposals Awarded --></label>
+        <name>SBIR_STTR_Proposals_Awarded__c</name>
+    </fields>
+    <fields>
+        <label><!-- # SBIR STTR Proposals Not Awarded --></label>
+        <name>SBIR_STTR_Proposals_Not_Awarded__c</name>
+    </fields>
+    <fields>
+        <help><!-- # SBIR STTR Proposals Applied --></help>
+        <label><!-- # SBIR STTR Proposals Applied --></label>
+        <name>SBIR_STTR_Proposals__c</name>
+    </fields>
+    <fields>
+        <help><!-- The KU Division that the data is received from --></help>
+        <label><!-- Source Organization Owner --></label>
+        <name>Source_KU_Division__c</name>
+        <picklistValues>
+            <masterLabel>Career Services</masterLabel>
+            <translation><!-- Career Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Center For Research</masterLabel>
+            <translation><!-- Center For Research --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Continuing Education</masterLabel>
+            <translation><!-- Continuing Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Partnerships</masterLabel>
+            <translation><!-- Corporate Partnerships --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Endowment</masterLabel>
+            <translation><!-- Endowment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology Transfer</masterLabel>
+            <translation><!-- Technology Transfer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Created date in the source system. --></help>
+        <label><!-- Source System Created Date --></label>
+        <name>Source_System_Created_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source System Is Deleted --></label>
+        <name>Source_System_Is_Deleted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Last modified date in the source system. --></help>
+        <label><!-- Source System Last Modified Date --></label>
+        <name>Source_System_Last_Modified_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose from the list of Source Systems to indicate where this data was received from --></help>
+        <label><!-- Source System --></label>
+        <name>Source_System__c</name>
+        <picklistValues>
+            <masterLabel>Advance</masterLabel>
+            <translation><!-- Advance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manual Entry</masterLabel>
+            <translation><!-- Manual Entry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PeopleSoft</masterLabel>
+            <translation><!-- PeopleSoft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reggie</masterLabel>
+            <translation><!-- Reggie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sophia</masterLabel>
+            <translation><!-- Sophia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Symplicity</masterLabel>
+            <translation><!-- Symplicity --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- State/Province --></label>
+        <name>StateORProvince__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total # SO Contacts --></label>
+        <name>Total_SO_Contacts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Website --></label>
+        <name>Website__c</name>
+    </fields>
+    <fields>
+        <label><!-- ZIP Code --></label>
+        <name>ZIP_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Of Jobs Posted --></label>
+        <name>of_Jobs_posted__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Of Sponsored Research Awards --></label>
+        <name>of_Sponsored_Research_Awards__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Of Career Fair Events --></label>
+        <name>of_career_fair_events__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Of Internships --></label>
+        <name>of_internships__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Of Licenses Executed --></label>
+        <name>of_licenses_executed__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Of Service Agreements --></label>
+        <name>of_service_agreements__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Of Workshops --></label>
+        <name>of_workshops__c</name>
+    </fields>
+    <layouts>
+        <layout>Source Organization Layout For All Non Admin Users</layout>
+        <sections>
+            <label><!-- Address &amp; Communication Details --></label>
+            <section>Address &amp; Communication Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields For Manual Entry --></label>
+            <section>Fields For Manual Entry</section>
+        </sections>
+        <sections>
+            <label><!-- Organization Details --></label>
+            <section>Organization Details</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Source Organization Master Layout</layout>
+        <sections>
+            <label><!-- Address &amp; Communication Details --></label>
+            <section>Address &amp; Communication Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Details Provided from Source Orgs --></label>
+            <section>Details Provided from Source Orgs</section>
+        </sections>
+        <sections>
+            <label><!-- Endowment Details --></label>
+            <section>Endowment Details</section>
+        </sections>
+        <sections>
+            <label><!-- Organization Details --></label>
+            <section>Organization Details</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Excluded --></label>
+        <name>Excluded</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Standard SO --></label>
+        <name>Standard_SO</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Primary SourceOrganization already exists for this MasterOrganization. If you want to select this as the PrimarySource, please uncheck the &quot;Primary&quot; checkbox from the current PrimarySource --></errorMessage>
+        <name>Only_One_Primary_Source_Per_Master</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only System Administrator Can Change The Source Organization Owner/Master Organization - Please Contact Your System Administrator --></errorMessage>
+        <name>SourceOrgOwner_CannotChange</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Create_MO --></label>
+        <name>Create_MO</name>
+    </webLinks>
+</CustomObjectTranslation>

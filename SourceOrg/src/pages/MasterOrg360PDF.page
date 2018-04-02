@@ -1,0 +1,412 @@
+<apex:page standardController="Account" sidebar="fasle" showheader="false" renderAs="pdf">
+<apex:form >
+<html>
+
+<head>
+<title>PDF: 360 Degree View Of {!account.name}</title>
+</head>
+
+<table class="container">
+<tr>
+<td><apex:image id="KULogo" value="{!$Resource.KUSighorz2C}" width="361" height="122"/></td>
+</tr>
+<tr>
+<td>
+<h1><apex:outputText >360 Degree View Of {!account.name}</apex:outputText></h1>
+</td>
+</tr>
+<tr>
+<td>
+<h2><apex:outputLabel value="Report Date:" />
+<apex:outputText >{!Now()}</apex:outputText></h2>
+</td>
+</tr>
+</table>
+<br></br><br></br><br></br>
+
+<apex:pageBlock title="Organization Overview">
+<apex:pageBlockSection showHeader="true" title="Organization Description" columns="1" >
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="NAICS Description" />
+<apex:outputField value="{!account.NaicsDesc}" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="SIC Description" />
+<apex:outputField value="{!account.SicDesc}" />
+</apex:pageBlockSectionItem>
+</apex:pageBlockSection>
+<br></br><br></br>
+<apex:pageBlockSection showHeader="true" title="Key Statistics" columns="1" >
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="Annual Revenue" />
+<apex:outputField value="{!account.AnnualRevenue}" />
+</apex:pageBlockSectionItem>
+</apex:pageBlockSection>
+</apex:pageBlock>
+<br></br><br></br>
+<apex:pageBlock title="Economic Development">
+<!-- 071813 1500 BI CRM 45-50. -->
+<apex:pageBlockSection showHeader="true" title="Tech Commercialization" columns="1" >
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Of Licenses Executed" />
+<apex:outputField value="{!account.N_oflicensesexecuted__c}" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Of Licenses Active" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="$ Generated From Licenses" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="KU Spin-Off Companies" />
+<apex:outputField value="{!account.N_Of_KU_Spinoff_Companies__c}" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="$ License Revenue Generated From Spin-Off" />
+<apex:outputField value="{!account.D_LicenseRevenueFromSpinoffs__c}" />
+</apex:pageBlockSectionItem>
+</apex:pageBlockSection>
+<br></br><br></br>
+<!-- 071813 1500 BI CRM 57-60. -->
+<apex:pageBlockSection showHeader="true" title="Geographic Growth" columns="1" >
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Company FTE Located In KU BTBC" />
+<apex:outputField value="{!account.N_OfCompanyFTELocatedInKUBTBC__c}" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Company FTE Located In Kansas" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Company FTE Located In Region (OK, MO, NE)" />
+</apex:pageBlockSectionItem>
+</apex:pageBlockSection>
+<br></br>
+<!-- 071813 1500 BI CRM 51-56. -->
+<apex:pageBlockSection showHeader="true" title="Bueiness Incubation" columns="1" >
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# SBIR/STTR Grants Applied" />
+<apex:outputField value="{!account.N_SBIR_STTR_Grants_Applied__c}" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# SBIR/STTR Grants Awarded" />
+<apex:outputField value="{!account.N_SBIR_STTR_Grants_Awarded__c}" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="$ Raised From SBIR/STTR Grants" />
+<apex:outputField value="{!account.D_Raised_From_SBIR_STTR_Grants__c}" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="$ Raised From External Investment" />
+<apex:outputField value="{!account.D_FromExternalInvestment__c}" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Company Reps On KUCTC Board" />
+</apex:pageBlockSectionItem>
+</apex:pageBlockSection>
+</apex:pageBlock>
+<br></br><br></br>
+<apex:pageBlock title="Knowledge Transfer">
+<!-- 071813 1500 BI CRM 28-33. -->
+<apex:pageBlockSection showHeader="true" title="Company" columns="1" >
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Of Firm Courses Held" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Of Firm Employees Seeking Training At KU Cont ED" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Of Workshops" />
+<apex:outputField value="{!account.N_OfWorkshops__c}" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Sponsored Professorships" />
+<apex:outputField value="{!account.N_Of_Sponsored_Professorships__c}" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Of University Researchers To Firms For Sabbatical" />
+<apex:outputField value="{!account.N_OfUniversityResearcherstoFirmsForSabba__c}" />
+</apex:pageBlockSectionItem>
+</apex:pageBlockSection>
+<br></br><br></br>
+<!-- 071813 1500 BI CRM 34-43. -->
+<apex:pageBlockSection showHeader="true" title="Joint Knowledge Creation" columns="2" >
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Of Seminars Given By Firm At KU" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Of Citations For University-Firm Published Research" />
+<apex:outputField value="{!account.N_OfCitationsOfKUFirmPublications__c}" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Of Firm Expert Visits To University" />
+<apex:outputField value="{!account.N_Of_Firm_Expert_Visits_To_University__c}" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Of Joint Invention Disclosures Received" />
+<apex:outputField value="{!account.N_OfJointInventionDisclosuresReceived__c }" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Of Joint Patents Filed" />
+<apex:outputField value="{!account.N_Of_Joint_Patents_Filed__c }" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Of Joint Patents Issued" />
+<apex:outputField value="{!account.N_Of_Joint_Patents_Issued__c}" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Of Joint PCT Patents Filed" />
+<apex:outputField value="{!account.N_Of_Joint_PCT_Patents_Filed__c }" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Of Joint PCT Patents Issued" />
+<apex:outputField value="{!account.N_Of_Joint_PCT_Patents_Issued__c }" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="$ Generated From Joint Patents" />
+<apex:outputField value="{!account.D_FromJointPatents__c }" />
+</apex:pageBlockSectionItem>
+</apex:pageBlockSection>
+<br></br><br></br>
+<!-- 071813 1500 BI CRM 19-27. -->
+<apex:pageBlockSection showHeader="true" title="Student" columns="1" >
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Of Internships" />
+<apex:outputField value="{!account.N_OfInternships__c}" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Of Jobs Posted" />
+<apex:outputField value="{!account.N_OfJobsPosted__c}" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Of Career Fair Events" />
+<apex:outputField value="{!account.N_OfCareerFairEvents__c}" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Interviews On Campus" />
+<apex:outputField value="{!account.N_OfInterviewsOnCampus__c}" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Of Courses With Firm Input" />
+<apex:outputField value="{!account.N_OfCoursesWithFirmInput__c}" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Of Joint Supervisors Of PhD And Masters Theses" />
+<apex:outputField value="{!account.N_OfJointSupervisorsofPhDandMaster__c}" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="$ For Capstone Projects" />
+<apex:outputField value="{!account.D_ForCapstoneProjects__c}" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="IS KU A Strategic Hiring Partner?" />
+<apex:outputField value="{!account.Is_KU_A_Strategic_Hiring_Partner__c}" />
+</apex:pageBlockSectionItem>
+</apex:pageBlockSection>
+</apex:pageBlock>
+<br></br><br></br>
+<apex:pageBlock title="Research & Services">
+<!-- 071813 1500 BI CRM 17. -->
+<apex:pageBlockSection showHeader="true" title="Policy" columns="1" >
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Of Collaborative Policy-Changing Activities" />
+<apex:outputField value="{!account.N_CollaborativePolicyChangingActivities__c}" />
+</apex:pageBlockSectionItem>
+</apex:pageBlockSection>
+<br></br><br></br>
+<!-- 071813 1500 BI CRM 3-10. -->
+<apex:pageBlockSection showHeader="true" title="Shared Research And Services" columns="1" >
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Of Sponsored Research Proposals" />
+<apex:outputField value="{!account.N_OfSponsoredResearchProposals__c}" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Of Sponsored Research Awards" />
+<apex:outputField value="{!account.N_OfSponsoredResearchAwards__c}" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="$ Of Sponsored Research Awards" />
+<apex:outputField value="{!account.D_SponsoredResearchAwards__c}" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Of University Facilities Used By Firms" />
+<apex:outputField value="{!account.N_OfKUFacilitiesUsedByFirms__c}" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Of Times University Equipment Leased" />
+<apex:outputField value="{!account.N_OfTimesKUEquipmentLeased__c}" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="$ From Equipment Lease" />
+<apex:outputField value="{!account.D_FromEquipmentLease__c}" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Of Service Agreements" />
+<apex:outputField value="{!account.N_OfServiceAgreements__c}" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="$ Of Service Agreements" />
+<apex:outputField value="{!account.D_ServiceAgreements__c}" />
+</apex:pageBlockSectionItem>
+</apex:pageBlockSection>
+</apex:pageBlock>
+<br></br><br></br>
+<apex:pageBlock title="IT Engagement">
+<!-- 071813 1500 BI CRM 83-85. -->
+<apex:pageBlockSection showHeader="true" title="IT Engagement" columns="1" >
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="$ Of IT Vendor Spending" />
+<apex:outputField value="{!account.D_ITVendorSpending__c}" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Of Executive Briefings" />
+<apex:outputField value="{!account.N_OfExecutiveBriefings__c}" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="$ Cost Savings" />
+<apex:outputField value="{!account.D_CostSavings__c}" />
+</apex:pageBlockSectionItem>
+<br></br>
+</apex:pageBlockSection>
+</apex:pageBlock>
+<br></br><br></br>
+<!-- 071813 1500 BI CRM 61-81. -->
+<apex:pageBlock title="Potential For Collaboration">
+<apex:pageBlockSection showHeader="true" title="Potential For Collaboration" columns="2" >
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="$ Of Gifts To KU" />
+<apex:outputField value="{!account.D_Of_Gifts_To_KU__c}" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="Geographic Proximity Of Firm To University" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Of Major Entities Collaborating With Firm" />
+<apex:outputField value="{!account.N_OfMajorEntitiesCollaboratingWithFirm__c}" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Of Firm Collaboration Activities With Other Universities" />
+<apex:outputField value="{!account.N_OfFirmCollaborationActivities__c}" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Of Calls To Firm" />
+<apex:outputField value="{!account.N_Of_Calls_To_Firm__c}" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Of Emails To Firm" />
+<apex:outputField value="{!account.N_Of_Emails_To_Firm__c}" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Of Total Firm Employees" />
+<apex:outputField value="{!account.N_OfFirmEmployees__c}" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Of KU Faculty And Staff Consulting For Firm" />
+<apex:outputField value="{!account.N_OfKUStaffConsultingForFirm__c}" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Of KU Faculty And Staff Serving On Firm Board" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Of KU Alumni Working In Firm" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Of Key KU Alumni" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# KU Researchers With Non-KU Eelationship To CO" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Of KU Alumni Serving On Firm Board" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Of Key Non-Alumni On Firm Board" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# CO key Executive Visits To KU" />
+<apex:outputField value="{!account.N_CO_Key_Executive_Visits_To_KU__c}" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# KU Visits To CO HQ" />
+<apex:outputField value="{!account.N_KU_Visits_To_CO_HQ__c}" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# Of News Stories Of Firm And KU Partnership" />
+<apex:outputField value="{!account.N_OfNewsStoriesOfKUFirmPartnership__c}" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="Master RA in Place?" />
+<apex:outputField value="{!account.Is_Master_RA_In_Place__c}" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="# CDA In Place Between Firm And KU" />
+<apex:outputField value="{!account.N_CDA_In_Place_Between_Firm_And_KU__c}" />
+</apex:pageBlockSectionItem>
+<br></br>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="Length Of Client Relationship" />
+<apex:outputField value="{!account.Length_Of_Client_Relationship_Years__c}" />
+</apex:pageBlockSectionItem>
+<br></br>
+</apex:pageBlockSection>
+</apex:pageBlock>
+<br></br><br></br>
+</html>
+</apex:form>
+</apex:page>

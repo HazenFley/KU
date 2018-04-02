@@ -1,0 +1,385 @@
+<apex:page standardController="Account"  extensions="mySave" showHeader="false" sidebar="false" tabStyle="account" >
+
+<style type="text/css">
+    .col1 {width:20%; text-align:left;}
+    .col2 {width:15%; text-align:left;}
+    .col3 {width:15%; text-align:left;} 
+    .col4 {width:20%; text-align:left;}
+    .col5 {width:15%; text-align:left;}
+    .col6 {width:15%; text-align:left;}       
+</style>
+
+<head>
+<title>Expected Value {!account.name}</title>
+</head>
+
+<apex:form id="theform" >
+
+<apex:sectionHeader title="Master Organization Expected Value" subtitle="{!account.name}" help="/help/doc/user_ed.jsp?loc=help"/>
+
+<apex:pageBlock mode="Edit">
+<apex:pageBlockButtons >
+    <!--<apex:commandButton value="Edit" action="{!Edit}" id="editButton"/>-->
+    <apex:commandButton value="Save" id="saveButton" action="{!Save}" />
+    <apex:commandButton onclick="resetEdit()" id="resetButton" value="Cancel" action="{!Cancel}"/>
+    <apex:commandButton value="Clear" id="clearButton" onclick="window.location.reload()" rerender="theform"/>
+</apex:pageBlockButtons>
+
+<apex:pageBlockSection showHeader="true" title="360 Report Inputs" columns="1">
+
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="Select/Change KU Division Generating Report" />
+<apex:inputField value="{!account.KU_Division_Generating_Report__c}" />      
+</apex:pageBlockSectionItem>
+
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="Key Company Research/Focus Areas" />
+<apex:inputField value="{!account.Key_Focus_Areas__c}" />       
+</apex:pageBlockSectionItem>
+
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="Status of Partnership" />
+<apex:inputField value="{!account.Status_Of_Partnership__c}">
+<!--<apex:inlineEditSupport showOnEdit="saveButton, cancelButton"  
+            hideOnEdit="editButton" event="ondblclick"  
+            changedStyleClass="myBoldClass" resetFunction="resetInlineEdit"/>-->
+</apex:inputField>           
+</apex:pageBlockSectionItem>
+
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="Other Locations" />
+<apex:inputField value="{!account.Other_Locations__c}" />       
+</apex:pageBlockSectionItem>
+
+<apex:pageBlockSectionItem >
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Of KU Alumni Working In Firm"/> 
+<apex:inputField value="{!account.N_Of_KU_Alumni_Working_In_Firm__c}" />
+</apex:pageBlockSectionItem>
+
+<apex:pageBlockSectionItem >
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Of Key KU Alumni"/> 
+<apex:inputField value="{!account.N_Of_Key_KU_Alumni__c}" />
+</apex:pageBlockSectionItem>
+
+</apex:pageBlockSection>
+
+<!--
+<apex:inputField value="{!account.EV_Of_Key_KU_Alumni__c}" />
+<apex:inputField value="{!account.EV_Of_KU_Alumni_Working_In_Firm__c}" />
+--->
+
+<apex:pageBlockSection showHeader="true" title="Research And Services" columns="1">
+
+<apex:panelGrid cellpadding="1" cellspacing="1" columnClasses="col1,col2,col3,col4,col5,col6" columns="6" width="100%" border="0">
+
+<apex:outputText style="font-style:regular; font-weight:bold;" value="Attribute"/>
+<apex:outputText style="font-style:regular; font-weight:bold;" value="Current Value"/>
+<apex:outputText style="font-style:regular; font-weight:bold;" value="Expected Value"/>
+<apex:outputText style="font-style:regular; font-weight:bold;" value="Attribute"/>
+<apex:outputText style="font-style:regular; font-weight:bold;" value="Current Value"/>
+<apex:outputText style="font-style:regular; font-weight:bold;" value="Expected Value"/>
+
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Of Sponsored Research Proposals"/> 
+<apex:outputField value="{!account.N_OfSponsoredResearchProposals__c}" />
+<apex:inputField value="{!account.EV_Of_Sponsored_Research_Proposals__c}"/>   
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Of Sponsored Research Awards" />
+<apex:outputField value="{!account.N_OfSponsoredResearchAwards__c}" />
+<apex:inputField value="{!account.EV_NOf_Sponsored_Research_Awards__c}" />
+
+<apex:outputText style="font-style:regular; font-weight:bold;" value="$ Of Sponsored Research"/> 
+<apex:outputField value="{!account.D_SponsoredResearchAwards__c}" />
+<apex:inputField value="{!account.EV_Of_Sponsored_Research_Awards__c}"/>   
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Of University Facilities Used By Firms" />
+<apex:outputField value="{!account.N_OfKUFacilitiesUsedByFirms__c}" />
+<apex:inputField value="{!account.EV_Of_KU_Facilities_Used_By_Firms__c}" />
+
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Of Times University Equipment Leased"/> 
+<apex:outputField value="{!account.N_OfTimesKUEquipmentLeased__c}" />
+<apex:inputField value="{!account.EV_Of_Times_KU_Equipment_Leased__c}" />
+<apex:outputText style="font-style:regular; font-weight:bold;" value="$ From Equipment Leased"/> 
+<apex:outputField value="{!account.D_FromEquipmentLease__c}" />
+<apex:inputField value="{!account.EV_From_Equipment_Lease__c}" />
+
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Of Service Agreements"/> 
+<apex:outputField value="{!account.N_OfServiceAgreements__c}" />
+<apex:inputField value="{!account.EV_Of_Service_Agreements__c}" />
+<apex:outputText style="font-style:regular; font-weight:bold;" value="$ Of Service Agreements"/> 
+<apex:outputField value="{!account.D_ServiceAgreements__c}" />
+<apex:inputField value="{!account.EV_From_Service_Agreements__c}" />
+
+<!--
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Collaborative Grants Or Contracts Awarded"/> 
+<apex:outputText value="NONE" />
+<apex:inputField value="{!account.EV_Collaborative_Grants_Awarded__c}" />
+<apex:outputText style="font-style:regular; font-weight:bold;" value="$ Of Awarded Grants"/> 
+<apex:outputText value="NONE" />
+<apex:inputField value="{!account.EV_Of_Awarded_Grants_Total__c}" />
+
+<apex:outputText style="font-style:regular; font-weight:bold;" value="$ Of Grants Received By KU"/> 
+<apex:outputText value="NONE" />
+<apex:inputField value="{!account.EV_Of_Awarded_Grants_received_By_KU__c}" />
+
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Of Collaborative Policy-Changing Activities"/> 
+<apex:outputField value="{!account.N_CollaborativePolicyChangingActivities__c}" />
+<apex:inputField value="{!account.EV_Of_Collaborative_policy_Changing__c}" />
+
+-->
+
+</apex:panelGrid>
+</apex:pageBlockSection>
+
+
+<apex:pageBlockSection showHeader="true" title="Knowledge Transfer" columns="1">
+
+<apex:panelGrid cellpadding="1" cellspacing="1" columnClasses="col1,col2,col3,col4,col5,col6" columns="6" width="100%" border="0">
+
+<apex:outputText style="font-style:regular; font-weight:bold;" value="Attribute"/>
+<apex:outputText style="font-style:regular; font-weight:bold;" value="Current Value"/>
+<apex:outputText style="font-style:regular; font-weight:bold;" value="Expected Value"/>
+<apex:outputText style="font-style:regular; font-weight:bold;" value="Attribute"/>
+<apex:outputText style="font-style:regular; font-weight:bold;" value="Current Value"/>
+<apex:outputText style="font-style:regular; font-weight:bold;" value="Expected Value"/>
+
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Of Internships"/> 
+<apex:outputField value="{!account.N_OfInternships__c}" />
+<apex:inputField value="{!account.EV_Of_Internships__c}" />
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Of Jobs Posted"/> 
+<apex:outputField value="{!account.N_OfJobsPosted__c}" />
+<apex:inputField value="{!account.EV_Of_Jobs_Posted__c}" />
+
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Of Career Fair Events"/> 
+<apex:outputField value="{!account.N_OfCareerFairEvents__c}" />
+<apex:inputField value="{!account.EV_Of_Career_Dair_Events__c}" />
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Interviews On Campus"/> 
+<apex:outputField value="{!account.N_OfInterviewsOnCampus__c}" />
+<apex:inputField value="{!account.EV_Interviews_On_Campus__c}" />
+
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Of Courses With Firm Input"/> 
+<apex:outputField value="{!account.N_OfCoursesWithFirmInput__c}" />
+<apex:inputField value="{!account.EV_Of_Courses_With_Firm_Input__c}" />
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Of Joint Supervisors Of Phd And Masters Theses"/> 
+<apex:outputField value="{!account.N_OfJointSupervisorsofPhDandMaster__c}" />
+<apex:inputField value="{!account.EV_Of_Joint_Supervisors_Of_PhD_M_These__c}" />
+
+<apex:outputText style="font-style:regular; font-weight:bold;" value="$ For Capstone Projects"/> 
+<apex:outputField value="{!account.D_ForCapstoneProjects__c}" />
+<apex:inputField value="{!account.EV_For_Capstone_Projects__c}" />
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Of Firm Courses Held"/> 
+<apex:outputField value="{!account.N_Of_Firm_Courses_Held__c}" />
+<apex:inputField value="{!account.EV_Of_Firm_Courses_held__c}" />
+
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Of Firm Employees Seeking Training At KUCE"/> 
+<apex:outputField value="{!account.N_Of_Firm_Employees_Seeking_Training_At__c}" />
+<apex:inputField value="{!account.EV_Of_Firm_Employees_Seeking_Training_CE__c}" />
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Of Workshops"/> 
+<apex:outputField value="{!account.N_OfWorkshops__c}" />
+<apex:inputField value="{!account.EV_Of_Workshops__c}" />
+
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Sponsored Professorships"/> 
+<apex:outputField value="{!account.N_Of_Sponsored_Professorships__c}" />
+<apex:inputField value="{!account.EV_Of_Sponsored_Professorships__c}" />
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Of University Researchers To Firms For Sabbatical"/> 
+<apex:outputField value="{!account.N_OfUniversityResearcherstoFirmsForSabba__c}" />
+<apex:inputField value="{!account.EV_Of_KU_Researchers_For_Sabbatical__c}" />
+
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Of Seminars Given By Firm At KU"/> 
+<apex:outputField value="{!account.N_Of_Seminars_Given_By_Firm_At_KU__c}" />
+<apex:inputField value="{!account.EV_Of_Seminars_Given_By_Firm_At_KU__c}" />
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Of Citations For University-Firm Published Research"/> 
+<apex:outputField value="{!account.N_OfCitationsOfKUFirmPublications__c}" />
+<apex:inputField value="{!account.EV_Of_Citations_For_Published_Research__c}" />
+ 
+
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Of Firm Expert Visits To University"/> 
+<apex:outputField value="{!account.N_Of_Firm_Expert_Visits_To_University__c}" />
+<apex:inputField value="{!account.EV_Of_Firm_Expert_Visits_To_KU__c}" />
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Of Joint Invention Disclosures Received"/> 
+<apex:outputField value="{!account.N_OfJointInventionDisclosuresReceived__c}" />
+<apex:inputField value="{!account.EV_Of_Joint_Invention_Disclosures__c}" />
+
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Of Joint Patents Filed"/> 
+<apex:outputField value="{!account.N_Of_Joint_Patents_Filed__c}" />
+<apex:inputField value="{!account.EV_Of_Joint_Patents_Filed__c}" />
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Of Joint Patents Issued"/> 
+<apex:outputField value="{!account.N_Of_Joint_Patents_Issued__c}" />
+<apex:inputField value="{!account.EV_Of_Joint_Patents_Issued__c}" />
+
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Of Joint PCT Patents Filed"/> 
+<apex:outputField value="{!account.N_Of_Joint_PCT_Patents_Filed__c}" />
+<apex:inputField value="{!account.EV_Of_Joint_PCT_Patents_Filed__c}" />
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Of Joint PCT Patents Issued"/> 
+<apex:outputField value="{!account.N_Of_Joint_PCT_Patents_Issued__c}" />
+<apex:inputField value="{!account.EV_of_Joint_PCT_Patents_Issued__c}" />
+
+<apex:outputText style="font-style:regular; font-weight:bold;" value="$ Generated From Joint Patents"/> 
+<apex:outputField value="{!account.D_FromJointPatents__c}" />
+<apex:inputField value="{!account.EV_Generated_From_Joint_Patents__c}" />
+
+</apex:panelGrid>
+
+</apex:pageBlockSection>
+
+
+<apex:pageBlockSection showHeader="true" title="Economic Development" columns="1">
+
+<apex:panelGrid cellpadding="1" cellspacing="1" columnClasses="col1,col2,col3,col4,col5,col6" columns="6" width="100%" border="0">
+
+<apex:outputText style="font-style:regular; font-weight:bold;" value="Attribute"/>
+<apex:outputText style="font-style:regular; font-weight:bold;" value="Current Value"/>
+<apex:outputText style="font-style:regular; font-weight:bold;" value="Expected Value"/>
+<apex:outputText style="font-style:regular; font-weight:bold;" value="Attribute"/>
+<apex:outputText style="font-style:regular; font-weight:bold;" value="Current Value"/>
+<apex:outputText style="font-style:regular; font-weight:bold;" value="Expected Value"/>
+
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Of Licenses Executed"/> 
+<apex:outputField value="{!account.N_oflicensesexecuted__c}" />
+<apex:inputField value="{!account.EV_Of_Licenses_Executed__c}" />
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Of Licenses Active"/> 
+<apex:outputField value="{!account.N_Of_Licenses_Active__c}" />
+<apex:inputField value="{!account.EV_Of_Licenses_Active__c}" />
+
+<apex:outputText style="font-style:regular; font-weight:bold;" value="$ Generated From Licenses"/> 
+<apex:outputField value="{!account.D_Generated_From_Licenses__c}" />
+<apex:inputField value="{!account.EV_Generated_From_Licenses__c}" />
+<apex:outputText style="font-style:regular; font-weight:bold;" value="$ License Revenue Generated From Spin-Off"/> 
+<apex:outputField value="{!account.D_LicenseRevenueFromSpinoffs__c}" />
+<apex:inputField value="{!account.EV_License_Revenue_From_Spin_Off__c}" />
+
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# SBIR/STTR Grants Applied"/> 
+<apex:outputField value="{!account.N_SBIR_STTR_Grants_Applied__c}" />
+<apex:inputField value="{!account.EV_SBIR_STTR_Grants_Applied__c}" />
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# SBIR/STTR Grants Awarded"/> 
+<apex:outputField value="{!account.N_SBIR_STTR_Grants_Awarded__c}" />
+<apex:inputField value="{!account.EV_SBIR_STTR_Grants_Awarded__c}" />
+
+<apex:outputText style="font-style:regular; font-weight:bold;" value="$ Raised From SBIR/STTR Grants"/> 
+<apex:outputField value="{!account.D_Raised_From_SBIR_STTR_Grants__c}" />
+<apex:inputField value="{!account.EV_Raised_From_SBIR_STTR_Grants__c}" />
+<apex:outputText style="font-style:regular; font-weight:bold;" value="$ Raised From External Investment"/> 
+<apex:outputField value="{!account.D_FromExternalInvestment__c}" />
+<apex:inputField value="{!account.EV_Raised_From_External_Investment__c}" />
+
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Company Reps On KUCTC Board"/> 
+<apex:outputField value="{!account.N_Company_Reps_On_KUCTC_Board__c}" />
+<apex:inputField value="{!account.EV_Company_Reps_On_KUCTC_Board__c}" />
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Company FTE Located In Kansas"/> 
+<apex:outputField value="{!account.N_Company_FTE_Located_In_Kansas__c}" />
+<apex:inputField value="{!account.EV_Company_FTE_Located_In_Kansas__c}" />
+
+<!--
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# KU Reps On Company Start-Up Co Board"/> 
+<apex:outputText value="NONE" />
+<apex:inputField value="{!account.EV_Company_Reps_On_Start_Up_Board__c}" />
+-->
+
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Company FTE Located In Region"/> 
+<apex:outputField value="{!account.N_Company_FTE_Located_In_Region_OK_MO__c}" />
+<apex:inputField value="{!account.EV_Company_FTE_Located_In_Region__c}" />
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Company FTE Located In KU BTBC"/> 
+<apex:outputField value="{!account.N_OfCompanyFTELocatedInKUBTBC__c}" />
+<apex:inputField value="{!account.EV_Company_FTE_Located_In_KU_BTBR__c}" />
+
+
+</apex:panelGrid>
+
+</apex:pageBlockSection>
+
+
+<apex:pageBlockSection showHeader="true" title="Potential For Collaboration" columns="1">
+
+<apex:panelGrid cellpadding="1" cellspacing="1" columnClasses="col1,col2,col3,col4,col5,col6" columns="6" width="100%" border="0">
+
+<apex:outputText style="font-style:regular; font-weight:bold;" value="Attribute"/>
+<apex:outputText style="font-style:regular; font-weight:bold;" value="Current Value"/>
+<apex:outputText style="font-style:regular; font-weight:bold;" value="Expected Value"/>
+<apex:outputText style="font-style:regular; font-weight:bold;" value="Attribute"/>
+<apex:outputText style="font-style:regular; font-weight:bold;" value="Current Value"/>
+<apex:outputText style="font-style:regular; font-weight:bold;" value="Expected Value"/>
+
+<apex:outputText style="font-style:regular; font-weight:bold;" value="$ Of Gifts To KU"/> 
+<apex:outputField value="{!account.D_Of_Gifts_To_KU__c}" />
+<apex:inputField value="{!account.EV_Of_Gifts_To_KU__c}" />
+<!--
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Of Major Entities Collaborating With Firm"/> 
+<apex:outputText value="NONE" />
+<apex:inputField value="{!account.EV_Of_Major_Entities_Collaborating__c}" />
+--> 
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Of Firm Collaboration Activities With Other Universities"/> 
+<apex:outputField value="{!account.N_OfFirmCollaborationActivities__c}" />
+<apex:inputField value="{!account.EV_Of_Firm_Activities_With_Other_U__c}" />
+
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Of Calls To Firm"/> 
+<apex:outputField value="{!account.N_Of_Calls_To_Firm__c}" />
+<apex:inputField value="{!account.EV_Of_Calls_To_Firm__c}" />
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Of Emails To Firm"/> 
+<apex:outputField value="{!account.N_Of_Emails_To_Firm__c}" />
+<apex:inputField value="{!account.EV_Of_Emails_To_Firm__c}" />
+
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Of KU Faculty And Staff Consulting For Firm"/> 
+<apex:outputField value="{!account.N_OfKUStaffConsultingForFirm__c}" />
+<apex:inputField value="{!account.EV_Of_KU_F_S_Consulting_For_Firm__c}" />
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Of KU Faculty And Staff Serving On Firm Board"/> 
+<apex:outputField value="{!account.N_Of_KU_Faculty_And_Staff_Serving_On_Fir__c}" />
+<apex:inputField value="{!account.EV_Of_KU_F_S_Serving_On_Firm_Board__c}" />
+
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# KU Researchers With Non-KU Relationship To Co"/> 
+<apex:outputField value="{!account.N_KU_Researchers_With_Non_KU_Relationshi__c}" />
+<apex:inputField value="{!account.EV_KU_Researchers_With_Non_KU_To_CO__c}" />
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Of KU Alumni Serving On Firm Board"/> 
+<apex:outputField value="{!account.N_Of_KU_Alumni_Serving_On_Firm_Board__c}" />
+<apex:inputField value="{!account.EV_Of_KU_Alumni_Serving_On_Firm_Board__c}" />
+
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Of Key Non-Alumni On Firm Board"/> 
+<apex:outputField value="{!account.N_Of_Key_Non_Alumni_On_Firm_Board__c}" />
+<apex:inputField value="{!account.EV_Of_Key_Non_Alumni_On_Firm_Board__c}" />
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Co Key Executive Visits To KU"/> 
+<apex:outputField value="{!account.N_CO_Key_Executive_Visits_To_KU__c}" />
+<apex:inputField value="{!account.EV_Of_Firm_Expert_Visits_To_KU__c}" />
+
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# KU Visits To Co HQ"/> 
+<apex:outputField value="{!account.N_KU_Visits_To_CO_HQ__c}" />
+<apex:inputField value="{!account.EV_KU_Visits_To_CO_HQ__c}" />
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Of News Stories Of Firm And KU Partnership"/> 
+<apex:outputField value="{!account.N_OfNewsStoriesOfKUFirmPartnership__c}" />
+<apex:inputField value="{!account.EV_Of_News_Stories_Of_Firm_KU__c}" />
+
+<apex:outputText style="font-style:regular; font-weight:bold;" value="Length Of Client Relationship"/> 
+<apex:outputField value="{!account.Length_Relationship_In_Master_Org_Level__c}" />
+<apex:inputField value="{!account.EV_Length_Of_Relationship__c}" />
+
+</apex:panelGrid>
+
+</apex:pageBlockSection>
+
+
+<apex:pageBlockSection showHeader="true" title="IT Engagement" columns="1">
+
+<apex:panelGrid cellpadding="1" cellspacing="1" columnClasses="col1,col2,col3,col4,col5,col6" columns="6" width="100%" border="0">
+
+<apex:outputText style="font-style:regular; font-weight:bold;" value="Attribute"/>
+<apex:outputText style="font-style:regular; font-weight:bold;" value="Current Value"/>
+<apex:outputText style="font-style:regular; font-weight:bold;" value="Expected Value"/>
+<apex:outputText style="font-style:regular; font-weight:bold;" value="Attribute"/>
+<apex:outputText style="font-style:regular; font-weight:bold;" value="Current Value"/>
+<apex:outputText style="font-style:regular; font-weight:bold;" value="Expected Value"/>
+
+<apex:outputText style="font-style:regular; font-weight:bold;" value="$ Of IT Vendor Spending"/> 
+<apex:outputField value="{!account.D_ITVendorSpending__c}" />
+<apex:inputField value="{!account.EV_Of_IT_Vendor_Spending__c}" />
+<apex:outputText style="font-style:regular; font-weight:bold;" value="# Of Executive Briefings"/> 
+<apex:outputField value="{!account.N_OfExecutiveBriefings__c}" />
+<apex:inputField value="{!account.EV_Of_Executive_Briefings__c}" />
+
+<apex:outputText style="font-style:regular; font-weight:bold;" value="$ Cost Savings"/> 
+<apex:outputField value="{!account.D_CostSavings__c}" />
+<apex:inputField value="{!account.EV_Cost_Saving__c}" />
+
+
+</apex:panelGrid>
+
+</apex:pageBlockSection>
+
+
+</apex:pageBlock>
+</apex:form>
+</apex:page>

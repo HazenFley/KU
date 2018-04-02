@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Interaction__c$Interaction_Source_System_ID__c</field>
+    </columns>
+    <columns>
+        <field>Interaction__c$Id</field>
+    </columns>
+    <columns>
+        <field>Interaction__c$Interaction_Source_System__c</field>
+    </columns>
+    <columns>
+        <field>Interaction__c$Interaction_Source_KU_Division__c</field>
+    </columns>
+    <description>Use to generate Engagement XREF files. Modify the filter for the reference system.</description>
+    <filter>
+        <criteriaItems>
+            <column>Interaction__c$Interaction_Type__c</column>
+            <operator>contains</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Interaction__c$Interaction_Source_KU_Division__c</column>
+            <operator>equals</operator>
+            <value>Endowment</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>XREF Engagements</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Engagements__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Interaction__c$Activity_Due_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

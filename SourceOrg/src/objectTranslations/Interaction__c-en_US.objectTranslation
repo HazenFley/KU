@@ -1,0 +1,2694 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Engagement</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Engagements</value>
+    </caseValues>
+    <fields>
+        <label><!-- Abandon Date --></label>
+        <name>Abandon_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Academic Concentration For Job/Internship/Job Posting --></help>
+        <label><!-- Academic Concentration --></label>
+        <name>Academic_Concentration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Engagements (Account) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Due Date of an Activity --></help>
+        <label><!-- Activity Due Date --></label>
+        <name>Activity_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement Track Code --></label>
+        <name>Agreement_Track_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- Agreement Type For KUCTC Agreement Data From Sophia --></help>
+        <label><!-- Agreement Type --></label>
+        <name>Agreement_Type__c</name>
+        <picklistValues>
+            <masterLabel>Assignment</masterLabel>
+            <translation><!-- Assignment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assignment - Amendment</masterLabel>
+            <translation><!-- Assignment - Amendment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Capstone Sponsor</masterLabel>
+            <translation><!-- Capstone Sponsor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collaboration</masterLabel>
+            <translation><!-- Collaboration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Confidential Disclosure</masterLabel>
+            <translation><!-- Confidential Disclosure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Confidential Disclosure - Amendment</masterLabel>
+            <translation><!-- Confidential Disclosure - Amendment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equipment Use</masterLabel>
+            <translation><!-- Equipment Use --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Industry Sponsored Research</masterLabel>
+            <translation><!-- Industry Sponsored Research --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Industry Sponsored Research - Amendment</masterLabel>
+            <translation><!-- Industry Sponsored Research - Amendment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inter-Institutional</masterLabel>
+            <translation><!-- Inter-Institutional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>License - Exclusive</masterLabel>
+            <translation><!-- License - Exclusive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>License - Exclusive - Amendment</masterLabel>
+            <translation><!-- License - Exclusive - Amendment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>License - Mixed Exclusive</masterLabel>
+            <translation><!-- License - Mixed Exclusive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>License - Mixed Exclusive - Amendment</masterLabel>
+            <translation><!-- License - Mixed Exclusive - Amendment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>License - Non-Exclusive</masterLabel>
+            <translation><!-- License - Non-Exclusive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>License - Non-Exclusive - Amendment</masterLabel>
+            <translation><!-- License - Non-Exclusive - Amendment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Master Research</masterLabel>
+            <translation><!-- Master Research --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Master Service</masterLabel>
+            <translation><!-- Master Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Master Service - Amendment</masterLabel>
+            <translation><!-- Master Service - Amendment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Material Transfer - Inbound</masterLabel>
+            <translation><!-- Material Transfer - Inbound --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Material Transfer - Inbound - Amendment</masterLabel>
+            <translation><!-- Material Transfer - Inbound - Amendment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Material Transfer - Outbound</masterLabel>
+            <translation><!-- Material Transfer - Outbound --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Material Transfer - Outbound - Amendment</masterLabel>
+            <translation><!-- Material Transfer - Outbound - Amendment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Memorandum of Understanding</masterLabel>
+            <translation><!-- Memorandum of Understanding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Memorandum of Understanding - Amendment</masterLabel>
+            <translation><!-- Memorandum of Understanding - Amendment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Option</masterLabel>
+            <translation><!-- Option --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Option - Amendment</masterLabel>
+            <translation><!-- Option - Amendment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other - Amendment</masterLabel>
+            <translation><!-- Other - Amendment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research Affiliate</masterLabel>
+            <translation><!-- Research Affiliate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research Affiliate - Amendment</masterLabel>
+            <translation><!-- Research Affiliate - Amendment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Revenue Distribution</masterLabel>
+            <translation><!-- Revenue Distribution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Revenue Distribution - Amendment</masterLabel>
+            <translation><!-- Revenue Distribution - Amendment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service</masterLabel>
+            <translation><!-- Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service - Amendment</masterLabel>
+            <translation><!-- Service - Amendment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shareholder</masterLabel>
+            <translation><!-- Shareholder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shareholder - Amendment</masterLabel>
+            <translation><!-- Shareholder - Amendment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tangible Property License</masterLabel>
+            <translation><!-- Tangible Property License --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology Release</masterLabel>
+            <translation><!-- Technology Release --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Visiting Scientist</masterLabel>
+            <translation><!-- Visiting Scientist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work For Hire</masterLabel>
+            <translation><!-- Work For Hire --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- User the Task or Event is assigned to --></help>
+        <label><!-- Assigned To --></label>
+        <name>Assigned_To__c</name>
+        <relationshipLabel><!-- Engagements --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Department Implementing The Capstone Project --></help>
+        <label><!-- Capstone Project Department --></label>
+        <name>Capstone_Project_Department__c</name>
+    </fields>
+    <fields>
+        <help><!-- When is the Graduation/Internship/Job --></help>
+        <label><!-- Term/Semester/Quarter --></label>
+        <name>Class__c</name>
+        <picklistValues>
+            <masterLabel>2006-2007</masterLabel>
+            <translation><!-- 2006-2007 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2007-2008</masterLabel>
+            <translation><!-- 2007-2008 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2008-2009</masterLabel>
+            <translation><!-- 2008-2009 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2009-2010</masterLabel>
+            <translation><!-- 2009-2010 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2010-2011</masterLabel>
+            <translation><!-- 2010-2011 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2011-2012</masterLabel>
+            <translation><!-- 2011-2012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2012-2013</masterLabel>
+            <translation><!-- 2012-2013 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2013-2014</masterLabel>
+            <translation><!-- 2013-2014 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2014-2015</masterLabel>
+            <translation><!-- 2014-2015 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fall 2010</masterLabel>
+            <translation><!-- Fall 2010 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fall 2011</masterLabel>
+            <translation><!-- Fall 2011 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fall 2012</masterLabel>
+            <translation><!-- Fall 2012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fall 2013</masterLabel>
+            <translation><!-- Fall 2013 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fall 2014</masterLabel>
+            <translation><!-- Fall 2014 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fall 2015</masterLabel>
+            <translation><!-- Fall 2015 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School of Engineering B.S. Class of 2007</masterLabel>
+            <translation><!-- School of Engineering B.S. Class of 2007 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School of Engineering B.S. Class of 2008</masterLabel>
+            <translation><!-- School of Engineering B.S. Class of 2008 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School of Engineering B.S. Class of 2009</masterLabel>
+            <translation><!-- School of Engineering B.S. Class of 2009 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School of Engineering B.S. Class of 2010</masterLabel>
+            <translation><!-- School of Engineering B.S. Class of 2010 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School of Engineering B.S. Class of 2011</masterLabel>
+            <translation><!-- School of Engineering B.S. Class of 2011 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School of Engineering B.S. Class of 2012</masterLabel>
+            <translation><!-- School of Engineering B.S. Class of 2012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School of Engineering B.S. Class of 2013</masterLabel>
+            <translation><!-- School of Engineering B.S. Class of 2013 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School of Engineering B.S. Class of 2014</masterLabel>
+            <translation><!-- School of Engineering B.S. Class of 2014 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School of Engineering B.S. Class of 2015</masterLabel>
+            <translation><!-- School of Engineering B.S. Class of 2015 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spring 2010</masterLabel>
+            <translation><!-- Spring 2010 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spring 2011</masterLabel>
+            <translation><!-- Spring 2011 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spring 2012</masterLabel>
+            <translation><!-- Spring 2012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spring 2013</masterLabel>
+            <translation><!-- Spring 2013 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spring 2014</masterLabel>
+            <translation><!-- Spring 2014 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spring 2015</masterLabel>
+            <translation><!-- Spring 2015 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Summer 2010</masterLabel>
+            <translation><!-- Summer 2010 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Summer 2011</masterLabel>
+            <translation><!-- Summer 2011 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Summer 2012</masterLabel>
+            <translation><!-- Summer 2012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Summer 2013</masterLabel>
+            <translation><!-- Summer 2013 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Summer 2014</masterLabel>
+            <translation><!-- Summer 2014 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Summer 2015</masterLabel>
+            <translation><!-- Summer 2015 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Primary Contact for this Interaction. The Contact&apos;s Master Organization must match the Engagement&apos;s Master Organization. --></help>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Engagements (Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- $ Of Cost Savings From IT Engagement --></help>
+        <label><!-- $ Cost Savings --></label>
+        <name>Cost_Savings__c</name>
+    </fields>
+    <fields>
+        <help><!-- Job/Internship Count OR Count Of Attendees In a Continuing Ed Event --></help>
+        <label><!-- Count --></label>
+        <name>Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country of Filing --></label>
+        <name>Country_of_Filing__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date Of Creation In Source System --></help>
+        <label><!-- Source System Created Date --></label>
+        <name>Created_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dashboard Category --></label>
+        <name>Dashboard_Category__c</name>
+    </fields>
+    <fields>
+        <help><!-- Continuing Education Event Delivery Type --></help>
+        <label><!-- Delivery Type --></label>
+        <name>Delivery_Type__c</name>
+        <picklistValues>
+            <masterLabel>Blended</masterLabel>
+            <translation><!-- Blended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Certification</masterLabel>
+            <translation><!-- Certification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct</masterLabel>
+            <translation><!-- Direct --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In-house</masterLabel>
+            <translation><!-- In-house --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moodle</masterLabel>
+            <translation><!-- Moodle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online</masterLabel>
+            <translation><!-- Online --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private</masterLabel>
+            <translation><!-- Private --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public</masterLabel>
+            <translation><!-- Public --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regional</masterLabel>
+            <translation><!-- Regional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>State</masterLabel>
+            <translation><!-- State --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Department the contact is associated with for this particular engagement. This information comes from the Center for Research. --></help>
+        <label><!-- Department --></label>
+        <name>Department__c</name>
+    </fields>
+    <fields>
+        <help><!-- Provide a description of the event --></help>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter Agreement/Contract/Award Effective Date --></help>
+        <label><!-- Effective Date --></label>
+        <name>Effective_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter End Date/Time --></help>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Joint Supervisor End Term --></help>
+        <label><!-- End Term --></label>
+        <name>End_Term__c</name>
+    </fields>
+    <fields>
+        <help><!-- Endowment Gift Count 1 --></help>
+        <label><!-- Endowment Gift Count 1 --></label>
+        <name>Endowment_Gift_Count_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Endowment Gift Count 2 --></help>
+        <label><!-- Endowment Gift Count 2 --></label>
+        <name>Endowment_Gift_Count_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Endowment Gift Count 3 --></help>
+        <label><!-- Endowment Gift Count 3 --></label>
+        <name>Endowment_Gift_Count_3__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date of most recent gift. --></help>
+        <label><!-- Endowment Gift Last 1 --></label>
+        <name>Endowment_Gift_Last_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date of most recent gift to affinity --></help>
+        <label><!-- Endowment Gift Last 2 --></label>
+        <name>Endowment_Gift_Last_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date of most recent gift to affinity --></help>
+        <label><!-- Endowment Gift Last 3 --></label>
+        <name>Endowment_Gift_Last_3__c</name>
+    </fields>
+    <fields>
+        <help><!-- Range describing total legal gifts to affinity (KU Division/Department) from this company. --></help>
+        <label><!-- Endowment Gift Level 1 --></label>
+        <name>Endowment_Gift_Level_1__c</name>
+        <picklistValues>
+            <masterLabel>1) Under $25K</masterLabel>
+            <translation><!-- 1) Under $25K --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2) $25K - $99K</masterLabel>
+            <translation><!-- 2) $25K - $99K --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3) $100K - $999K</masterLabel>
+            <translation><!-- 3) $100K - $999K --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4) $1 Million +</masterLabel>
+            <translation><!-- 4) $1 Million + --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Range describing total legal gifts to this company. --></help>
+        <label><!-- Endowment Gift Level 2 --></label>
+        <name>Endowment_Gift_Level_2__c</name>
+        <picklistValues>
+            <masterLabel>1) Under $25K</masterLabel>
+            <translation><!-- 1) Under $25K --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2) $25K - $99K</masterLabel>
+            <translation><!-- 2) $25K - $99K --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3) $100K - $999K</masterLabel>
+            <translation><!-- 3) $100K - $999K --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4) $1 Million +</masterLabel>
+            <translation><!-- 4) $1 Million + --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Range describing total legal gifts to this company. --></help>
+        <label><!-- Endowment Gift Level 3 --></label>
+        <name>Endowment_Gift_Level_3__c</name>
+        <picklistValues>
+            <masterLabel>1) Under $25K</masterLabel>
+            <translation><!-- 1) Under $25K --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2) $25K - $99K</masterLabel>
+            <translation><!-- 2) $25K - $99K --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3) $100K - $999K</masterLabel>
+            <translation><!-- 3) $100K - $999K --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4) $1 Million +</masterLabel>
+            <translation><!-- 4) $1 Million + --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- KU Department where endowment was gifted. --></help>
+        <label><!-- Endowment Int 1 --></label>
+        <name>Endowment_Int_1__c</name>
+        <picklistValues>
+            <masterLabel>Alumni Association</masterLabel>
+            <translation><!-- Alumni Association --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Architecture</masterLabel>
+            <translation><!-- Architecture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Athletics</masterLabel>
+            <translation><!-- Athletics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business</masterLabel>
+            <translation><!-- Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>College of Liberal Arts</masterLabel>
+            <translation><!-- College of Liberal Arts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dole Institute of Politics</masterLabel>
+            <translation><!-- Dole Institute of Politics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education</masterLabel>
+            <translation><!-- Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edwards Campus</masterLabel>
+            <translation><!-- Edwards Campus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering</masterLabel>
+            <translation><!-- Engineering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hall Center for Humanities</masterLabel>
+            <translation><!-- Hall Center for Humanities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health Professions</masterLabel>
+            <translation><!-- Health Professions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inst for Advancing Med Innovation</masterLabel>
+            <translation><!-- Inst for Advancing Med Innovation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Institute for Life Span Studies</masterLabel>
+            <translation><!-- Institute for Life Span Studies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International Programs</masterLabel>
+            <translation><!-- International Programs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Journalism</masterLabel>
+            <translation><!-- Journalism --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KU Cancer Center</masterLabel>
+            <translation><!-- KU Cancer Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Law</masterLabel>
+            <translation><!-- Law --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Libraries</masterLabel>
+            <translation><!-- Libraries --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lied Center</masterLabel>
+            <translation><!-- Lied Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medicine</masterLabel>
+            <translation><!-- Medicine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Museum of Natural History</masterLabel>
+            <translation><!-- Museum of Natural History --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Music</masterLabel>
+            <translation><!-- Music --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nursing</masterLabel>
+            <translation><!-- Nursing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Affinity</masterLabel>
+            <translation><!-- Other Affinity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharmacy</masterLabel>
+            <translation><!-- Pharmacy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Health</masterLabel>
+            <translation><!-- Public Health --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salina Campus (Med)</masterLabel>
+            <translation><!-- Salina Campus (Med) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scholarships</masterLabel>
+            <translation><!-- Scholarships --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Welfare</masterLabel>
+            <translation><!-- Social Welfare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spencer Museum of Art</masterLabel>
+            <translation><!-- Spencer Museum of Art --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unrestricted</masterLabel>
+            <translation><!-- Unrestricted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wichita Campus (Med)</masterLabel>
+            <translation><!-- Wichita Campus (Med) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- KU Department where endowment was gifted. --></help>
+        <label><!-- Endowment Int 2 --></label>
+        <name>Endowment_Int_2__c</name>
+        <picklistValues>
+            <masterLabel>Alumni Association</masterLabel>
+            <translation><!-- Alumni Association --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Architecture</masterLabel>
+            <translation><!-- Architecture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Athletics</masterLabel>
+            <translation><!-- Athletics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business</masterLabel>
+            <translation><!-- Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>College of Liberal Arts</masterLabel>
+            <translation><!-- College of Liberal Arts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dole Institute of Politics</masterLabel>
+            <translation><!-- Dole Institute of Politics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education</masterLabel>
+            <translation><!-- Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edwards Campus</masterLabel>
+            <translation><!-- Edwards Campus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering</masterLabel>
+            <translation><!-- Engineering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hall Center for Humanities</masterLabel>
+            <translation><!-- Hall Center for Humanities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health Professions</masterLabel>
+            <translation><!-- Health Professions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inst for Advancing Med Innovation</masterLabel>
+            <translation><!-- Inst for Advancing Med Innovation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Institute for Life Span Studies</masterLabel>
+            <translation><!-- Institute for Life Span Studies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International Programs</masterLabel>
+            <translation><!-- International Programs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Journalism</masterLabel>
+            <translation><!-- Journalism --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KU Cancer Center</masterLabel>
+            <translation><!-- KU Cancer Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Law</masterLabel>
+            <translation><!-- Law --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Libraries</masterLabel>
+            <translation><!-- Libraries --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lied Center</masterLabel>
+            <translation><!-- Lied Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medicine</masterLabel>
+            <translation><!-- Medicine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Museum of Natural History</masterLabel>
+            <translation><!-- Museum of Natural History --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Music</masterLabel>
+            <translation><!-- Music --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nursing</masterLabel>
+            <translation><!-- Nursing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Affinity</masterLabel>
+            <translation><!-- Other Affinity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharmacy</masterLabel>
+            <translation><!-- Pharmacy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Health</masterLabel>
+            <translation><!-- Public Health --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salina Campus (Med)</masterLabel>
+            <translation><!-- Salina Campus (Med) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scholarships</masterLabel>
+            <translation><!-- Scholarships --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Welfare</masterLabel>
+            <translation><!-- Social Welfare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spencer Museum of Art</masterLabel>
+            <translation><!-- Spencer Museum of Art --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unrestricted</masterLabel>
+            <translation><!-- Unrestricted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wichita Campus (Med)</masterLabel>
+            <translation><!-- Wichita Campus (Med) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- KU Department where endowment was gifted. --></help>
+        <label><!-- Endowment Int 3 --></label>
+        <name>Endowment_Int_3__c</name>
+        <picklistValues>
+            <masterLabel>Alumni Association</masterLabel>
+            <translation><!-- Alumni Association --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Architecture</masterLabel>
+            <translation><!-- Architecture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Athletics</masterLabel>
+            <translation><!-- Athletics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business</masterLabel>
+            <translation><!-- Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>College of Liberal Arts</masterLabel>
+            <translation><!-- College of Liberal Arts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dole Institute of Politics</masterLabel>
+            <translation><!-- Dole Institute of Politics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education</masterLabel>
+            <translation><!-- Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edwards Campus</masterLabel>
+            <translation><!-- Edwards Campus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering</masterLabel>
+            <translation><!-- Engineering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hall Center for Humanities</masterLabel>
+            <translation><!-- Hall Center for Humanities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health Professions</masterLabel>
+            <translation><!-- Health Professions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inst for Advancing Med Innovation</masterLabel>
+            <translation><!-- Inst for Advancing Med Innovation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Institute for Life Span Studies</masterLabel>
+            <translation><!-- Institute for Life Span Studies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International Programs</masterLabel>
+            <translation><!-- International Programs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Journalism</masterLabel>
+            <translation><!-- Journalism --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KU Cancer Center</masterLabel>
+            <translation><!-- KU Cancer Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Law</masterLabel>
+            <translation><!-- Law --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Libraries</masterLabel>
+            <translation><!-- Libraries --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lied Center</masterLabel>
+            <translation><!-- Lied Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medicine</masterLabel>
+            <translation><!-- Medicine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Museum of Natural History</masterLabel>
+            <translation><!-- Museum of Natural History --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Music</masterLabel>
+            <translation><!-- Music --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nursing</masterLabel>
+            <translation><!-- Nursing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Affinity</masterLabel>
+            <translation><!-- Other Affinity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharmacy</masterLabel>
+            <translation><!-- Pharmacy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Health</masterLabel>
+            <translation><!-- Public Health --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salina Campus (Med)</masterLabel>
+            <translation><!-- Salina Campus (Med) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scholarships</masterLabel>
+            <translation><!-- Scholarships --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Welfare</masterLabel>
+            <translation><!-- Social Welfare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spencer Museum of Art</masterLabel>
+            <translation><!-- Spencer Museum of Art --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unrestricted</masterLabel>
+            <translation><!-- Unrestricted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wichita Campus (Med)</masterLabel>
+            <translation><!-- Wichita Campus (Med) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Date of most recent contact report. --></help>
+        <label><!-- Endowment Last Contact Date --></label>
+        <name>Endowment_Last_Contact_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Purpose of last contact (e.g. cultivation, solicitation ) --></help>
+        <label><!-- Endowment Last Contact Purpose --></label>
+        <name>Endowment_Last_Contact_Purpose__c</name>
+        <picklistValues>
+            <masterLabel>Cultivation</masterLabel>
+            <translation><!-- Cultivation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Follow-up</masterLabel>
+            <translation><!-- Follow-up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non Major Gift Solicitation</masterLabel>
+            <translation><!-- Non Major Gift Solicitation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Purpose</masterLabel>
+            <translation><!-- Other Purpose --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Provide/Request Info</masterLabel>
+            <translation><!-- Provide/Request Info --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualification</masterLabel>
+            <translation><!-- Qualification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solicitation - Major Gift</masterLabel>
+            <translation><!-- Solicitation - Major Gift --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stewardship</masterLabel>
+            <translation><!-- Stewardship --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Type of last contact (e.g. visit, phone call, e-mail) --></help>
+        <label><!-- Endowment Last Contact Type --></label>
+        <name>Endowment_Last_Contact_Type__c</name>
+        <picklistValues>
+            <masterLabel>Event</masterLabel>
+            <translation><!-- Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Contact Move</masterLabel>
+            <translation><!-- Non-Contact Move --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone Call/Letter/Email</masterLabel>
+            <translation><!-- Phone Call/Letter/Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Visit</masterLabel>
+            <translation><!-- Visit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Date when the latest endowment was received. --></help>
+        <label><!-- Endowment Last Gift Date --></label>
+        <name>Endowment_Last_Gift_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter/Import the &quot;Number&quot; for each record from the corresponding Source System. This is an optional field. --></help>
+        <label><!-- Event Number --></label>
+        <name>Event_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter Contract/Agreement Execution Date --></help>
+        <label><!-- Execution Date --></label>
+        <name>Execution_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date When an Agreement(from KUCTC) Expires --></help>
+        <label><!-- Expiration Date --></label>
+        <name>Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- How was the Job/Internship Obtained --></help>
+        <label><!-- How Obtained --></label>
+        <name>How_Obtained__c</name>
+        <picklistValues>
+            <masterLabel>KU Supported Efforts - Alumni Networks</masterLabel>
+            <translation><!-- KU Supported Efforts - Alumni Networks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KU Supported Efforts - Career Fair</masterLabel>
+            <translation><!-- KU Supported Efforts - Career Fair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KU Supported Efforts - Career Services</masterLabel>
+            <translation><!-- KU Supported Efforts - Career Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KU Supported Efforts - Faculty Assistance</masterLabel>
+            <translation><!-- KU Supported Efforts - Faculty Assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KU Supported Efforts - Internship obtained through Career Services</masterLabel>
+            <translation><!-- KU Supported Efforts - Internship obtained through Career Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Student Facilitated - Internship not obtained through Career Services</masterLabel>
+            <translation><!-- Student Facilitated - Internship not obtained through Career Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Student Facilitated - Other source</masterLabel>
+            <translation><!-- Student Facilitated - Other source --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Student Facilitated - Personal Networks</masterLabel>
+            <translation><!-- Student Facilitated - Personal Networks --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- IP Track Code --></label>
+        <name>IP_Track_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- Initial Term for Joint Supervisor --></help>
+        <label><!-- Initial Term --></label>
+        <name>Initial_Term__c</name>
+    </fields>
+    <fields>
+        <help><!-- KU Division that provided the data. --></help>
+        <label><!-- Engagement Owner --></label>
+        <name>Interaction_Source_KU_Division__c</name>
+        <picklistValues>
+            <masterLabel>Career Services</masterLabel>
+            <translation><!-- Career Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Center For Research</masterLabel>
+            <translation><!-- Center For Research --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Central IT</masterLabel>
+            <translation><!-- Central IT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Continuing Education</masterLabel>
+            <translation><!-- Continuing Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Partnerships</masterLabel>
+            <translation><!-- Corporate Partnerships --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Endowment</masterLabel>
+            <translation><!-- Endowment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology Transfer</masterLabel>
+            <translation><!-- Technology Transfer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Unique identifier from KU Division datasource for this engagement transaction (where available). --></help>
+        <label><!-- Engagement Source System ID --></label>
+        <name>Interaction_Source_System_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Source System From Where The Interaction Was Imported --></help>
+        <label><!-- Engagement Source System --></label>
+        <name>Interaction_Source_System__c</name>
+        <picklistValues>
+            <masterLabel>Advance</masterLabel>
+            <translation><!-- Advance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manual Entry</masterLabel>
+            <translation><!-- Manual Entry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PeopleSoft</masterLabel>
+            <translation><!-- PeopleSoft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reggie</masterLabel>
+            <translation><!-- Reggie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SFDC</masterLabel>
+            <translation><!-- SFDC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sophia</masterLabel>
+            <translation><!-- Sophia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Symplicity</masterLabel>
+            <translation><!-- Symplicity --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Type of Engagement. --></help>
+        <label><!-- Engagement Type --></label>
+        <name>Interaction_Type__c</name>
+        <picklistValues>
+            <masterLabel>Agreement</masterLabel>
+            <translation><!-- Agreement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Capstone Project</masterLabel>
+            <translation><!-- Capstone Project --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Endowment</masterLabel>
+            <translation><!-- Endowment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engagement - Call</masterLabel>
+            <translation><!-- Engagement - Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engagement - Company Onsite Visit</masterLabel>
+            <translation><!-- Engagement - Company Onsite Visit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engagement - Email</masterLabel>
+            <translation><!-- Engagement - Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engagement - Executive Briefing</masterLabel>
+            <translation><!-- Engagement - Executive Briefing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engagement - KU Visit</masterLabel>
+            <translation><!-- Engagement - KU Visit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engagement - Key Executive Visit</masterLabel>
+            <translation><!-- Engagement - Key Executive Visit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engagement - Seminar By Firm At KU</masterLabel>
+            <translation><!-- Engagement - Seminar By Firm At KU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engagement - Workshop</masterLabel>
+            <translation><!-- Engagement - Workshop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event - Career Services</masterLabel>
+            <translation><!-- Event - Career Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event - Continuing Education</masterLabel>
+            <translation><!-- Event - Continuing Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graduate Committee Member</masterLabel>
+            <translation><!-- Graduate Committee Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internship</masterLabel>
+            <translation><!-- Internship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Job Posting</masterLabel>
+            <translation><!-- Job Posting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Job/Placement</masterLabel>
+            <translation><!-- Job/Placement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Job/Placement Count</masterLabel>
+            <translation><!-- Job/Placement Count --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Joint Invention Disclosure</masterLabel>
+            <translation><!-- Joint Invention Disclosure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Joint Patent</masterLabel>
+            <translation><!-- Joint Patent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Campus Interview</masterLabel>
+            <translation><!-- On Campus Interview --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research Grant</masterLabel>
+            <translation><!-- Research Grant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Agreement</masterLabel>
+            <translation><!-- Service Agreement --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Job Area For Internships --></help>
+        <label><!-- Internship Area --></label>
+        <name>Internship_Area__c</name>
+        <picklistValues>
+            <masterLabel>IS_ACCOUNTINGAUDIT</masterLabel>
+            <translation><!-- IS_ACCOUNTINGAUDIT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IS_ACCOUNTINGOTHER</masterLabel>
+            <translation><!-- IS_ACCOUNTINGOTHER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IS_ACCOUNTINGTAX</masterLabel>
+            <translation><!-- IS_ACCOUNTINGTAX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IS_CONSULTING</masterLabel>
+            <translation><!-- IS_CONSULTING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IS_FINANCECOMMERCIAL</masterLabel>
+            <translation><!-- IS_FINANCECOMMERCIAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IS_FINANCECORPORATE</masterLabel>
+            <translation><!-- IS_FINANCECORPORATE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IS_FINANCEFINANCIALSVC</masterLabel>
+            <translation><!-- IS_FINANCEFINANCIALSVC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IS_FINANCEINVEST</masterLabel>
+            <translation><!-- IS_FINANCEINVEST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IS_FINANCEOTHER</masterLabel>
+            <translation><!-- IS_FINANCEOTHER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IS_GENERALMGMT</masterLabel>
+            <translation><!-- IS_GENERALMGMT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IS_HUMANRESOURCES</masterLabel>
+            <translation><!-- IS_HUMANRESOURCES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IS_INFOSYSTEMS</masterLabel>
+            <translation><!-- IS_INFOSYSTEMS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IS_INTERNATIONALBUS</masterLabel>
+            <translation><!-- IS_INTERNATIONALBUS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IS_MARKETINGADVERTISING</masterLabel>
+            <translation><!-- IS_MARKETINGADVERTISING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IS_MARKETINGBRAND</masterLabel>
+            <translation><!-- IS_MARKETINGBRAND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IS_MARKETINGMARKETANALYSIS</masterLabel>
+            <translation><!-- IS_MARKETINGMARKETANALYSIS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IS_MARKETINGMARKETRESEARCH</masterLabel>
+            <translation><!-- IS_MARKETINGMARKETRESEARCH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IS_MARKETINGOTHER</masterLabel>
+            <translation><!-- IS_MARKETINGOTHER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IS_MARKETINGPR</masterLabel>
+            <translation><!-- IS_MARKETINGPR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IS_OPERATIONS</masterLabel>
+            <translation><!-- IS_OPERATIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IS_OTHER</masterLabel>
+            <translation><!-- IS_OTHER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IS_SALES</masterLabel>
+            <translation><!-- IS_SALES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IS_SUPPLYCHAIN</masterLabel>
+            <translation><!-- IS_SUPPLYCHAIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Level During Internship --></help>
+        <label><!-- Internship Level --></label>
+        <name>Internship_Level__c</name>
+        <picklistValues>
+            <masterLabel>Business - Masters</masterLabel>
+            <translation><!-- Business - Masters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business - UG</masterLabel>
+            <translation><!-- Business - UG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freshman</masterLabel>
+            <translation><!-- Freshman --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Junior</masterLabel>
+            <translation><!-- Junior --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAcc</masterLabel>
+            <translation><!-- MAcc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MBA</masterLabel>
+            <translation><!-- MBA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior</masterLabel>
+            <translation><!-- Senior --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sophomore</masterLabel>
+            <translation><!-- Sophomore --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Invention Track Code --></label>
+        <name>Invention_Track_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicator of whether the Internship was paid or not --></help>
+        <label><!-- Is Paid Internship? --></label>
+        <name>Is_Paid_Internship__c</name>
+    </fields>
+    <fields>
+        <help><!-- Job Area For Placements --></help>
+        <label><!-- Job Area --></label>
+        <name>Job_Area__c</name>
+        <picklistValues>
+            <masterLabel>IS_ACCOUNTING</masterLabel>
+            <translation><!-- IS_ACCOUNTING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IS_ADVERTISING</masterLabel>
+            <translation><!-- IS_ADVERTISING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IS_AUTOTRANSPORTATION</masterLabel>
+            <translation><!-- IS_AUTOTRANSPORTATION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IS_CONSULTING</masterLabel>
+            <translation><!-- IS_CONSULTING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IS_CONSUMERPRODUCTS</masterLabel>
+            <translation><!-- IS_CONSUMERPRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IS_ENVIRONMENTAL</masterLabel>
+            <translation><!-- IS_ENVIRONMENTAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IS_FINANCIAL</masterLabel>
+            <translation><!-- IS_FINANCIAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IS_FOODBEVERAGE</masterLabel>
+            <translation><!-- IS_FOODBEVERAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IS_GOVERNMENT</masterLabel>
+            <translation><!-- IS_GOVERNMENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IS_MANUFACTURING</masterLabel>
+            <translation><!-- IS_MANUFACTURING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IS_MEDIAENTERTAINMENT</masterLabel>
+            <translation><!-- IS_MEDIAENTERTAINMENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IS_MILITARY</masterLabel>
+            <translation><!-- IS_MILITARY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IS_NOTFORPROFIT</masterLabel>
+            <translation><!-- IS_NOTFORPROFIT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IS_OTHER</masterLabel>
+            <translation><!-- IS_OTHER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IS_PETROENERGY</masterLabel>
+            <translation><!-- IS_PETROENERGY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IS_PHARMACEUTICAL</masterLabel>
+            <translation><!-- IS_PHARMACEUTICAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IS_REALESTATE</masterLabel>
+            <translation><!-- IS_REALESTATE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IS_RELIGIOUS</masterLabel>
+            <translation><!-- IS_RELIGIOUS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IS_TECHNOLOGY</masterLabel>
+            <translation><!-- IS_TECHNOLOGY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Placement/Internship Job Function --></help>
+        <label><!-- Job Function --></label>
+        <name>Job_Function__c</name>
+        <picklistValues>
+            <masterLabel>Accounting - Audit</masterLabel>
+            <translation><!-- Accounting - Audit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accounting - Other</masterLabel>
+            <translation><!-- Accounting - Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accounting - Tax</masterLabel>
+            <translation><!-- Accounting - Tax --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consulting</masterLabel>
+            <translation><!-- Consulting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance - Business Development/M&amp;A</masterLabel>
+            <translation><!-- Finance - Business Development/M&amp;A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance - Commercial Banking</masterLabel>
+            <translation><!-- Finance - Commercial Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance - Corporate Finance</masterLabel>
+            <translation><!-- Finance - Corporate Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance - Financial Services</masterLabel>
+            <translation><!-- Finance - Financial Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance - Investment Banking/Investment Management</masterLabel>
+            <translation><!-- Finance - Investment Banking/Investment Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance - Other</masterLabel>
+            <translation><!-- Finance - Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Management</masterLabel>
+            <translation><!-- General Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Human Resources</masterLabel>
+            <translation><!-- Human Resources --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Information Systems/Technology</masterLabel>
+            <translation><!-- Information Systems/Technology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International Business</masterLabel>
+            <translation><!-- International Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing - Advertising</masterLabel>
+            <translation><!-- Marketing - Advertising --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing - Brand Management</masterLabel>
+            <translation><!-- Marketing - Brand Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing - Market Analysis</masterLabel>
+            <translation><!-- Marketing - Market Analysis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing - Other</masterLabel>
+            <translation><!-- Marketing - Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operations/Production</masterLabel>
+            <translation><!-- Operations/Production --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation><!-- Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supply Chain</masterLabel>
+            <translation><!-- Supply Chain --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Job Posting - Position Type --></help>
+        <label><!-- Job Posting - Position Type --></label>
+        <name>Job_Posting_Position_Type__c</name>
+        <picklistValues>
+            <masterLabel>Co-Op</masterLabel>
+            <translation><!-- Co-Op --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fellowships</masterLabel>
+            <translation><!-- Fellowships --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Full Time</masterLabel>
+            <translation><!-- Full Time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Full Time Experienced</masterLabel>
+            <translation><!-- Full Time Experienced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internships</masterLabel>
+            <translation><!-- Internships --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Limited Term (archived)</masterLabel>
+            <translation><!-- Limited Term (archived) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Part Time/Student Employment</masterLabel>
+            <translation><!-- Part Time/Student Employment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Summer (archived)</masterLabel>
+            <translation><!-- Summer (archived) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Volunteer</masterLabel>
+            <translation><!-- Volunteer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Joint Disclosure Date --></help>
+        <label><!-- Joint Disclosure Date --></label>
+        <name>Joint_Disclosure_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Joint Patent Type --></help>
+        <label><!-- Joint Patent Type --></label>
+        <name>Joint_Patent_Type__c</name>
+        <picklistValues>
+            <masterLabel>Continuation</masterLabel>
+            <translation><!-- Continuation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Continuation in Part</masterLabel>
+            <translation><!-- Continuation in Part --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Copyright</masterLabel>
+            <translation><!-- Copyright --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Design</masterLabel>
+            <translation><!-- Design --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Divisional</masterLabel>
+            <translation><!-- Divisional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>European Patent Office</masterLabel>
+            <translation><!-- European Patent Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Foreign</masterLabel>
+            <translation><!-- Foreign --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patent Cooperation Treaty</masterLabel>
+            <translation><!-- Patent Cooperation Treaty --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Provisional</masterLabel>
+            <translation><!-- Provisional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Utility</masterLabel>
+            <translation><!-- Utility --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Related KU Contact --></help>
+        <label><!-- KU Contact --></label>
+        <name>KU_Contact__c</name>
+        <relationshipLabel><!-- Engagements (KU Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- # Key IT Vendor Executive Briefings --></help>
+        <label><!-- # Key IT Vendor Executive Briefings --></label>
+        <name>Key_IT_Vendor_Executive_Briefings__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lab Name --></help>
+        <label><!-- Lab --></label>
+        <name>Lab__c</name>
+        <picklistValues>
+            <masterLabel>High Throughput Screening Laboratory</masterLabel>
+            <translation><!-- High Throughput Screening Laboratory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Instrumentation Design Laboratory</masterLabel>
+            <translation><!-- Instrumentation Design Laboratory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mass Spectrometry Laboratory</masterLabel>
+            <translation><!-- Mass Spectrometry Laboratory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medicinal Chemistry Core Service Laboratory</masterLabel>
+            <translation><!-- Medicinal Chemistry Core Service Laboratory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Microscopy Analytical Imaging Laboratory</masterLabel>
+            <translation><!-- Microscopy Analytical Imaging Laboratory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Molecular Graphics &amp; Modeling Laboratory</masterLabel>
+            <translation><!-- Molecular Graphics &amp; Modeling Laboratory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nuclear Magnetic Resonance</masterLabel>
+            <translation><!-- Nuclear Magnetic Resonance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>X-ray Crystallography Laboratory</masterLabel>
+            <translation><!-- X-ray Crystallography Laboratory --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Days Since The Oldest Engagement Related Date --></help>
+        <label><!-- Length Relationship In Interaction Level --></label>
+        <name>Length_Relationship_In_Interaction_Level__c</name>
+    </fields>
+    <fields>
+        <help><!-- Location of Interaction --></help>
+        <label><!-- Location --></label>
+        <name>Location__c</name>
+    </fields>
+    <fields>
+        <help><!-- Student&apos;s Major Area Of Study --></help>
+        <label><!-- Major --></label>
+        <name>Major__c</name>
+        <picklistValues>
+            <masterLabel>BSAcct</masterLabel>
+            <translation><!-- BSAcct --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BSBA</masterLabel>
+            <translation><!-- BSBA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BSFin</masterLabel>
+            <translation><!-- BSFin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BSIS</masterLabel>
+            <translation><!-- BSIS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BSMgmt</masterLabel>
+            <translation><!-- BSMgmt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BSMktg</masterLabel>
+            <translation><!-- BSMktg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAcc</masterLabel>
+            <translation><!-- MAcc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MBA-FT</masterLabel>
+            <translation><!-- MBA-FT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MBA-PT</masterLabel>
+            <translation><!-- MBA-PT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MSBFin</masterLabel>
+            <translation><!-- MSBFin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MSBScm</masterLabel>
+            <translation><!-- MSBScm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCMB-BSB</masterLabel>
+            <translation><!-- SCMB-BSB --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Number Of Job Offers --></label>
+        <name>Number_Of_Job_Offers__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number Of Projects implemented based on the Endowmwnt --></help>
+        <label><!-- Number Of Projects --></label>
+        <name>Number_Of_Projects__c</name>
+    </fields>
+    <fields>
+        <label><!-- On Campus Recruiting --></label>
+        <name>On_Campus_Recruiting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner Discrepancy --></label>
+        <name>Owner_Discrepancy__c</name>
+    </fields>
+    <fields>
+        <help><!-- Joint Patent Application Date --></help>
+        <label><!-- Patent Application Date --></label>
+        <name>Patent_Application_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Joint Patent Issue Date --></help>
+        <label><!-- Patent Issue Date --></label>
+        <name>Patent_Issue_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Priority For Tasks imported as Engagements --></help>
+        <label><!-- Priority --></label>
+        <name>Priority__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Normal</masterLabel>
+            <translation><!-- Normal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Program Level Identifies the degree/level for the Job/Placement --></help>
+        <label><!-- Program Level --></label>
+        <name>Program_Level__c</name>
+        <picklistValues>
+            <masterLabel>Masters</masterLabel>
+            <translation><!-- Masters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Undergraduate</masterLabel>
+            <translation><!-- Undergraduate --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Set to 1 when Engagement is a JointPatent --></help>
+        <label><!-- RU Joint Patent Flag --></label>
+        <name>RU_JointPatent_Flag__c</name>
+    </fields>
+    <fields>
+        <help><!-- For Rollup RU Joint Patents Issued Count --></help>
+        <label><!-- RU Joint Patents Issued Flag --></label>
+        <name>RU_Joint_Patents_Issued_Flag__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hidden Count For Rollup To Master Org; This should always be 1 on all interactions. --></help>
+        <label><!-- RU MainCount --></label>
+        <name>RU_MainCount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Joint Patents Filed/Unknown should not be counted as Issued; So, this flag is set to 0 when status=Filed/Unknown --></help>
+        <label><!-- RU Not Filed/Unknown Flag --></label>
+        <name>RU_Not_FiledUnknown_Flag__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hidden Field To Control Picklists --></help>
+        <label><!-- Record Type Name --></label>
+        <name>Record_Type_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Master Organization --></label>
+        <name>Related_Master_Organization__c</name>
+        <relationshipLabel><!-- Engagements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Source Organization Name --></label>
+        <name>Source_Organization_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Organization --></label>
+        <name>Source_Organization__c</name>
+        <relationshipLabel><!-- Engagements --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Last Modified Date In The Source System --></help>
+        <label><!-- Source System Last Modified Date --></label>
+        <name>Source_System_Last_Modified_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- # of Sponsored Research proposals per organizations --></help>
+        <label><!-- # Sponsored Research Proposals --></label>
+        <name>SponsoredResearchProposals__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter Start Date/Time --></help>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Joint Supervisor Start Term --></help>
+        <label><!-- Start Term --></label>
+        <name>Start_Term__c</name>
+    </fields>
+    <fields>
+        <help><!-- Status --></help>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Abandoned</masterLabel>
+            <translation><!-- Abandoned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Advanced Cultivation</masterLabel>
+            <translation><!-- Advanced Cultivation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Anticipated</masterLabel>
+            <translation><!-- Anticipated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Archive</masterLabel>
+            <translation><!-- Archive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Archived</masterLabel>
+            <translation><!-- Archived --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ask Made</masterLabel>
+            <translation><!-- Ask Made --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assigned To 3rd Party</masterLabel>
+            <translation><!-- Assigned To 3rd Party --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bulkdelete</masterLabel>
+            <translation><!-- Bulkdelete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canceled</masterLabel>
+            <translation><!-- Canceled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deferred</masterLabel>
+            <translation><!-- Deferred --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deleted</masterLabel>
+            <translation><!-- Deleted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Early Cultivation</masterLabel>
+            <translation><!-- Early Cultivation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Estate (Entity Deceased)</masterLabel>
+            <translation><!-- Estate (Entity Deceased) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executed</masterLabel>
+            <translation><!-- Executed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expired</masterLabel>
+            <translation><!-- Expired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Filed</masterLabel>
+            <translation><!-- Filed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Follow-up</masterLabel>
+            <translation><!-- Follow-up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fraudulent</masterLabel>
+            <translation><!-- Fraudulent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Issued</masterLabel>
+            <translation><!-- Issued --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Long-term Cultiv/Stewardship</masterLabel>
+            <translation><!-- Long-term Cultiv/Stewardship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merged</masterLabel>
+            <translation><!-- Merged --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nationalized</masterLabel>
+            <translation><!-- Nationalized --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Negotiating</masterLabel>
+            <translation><!-- Negotiating --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Assigned</masterLabel>
+            <translation><!-- Not Assigned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation><!-- Not Started --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Obtaining Signatures</masterLabel>
+            <translation><!-- Obtaining Signatures --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planned</masterLabel>
+            <translation><!-- Planned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prefiling</masterLabel>
+            <translation><!-- Prefiling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Registered</masterLabel>
+            <translation><!-- Registered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Released to Inventor</masterLabel>
+            <translation><!-- Released to Inventor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Started</masterLabel>
+            <translation><!-- Started --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stewardship</masterLabel>
+            <translation><!-- Stewardship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology Released</masterLabel>
+            <translation><!-- Technology Released --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terminated</masterLabel>
+            <translation><!-- Terminated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under Review</masterLabel>
+            <translation><!-- Under Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting on someone else</masterLabel>
+            <translation><!-- Waiting on someone else --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Task Subject --></help>
+        <label><!-- Subject --></label>
+        <name>Subject__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter Contract/Agreement/Award Termination Date --></help>
+        <label><!-- Termination Date --></label>
+        <name>Termination_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter Event Name/Title --></help>
+        <label><!-- Title --></label>
+        <name>Title__c</name>
+    </fields>
+    <fields>
+        <help><!-- Topic of discussion/Title for the Company Onsite Visit, Key Executive Visit, KU Visit, Seminar or Workshop --></help>
+        <label><!-- Topic --></label>
+        <name>Topic__c</name>
+    </fields>
+    <fields>
+        <help><!-- Job/Internship Work Type --></help>
+        <label><!-- Work Type --></label>
+        <name>Work_Type__c</name>
+        <picklistValues>
+            <masterLabel>Full Time</masterLabel>
+            <translation><!-- Full Time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Full Time Experienced</masterLabel>
+            <translation><!-- Full Time Experienced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internships</masterLabel>
+            <translation><!-- Internships --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Part Time</masterLabel>
+            <translation><!-- Part Time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Student Employment</masterLabel>
+            <translation><!-- Student Employment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Summer</masterLabel>
+            <translation><!-- Summer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Year When an Interaction took Place --></help>
+        <label><!-- Year --></label>
+        <name>Year__c</name>
+    </fields>
+    <layouts>
+        <layout>Agreement Layout</layout>
+        <sections>
+            <label><!-- Agreement Details --></label>
+            <section>Agreement Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Source System Details --></label>
+            <section>Source System Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Calls &amp; Emails Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Details --></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label><!-- Source System Details --></label>
+            <section>Source System Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Capstone Projects Layout</layout>
+        <sections>
+            <label><!-- Capstone Project Details --></label>
+            <section>Capstone Project Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Source System Details --></label>
+            <section>Source System Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Career Services Event Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Event Details --></label>
+            <section>Event Details</section>
+        </sections>
+        <sections>
+            <label><!-- Source System Details --></label>
+            <section>Source System Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Company Visits &amp; Contact Activities Layout</layout>
+        <sections>
+            <label><!-- Additional Details --></label>
+            <section>Additional Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Source System Details --></label>
+            <section>Source System Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Endowment Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Endowment Details --></label>
+            <section>Endowment Details</section>
+        </sections>
+        <sections>
+            <label><!-- Source System Details --></label>
+            <section>Source System Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Event Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Event Details --></label>
+            <section>Event Details</section>
+        </sections>
+        <sections>
+            <label><!-- Source System Details --></label>
+            <section>Source System Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Executive Briefings Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Executive Briefing Details --></label>
+            <section>Executive Briefing Details</section>
+        </sections>
+        <sections>
+            <label><!-- Source System Details --></label>
+            <section>Source System Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Internship Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Internship Details --></label>
+            <section>Internship Details</section>
+        </sections>
+        <sections>
+            <label><!-- Source System Details --></label>
+            <section>Source System Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Job Posting/Campus Interview Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Job Posting/Campus Interview Details --></label>
+            <section>Job Posting/Campus Interview Details</section>
+        </sections>
+        <sections>
+            <label><!-- Source System Details --></label>
+            <section>Source System Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Job/Placement Count Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Job/Placement Count Details --></label>
+            <section>Job/Placement Count Details</section>
+        </sections>
+        <sections>
+            <label><!-- Source System Details --></label>
+            <section>Source System Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Job/Placement Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Job/Placement Details --></label>
+            <section>Job/Placement Details</section>
+        </sections>
+        <sections>
+            <label><!-- Source System Details --></label>
+            <section>Source System Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Joint Disclosure Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Joint Disclosure Details --></label>
+            <section>Joint Disclosure Details</section>
+        </sections>
+        <sections>
+            <label><!-- Source System Details --></label>
+            <section>Source System Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Joint Patent Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Joint Patent Details --></label>
+            <section>Joint Patent Details</section>
+        </sections>
+        <sections>
+            <label><!-- Source System Details --></label>
+            <section>Source System Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Joint Supervisors Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Details --></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label><!-- Source System Details --></label>
+            <section>Source System Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Master Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Details --></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label><!-- Endowment Details --></label>
+            <section>Endowment Details</section>
+        </sections>
+        <sections>
+            <label><!-- Job Related Information --></label>
+            <section>Job Related Information</section>
+        </sections>
+        <sections>
+            <label><!-- Other Interaction Details --></label>
+            <section>Other Interaction Details</section>
+        </sections>
+        <sections>
+            <label><!-- Source System Details --></label>
+            <section>Source System Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Research Grants Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Research Grant Details --></label>
+            <section>Research Grant Details</section>
+        </sections>
+        <sections>
+            <label><!-- Source System Details --></label>
+            <section>Source System Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Service Agreements Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Service Agreement Details --></label>
+            <section>Service Agreement Details</section>
+        </sections>
+        <sections>
+            <label><!-- Source System Details --></label>
+            <section>Source System Details</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Agreements --></label>
+        <name>Agreements</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Calls &amp; Emails --></label>
+        <name>Calls_Emails</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Capstone Projects --></label>
+        <name>Capstone_Projects</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Career Services Events --></label>
+        <name>Career_Services_Events</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Company Visits &amp; Contact Activities --></label>
+        <name>Company_Visits_Contact_Activities</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Endowment --></label>
+        <name>Endowment</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Events --></label>
+        <name>Events</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Executive Briefings --></label>
+        <name>Executive_Briefings</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Internship --></label>
+        <name>Internship</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Job/Placement --></label>
+        <name>Job_Placement</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Job/Placement Count --></label>
+        <name>Job_Placement_Count</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Job Posting/Campus Interview --></label>
+        <name>Job_Posting</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Joint Disclosures --></label>
+        <name>Joint_Disclosures</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Joint Patents --></label>
+        <name>Joint_Patents</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Joint Supervisors --></label>
+        <name>Joint_Supervisors</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Master --></label>
+        <name>Master</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Research Grants --></label>
+        <name>Research_Grants</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Service Agreements --></label>
+        <name>Service_Agreements</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Contact Selected must be related to the same Master Organization as this Engagement --></errorMessage>
+        <name>Common_External_Contact_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Engagement Type Is Mandatory --></errorMessage>
+        <name>Common_Interaction_Type_Mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only System Administrator Can Change The Source Organization. Please Contact Your System Administrator to make this change. --></errorMessage>
+        <name>Engagement_SourceOrg_Cannot_Change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Title, Count and Source System ID are mandatory for Continuing Education Events --></errorMessage>
+        <name>InteractionType_EventContinuingEducation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Source System ID, Agreement Type and Status values are mandatory for Agreements. 
+Please enter all values to proceed. --></errorMessage>
+        <name>Interaction_Type_Agreement</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Amount is mandatory for Capstone Projects. If Amount is not available, please enter 0. --></errorMessage>
+        <name>Interaction_Type_CapstoneProject</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Amount is mandatory for Endowments. Please enter Amount to proceed. --></errorMessage>
+        <name>Interaction_Type_Endowment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Amount, $Cost Savings, # Of Executive Briefings are mandatory for Key IT Vendor. If details are not available, please enter 0. --></errorMessage>
+        <name>Interaction_Type_ITVendor</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Year, Class(Term/Semester/Quarter) and Count to proceed. --></errorMessage>
+        <name>Interaction_Type_JobInternshipCount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Status, Joint Disclosure Date, Source System Created Date, Engagement Source System ID are mandatory for &apos;Joint Invention Disclosures&apos;.
+Please enter all values to proceed. --></errorMessage>
+        <name>Interaction_Type_JointDislosure</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Source System ID, Source System Created Date, Joint Patent Type and Status values are mandatory for Joint Patents. Please enter all values to proceed. --></errorMessage>
+        <name>Interaction_Type_JointPatent</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Lab &amp; Amount values are mandatory for Service Agreements. Please select the Lab and Enter the Amount to Proceed. --></errorMessage>
+        <name>Interaction_Type_ServiceAgreement</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This type of Engagement can be related only to Source Organizations where the Source Org Owner is &quot;Corporate Partnerships&quot; --></errorMessage>
+        <name>Manual_Entry_Restrictions</name>
+    </validationRules>
+</CustomObjectTranslation>

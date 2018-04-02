@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Source_Organization__c$Id</field>
+    </columns>
+    <columns>
+        <field>Source_Organization__c$Name</field>
+    </columns>
+    <columns>
+        <field>Source_Organization__c$Source_KU_Division__c</field>
+    </columns>
+    <description>Use this report to identify Source Organizations which may be duplicates of other Source Organizations in the system.</description>
+    <filter>
+        <criteriaItems>
+            <column>Source_Organization__c$Source_KU_Division__c</column>
+            <operator>contains</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Source_Organization__c$Organization_Source_System_ID__c</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <aggregateType>RowCount</aggregateType>
+        <dateGranularity>Day</dateGranularity>
+        <field>Source_Organization__c$Organization_Source_System_ID__c</field>
+        <sortByName>RowCount</sortByName>
+        <sortOrder>Desc</sortOrder>
+        <sortType>Aggregate</sortType>
+    </groupingsDown>
+    <name>QA: Duplicate Source Org IDs</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Source_Organizations__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Source_Organization__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

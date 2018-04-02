@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <body>&lt;font face=&quot;Times New Roman, Times, serif&quot; size=&quot;2&quot;&gt;&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;Important Note: &lt;/font&gt;All content in the CRM System, including graphics and written text are for Internal Use by the University of Kansas and may not be used or reproduced in any way without prior written permission.&lt;/b&gt;&lt;/font&gt;&lt;br&gt;</body>
+    <pageComponentType>htmlArea</pageComponentType>
+    <width>narrow</width>
+</HomePageComponent>
