@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuraDefinitionBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>42.0</apiVersion>
+    <description>Uses one object, but has the option of pulling all records related ins some way outside of the individual hierarchy.</description>
+</AuraDefinitionBundle>

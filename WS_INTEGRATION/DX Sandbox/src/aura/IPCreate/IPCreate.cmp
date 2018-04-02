@@ -1,0 +1,39 @@
+<aura:component implements="force:lightningQuickAction,force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,lightning:actionOverride" 
+                controller="IPCreateController"
+                access="global" >
+    
+    <!-- list to hold picklist options -->
+    <aura:attribute name="options" type="List" />
+    
+    <!-- Selected record type to choose record type in new record -->
+    <aura:attribute name="selectedValue" type="String" default="" />
+    
+    <!-- force:recordData variables -->
+    <aura:attribute name="record" type="Object" />
+    <aura:attribute name="simpleRecord" type="Object" />
+    <aura:attribute name="recordError" type="String" />
+    
+    <!-- recordData does not load before doInit, so we need to use recordUpdated to run process after the fields are populated -->
+    <force:recordData aura:id="record"
+                      layoutType="FULL"
+                      recordId="{!v.recordId}"
+                      targetError="{!v.recordError}"
+                      targetRecord="{!v.record}"
+                      targetFields="{!v.simpleRecord}"
+                      recordUpdated="{!c.doInit}" />
+    
+    <!-- Picklist to determine the type of IP to be created -->
+    <lightning:card iconName="action:add_relationship" title="New IP type" variant="Base" >
+        <lightning:select name="myRecordType" label="Select the new IP Record Type: " aura:id="myRecordType" value="{!v.selectedValue}">
+            <aura:iteration items="{!v.options}" var="item">
+                <option text="{!item.label}" value="{!item.value}" selected="{!item.selected}" />
+            </aura:iteration>        
+        </lightning:select>
+    </lightning:card>
+    
+    <!-- Display Lightning Data Service errors, if any -->
+    <aura:if isTrue="{!not(empty(v.recordError))}">
+        {!c.displayError}
+    </aura:if>
+    
+</aura:component>

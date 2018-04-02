@@ -1,0 +1,24 @@
+<aura:component controller="myLightningTreeController">
+	<!-- attributes that need to be passed to this component for it to work -->
+    <aura:attribute name="currentRecordId" type="String" required="true"/>
+    <aura:attribute name="sObjectName" type="String" required="true"/>
+    <aura:attribute name="parentField" type="String" required="true"/>
+    <aura:attribute name="labelField" type="String" required="true"/>
+    <aura:attribute name="header" type="String" required="true"/>
+    <aura:attribute name="whereField" type="String" />
+    <aura:attribute name="whereValue" type="String" />
+    <aura:attribute name="items" type="Object"/>
+    
+    <!-- Spinner information -->
+    <aura:handler event="aura:waiting" action="{!c.showSpinner}"/>
+    <aura:handler event="aura:doneWaiting" action="{!c.hideSpinner}"/>
+    
+    <div class="slds-align--absolute-center">
+        <lightning:spinner aura:id="mySpinner" variant="brand" size="large" class="slds=hide" alternativeText="Waiting on myLightningTree component."/>
+    </div>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <lightning:tree items="{!v.items }" header="{!v.header}" onselect="{!c.handleSelect}"/>
+    
+</aura:component>

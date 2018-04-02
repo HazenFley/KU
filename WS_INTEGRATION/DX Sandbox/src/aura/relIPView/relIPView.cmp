@@ -1,0 +1,115 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" 
+                controller="relIPViewController"
+                access="global" >
+    
+    <!--overlayLib is for future modal updates-->
+    <lightning:overlayLibrary aura:id="overlayLib" />
+    
+    <!--mydata stores IP data and is used by a lightning data table-->
+    <aura:attribute name="mydata" type="Object" />
+    
+    <!--mycolumn creates column metadata and is used by a lightning data table-->
+    <aura:attribute name="mycolumns" type="List" />
+    
+    <!--showCreateDialog controls the visibility of the researcher creation component-->
+    <aura:attribute name="hideCreateDialog" type="Boolean" default="true"/>    
+    
+    <!-- list to hld the IP record types to be used if a record is created -->
+    <aura:attribute name="ipRecordTypes" type="List" access="public"/>
+    <aura:attribute Name="selRecType" type="String"  access="public" default=""/>
+    
+    <!-- Variables for the objects -->
+    <aura:attribute name="IPID" type="String" />
+    <aura:attribute name="invID" type="String" />
+    
+    <!-- Variables used by force:recordData -->
+    <aura:attribute name="record" type="Object" />
+    <aura:attribute name="simpleRecord" type="Object" />
+    <aura:attribute name="recordError" type="String" />
+    
+    <!-- recordData does not load before doInit, so we need to use recordUpdated to run process after the fields are populated -->
+    <force:recordData aura:id="record"
+                      layoutType="FULL"
+                      recordId="{!v.recordId}"
+                      targetError="{!v.recordError}"
+                      targetRecord="{!v.record}"
+                      targetFields="{!v.simpleRecord}"
+                      recordUpdated="{!c.doInit}" /> 
+    
+    <!-- tree for the current IP -->
+    <aura:if isTrue="{!not(empty(v.invID))}">
+        <div class="slds-grid slds-gutters">
+            <!-- columns -->
+            <div class="slds-col">
+                <lightning:card iconName="standard:hierarchy" title="Complete IP Hierarchy" variant="Base" >                    
+                    <c:myLightningTree currentRecordId="{!v.IPID}"
+                                       sObjectName="IP__c"
+                                       parentField="Parent_IP__c"
+                                       labelField="Name"
+                                       whereField="Invention__c"
+                                       whereValue="{!v.invID}" />                    
+                </lightning:card>
+            </div>
+            
+            <div class="slds-col">                
+                <!--short area -->
+                <aura:if isTrue="{!v.hideCreateDialog}">
+                    <lightning:card iconName="standard:relationship" title="Create New IP" variant="Base" >                    
+                        <lightning:button variant="brand" label="New IP" onclick="{!c.showBox}"/>
+                    </lightning:card>                
+                    
+                    <!--dialog to create new invention researchers-->
+                    <aura:set attribute="else">
+                        <lightning:card iconName="utility:add" title="Record Type" class="slds-border_top">
+                            
+                            <!--record type selector -->
+                            <lightning:select aura:id="selectRecType" name="selectRecType" label="Record Type" required="true" 
+                                              value="{!v.selRecType}" onchange="{!c.showRecType}" 
+                                              messageWhenValueMissing="You must define the record type of the new IP">
+                                <option value="">-- Please Select --</option>
+                                <aura:iteration items="{!v.ipRecordTypes}" var="item">
+                                    <option text="{!item.label}" value="{!item.value}" selected="{item.selected}"/>
+                                </aura:iteration>
+                            </lightning:select>
+                            
+                            <!-- show buttons only if a record type is selected -->
+                            <aura:if isTrue="{!not(empty(v.selRecType))}">
+                                <br/>
+                                <br/>
+                                <lightning:button label="New IP on Invention" onclick="{!c.newInvIP}" />
+                                <lightning:helptext content="Create a new IP that is related only to the invention." />
+                                <!-- show new child IP only if the current record is an IP -->
+                                <aura:if isTrue="{!not(empty(v.IPID))}">
+                                    <br/>
+                                    <br/>
+                                    <lightning:button label="New Child IP" onclick="{!c.newChild}" />
+                                    <lightning:helptext content="Create a new IP that is related to the invention and is a child to the current IP." />
+                                </aura:if>
+                            </aura:if>
+                            
+                            <br/>
+                            <br/>
+                            <!-- allow a cancel button to return the page to normal -->
+                            <lightning:button variant="neutral" label="Cancel" onclick="{!c.hideBox}" />
+                        </lightning:card>
+                    </aura:set>
+                </aura:if>
+            </div>            
+        </div>        
+        
+        <!--lightning data table that displays IP-->
+        <lightning:card iconName="custom:custom62" title="IP Related to Invention" variant="Base" >            
+            <lightning:datatable data="{!v.mydata}" columns="{!v.mycolumns}" keyField="Id" hideCheckboxColumn="true" 
+                                 sortedBy="Name_Link__c" minColumnWidth="150" title="Related IP to the Invention"
+                                 onsort="{!c.updateColumnSorting}"/>
+        </lightning:card>
+    </aura:if>
+    
+    
+    <!-- Display Lightning Data Service errors, if any -->
+    <aura:if isTrue="{!not(empty(v.recordError))}">
+        <div class="recordError">
+            {!v.recordError}</div>
+    </aura:if>
+    
+</aura:component>

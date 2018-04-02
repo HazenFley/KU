@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalPicklist xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>List of all the different campuses in KU</description>
+    <globalPicklistValues>
+        <fullName>Kansas City Medical Center</fullName>
+        <default>false</default>
+    </globalPicklistValues>
+    <globalPicklistValues>
+        <fullName>Lawrence</fullName>
+        <default>false</default>
+    </globalPicklistValues>
+    <globalPicklistValues>
+        <fullName>Wichita</fullName>
+        <default>false</default>
+    </globalPicklistValues>
+    <masterLabel>Campus</masterLabel>
+    <sorted>false</sorted>
+</GlobalPicklist>

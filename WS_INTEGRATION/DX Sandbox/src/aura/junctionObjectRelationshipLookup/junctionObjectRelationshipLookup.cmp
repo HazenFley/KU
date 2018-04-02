@@ -1,0 +1,25 @@
+<aura:component controller="junctionObjectRelLookupController" access="global">
+    
+    <!-- Define the component as a Method to be called easier -->
+    <aura:method name="echoJunction"
+                 description="Return related records defined differently every time. Specifically for many to many objects"
+                 action="getRelRecords">
+        
+        <aura:attribute name="data" type="Object" />
+        <aura:attribute name="picklistValues" type="Object" />
+        
+        <!--
+        <aura:attribute name="givenId" type="String" />
+        <aura:attribute name="givenIdFieldName" type="String" />
+        <aura:attribute name="junctionObjectName" type="String" />
+        <aura:attribute name="destinationObjectFieldName" type="String" />
+        <aura:attribute name="destinationObject" type="String" />
+        
+		-->
+        
+        <!--
+        <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+		-->
+        
+    </aura:method> 
+</aura:component>

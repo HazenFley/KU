@@ -1,0 +1,149 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" 
+                access="global" 
+                controller="IPInventorController">
+    
+    <!--overlayLib is for future modal updates-->
+    <lightning:overlayLibrary aura:id="overlayLib"/>
+    
+    <!--mydata stores ip contact data and is used by a lightning data table-->
+    <aura:attribute name="mydata" type="Object" />
+    
+    <!--mycolumn creates column metadata and is used by a lightning data table-->
+    <aura:attribute name="mycolumns" type="List" />
+    
+    <!--showCreateDialog controls the visibility of the researcher creation component-->
+    <aura:attribute name="showCreateDialog" type="Boolean" default="false"/>
+    
+    <!--showDeleteConfirmation controls the visibility of the record delete confirmation modal-->
+    <aura:attribute name="showDeleteConfirmation" type="boolean" default="false"/>
+    
+    <!--selItem stores Contact record data from the Lookup component-->
+    <aura:attribute Name="selItem" type="object"  access="public" />
+    
+    <!--selDiv stores Division record data from the Picklist component-->
+    <aura:attribute Name="selDiv" type="object"  access="public" />
+    
+    <!--selAcct stores Account record data from the Picklist component-->
+    <aura:attribute Name="selAcct" type="object"  access="public" />
+    
+    <!--lead inventor is populated manually from the primary checkbox on creation-->
+    <aura:attribute name="leadInventor" type="Boolean" default="false" />
+    
+    <!--ipConId stores the ip Contact to be deleted-->
+    <aura:attribute Name="ipConId" type="string"  access="public" />
+    
+    <!--newIpContact stores the ip Contact that is created-->
+    <aura:attribute name="newIpContact" type="Object" />
+    
+    <!--newIpContactFields stores the data to create the ip Contact-->
+    <aura:attribute name="newIpContactFields" type="Object" />
+    
+    <!--newIpError stores any error data from ip Contact creation-->
+    <aura:attribute name="newIpError" type="String"/>
+    
+    <!--recordCreator initializes a template with which to create an ip Contact-->
+    <force:recordData aura:id="recordCreator"
+                      layoutType="FULL"
+                      targetRecord="{!v.newIpContact}"
+                      targetFields="{!v.newIpContactFields}"
+                      targetError="{!v.newIpError}"/>
+    
+    <!--init is triggered on render and sets up columns and gets record data-->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <!--lightning data table that displays ip researchers-->
+    <lightning:card iconName="custom:custom18" title="Inventors" variant="Base" >
+        <aura:set attribute="actions">
+            <lightning:button label="New" onclick="{!c.enableCreateDialog}"/>
+        </aura:set>
+        <lightning:datatable data="{!v.mydata}" columns="{!v.mycolumns}" keyField="Id" hideCheckboxColumn="true" onrowaction="{!c.handleRowAction}"/>
+    </lightning:card>
+    
+    <!--dialog to create new ip researchers-->
+    <aura:if isTrue="{!v.showCreateDialog}">
+        <lightning:card iconName="custom:custom19" title="Add New Inventor" class="slds-border_top">
+            <!-- Display Lightning Data Service errors -->
+            <aura:if isTrue="{!not(empty(v.newIpError))}">
+                <div class="recordError">
+                    <ui:message title="Error" severity="error" closable="true">
+                        {!v.newIpError}
+                    </ui:message>
+                </div>
+            </aura:if>
+            Inventor
+            <!--combobox lookup for researchers-->
+            <c:Lookup objectName="Contact"
+                      field_API_text="Name"
+                      field_API_val="Id"
+                      limit="4"
+                      field_API_search="Name"
+                      lookupIcon="standard:contact" 
+                      selItem="{!v.selItem}" 
+                      placeholder="Enter space after text to search Inventors"
+                      addlText="Account_Name__c"
+                      /> 
+            <br/>
+            <!--picklist of divisions pulled from divison contact relationship-->
+            <c:PicklistValues objectName="Division__c"
+                              field_API_Id="Division__c"
+                              junctObjectName="Division2Contact__c"
+                              field_API_Jun_Search="Contact__c"
+                              field_API_text="Name"
+                              field_API_val="Id"
+                              limit="5"
+                              field_API_search="Id"
+                              lookupIcon="standard:contact" 
+                              selItem="{!v.selDiv}" 
+                              placeholder="Select Division"
+                              searchId="{!v.selItem.val}"
+                              labelText="Division"
+                              /> 
+            <br/>
+            <!--picklist of accounts pulled from account contact relationship-->
+            <c:PicklistValues objectName="Account"
+                              field_API_Id="AccountId"
+                              junctObjectName="AccountContactRelation"
+                              field_API_Jun_Search="ContactId"
+                              field_API_text="Name"
+                              field_API_val="Id"
+                              limit="5"
+                              field_API_search="Id"
+                              lookupIcon="standard:account" 
+                              selItem="{!v.selAcct}" 
+                              placeholder="Select Account"
+                              searchId="{!v.selItem.val}"
+                              labelText="Account"
+                              /> 
+            <br/>
+            <lightning:input aura:id="researcherField" name="researcherField" label="Lead Inventor" type="checkbox" checked="{!v.leadInventor}"/>
+            <br/>
+            <lightning:button variant="neutral" label="Cancel" onclick="{!c.disableCreateDialog}"/>
+            <lightning:button variant="brand" label="Save" onclick="{!c.saveRecord}"/>	
+        </lightning:card>
+    </aura:if>
+    
+    <!--modal that confirms if the user wants to delete a Researcher Contact record-->
+    <aura:if isTrue="{!v.showDeleteConfirmation}">
+        <!--###### MODAL BOX Start From Here ######--> 
+        <div role="dialog" tabindex="-1" aria-labelledby="header99" class="slds-modal slds-fade-in-open ">
+            <div class="slds-modal__container">
+                <!-- ###### MODAL BOX HEADER Part Start From Here ######-->
+                <div class="slds-modal__header">
+                    <h2 id="header99" class="slds-text-heading--medium">Inventor Contact Delete Confirmation</h2>
+                </div>
+                <!--###### MODAL BOX BODY Part Start From Here ######-->
+                <div class="slds-modal__content slds-p-around--medium">
+                    <p>Do you want to delete this Inventor relationship?
+                    </p>
+                </div>
+                <!--###### MODAL BOX FOOTER Part Start From Here ######-->
+                <div class="slds-modal__footer">
+                    <button class="slds-button slds-button--neutral" onclick="{!c.closeModal}" >Cancel</button>
+                    <button class="slds-button slds-button--brand" onclick="{!c.deleteRow}">Delete</button>
+                </div>
+            </div>
+        </div>
+        <div class="slds-backdrop slds-backdrop--open"></div>
+        <!--###### MODAL BOX Part END Here ######-->
+    </aura:if>
+</aura:component>

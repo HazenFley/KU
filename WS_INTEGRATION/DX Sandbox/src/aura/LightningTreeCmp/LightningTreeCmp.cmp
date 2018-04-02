@@ -1,0 +1,24 @@
+<aura:component controller="LightningTreeCmpController">
+    
+    <!-- attributes that need to be passed to this component for it to work -->
+    <aura:attribute name="ltngcurrentRecId" type="String" required="true"/>
+    <aura:attribute name="ltngSobjectname" type="String" required="true"/>
+    <aura:attribute name="ltngParentFieldAPIName" type="String" required="true"/>
+    <aura:attribute name="ltngLabelFieldAPIName" type="String" required="true"/>
+    <aura:attribute name="ltngHierarchyHeader" type="String" required="true"/>
+    <aura:attribute name="ltngUParentFieldName" type="String" required="true"/>
+    <aura:attribute name="ltngUParentFieldValue" type="String" required="true"/>
+    <aura:attribute name="items" type="Object"/>
+        
+    <!-- Spinner information -->
+    <aura:handler event="aura:waiting" action="{!c.showSpinner}"/>
+    <aura:handler event="aura:doneWaiting" action="{!c.hideSpinner}"/>    
+    <div class="slds-align--absolute-center">
+        <lightning:spinner aura:id="spinner" variant="brand" size="large" class="slds=hide" alternativeText="Waiting on LightningTreeCmp."/>
+    </div>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <lightning:tree items="{!v.items }" header="{!v.ltngHierarchyHeader}" onselect="{!c.handleSelect}"/>
+    
+</aura:component>

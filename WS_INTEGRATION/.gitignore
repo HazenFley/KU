@@ -1,0 +1,10 @@
+.sfdx/
+force-app/main/default/profiles/*
+/force-app/main/default/profiles/*
+/force-app/main/default/profiles
+/DX\ Sandbox/debug/
+/DX\ Sandbox/debug/*
+DX\ Sandbox/debug/
+/DX\ Sandbox/config/
+/DX\ Sandbox/config/*
+DX\ Sandbox/config/
